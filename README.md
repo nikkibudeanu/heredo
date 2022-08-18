@@ -47,6 +47,7 @@ Live app link [here](https://woofmeapp.herokuapp.com/)
 
 
 
+
 ### User Stories
 
 
@@ -74,13 +75,17 @@ Live app link [here](https://woofmeapp.herokuapp.com/)
 As a project owner, I would like to create :
 
 
+[Back to top ⇧](#)
+
 ## 3. Structure
 
 
+[Back to top ⇧](#)
 
 ## 4. Skeleton
 
 
+[Back to top ⇧](#)
 
 ### 1.  wireframe
 
@@ -114,6 +119,7 @@ As a project owner, I would like to create :
 
 <img width="500" src="media/readme/wireframes/4.png">
 
+[Back to top ⇧](#)
 
 ## 5. Surface
 
@@ -129,6 +135,7 @@ As a project owner, I would like to create :
 
 <img width="500" src="media/readme/fonts.png">
 
+[Back to top ⇧](#)
 
 ## Functional Scope 
 **Woofme Flowchart**
@@ -182,15 +189,18 @@ Test cases were linked with every User story presented above, and can be found i
 
 </details>
 
+[Back to top ⇧](#)
 
 ## Features
 
+[Back to top ⇧](#)
 
 ## Future Features
 
 I would like to implement the following features: 
 
 
+[Back to top ⇧](#)
 
 
 ## Languages Used
@@ -200,6 +210,7 @@ I would like to implement the following features:
 ## Frameworks, Libraries & Programs Used
 
 
+[Back to top ⇧](#)
 
 ## Testing and Code validation 
 All code validation and test details can be found [here](TESTING.md).
@@ -210,6 +221,7 @@ All code validation and test details can be found [here](TESTING.md).
 | ---               | --------- |
 | When deploying, the website CSS and database were failing on Heroku. | Debug Update and transfer all data to Postgres. A model did not have a slug as per old migrations.
 
+[Back to top ⇧](#)
 
 ## Deployment 
 
@@ -245,6 +257,8 @@ Command:  ` pip3 freeze > requirements.txt`.
        
 </details>
 
+[Back to top ⇧](#)
+
 # Credits
 
 ## Media
@@ -254,5 +268,8 @@ Command:  ` pip3 freeze > requirements.txt`.
 ### Work based on other code
 
 
+[Back to top ⇧](#)
 
 # Acknowledgements
+
+[Back to top ⇧](#)
