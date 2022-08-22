@@ -48,8 +48,16 @@
         </div>
 
         {% endif %}
+
+        {% block page_header %}
+        {% endblock %}
     </header>
 
+    {% block content %} 
+    {% endblock %}
+
+    {% block postloadjs %}
+    {% endblock %}
 
   </body>
 </html>
