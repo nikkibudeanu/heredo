@@ -4,6 +4,5 @@ html{
 
 body{
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Montserrat', sans-serif;
 }
