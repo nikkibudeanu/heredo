@@ -21,12 +21,7 @@ video {
       position: absolute;
       top: 0;
       left: 0;
-      opacity: 0.6;
-      -webkit-filter: blur(1px);
-      -moz-filter: blur(1px);
-      -o-filter: blur(1px);
-      -ms-filter: blur(1px);
-      filter: blur(1px);
+      opacity: 0.9;
     }
 
     .overlay-content {
@@ -34,7 +29,7 @@ video {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: rgba(6, 56, 82, 0.5);
+        color: rgba(255, 255, 255, 0.9);
         width: 100vw;
         height: 60vh;
     }
@@ -45,8 +40,7 @@ video {
 }
 h1,
 h2, 
-h3,
-a{
+h3{
     font-family: 'Montserrat', sans-serif;
 
 }
