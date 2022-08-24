@@ -29,6 +29,16 @@ video {
       filter: blur(1px);
     }
 
+    .overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(6, 56, 82, 0.5);
+        width: 100vw;
+        height: 60vh;
+    }
+
 
 .home-page{
     margin-top: 100vh;
