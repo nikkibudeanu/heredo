@@ -1,0 +1,58 @@
+[
+    {
+       "pk":1,
+       "model":"products.category",
+       "fields":{
+          "name":"red-wine",
+          "friendly_name":"Red wines"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.category",
+       "fields":{
+          "name":"white-and-rose-wine",
+          "friendly_name":"White and Rose"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.category",
+       "fields":{
+          "name":"sparkling",
+          "friendly_name":"Sparkling wine"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.category",
+       "fields":{
+          "name":"gifts",
+          "friendly_name":"Gifts"
+       }
+    },
+    {
+       "pk":5,
+       "model":"products.category",
+       "fields":{
+          "name":"gift-cards",
+          "friendly_name":"Gift cards"
+       }
+    },
+    {
+       "pk":6,
+       "model":"products.category",
+       "fields":{
+          "name":"mistery-box",
+          "friendly_name":"Mistery box"
+       }
+    },
+    {
+       "pk":7,
+       "model":"products.category",
+       "fields":{
+          "name":"kitchen_dining",
+          "friendly_name":"Kitchen & Dining"
+       }
+    }
+ ]
