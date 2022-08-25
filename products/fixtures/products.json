@@ -1,0 +1,15 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001340155",
+          "name":"Rosé-Merlot",
+          "description":"Rosé-Merlot will remind you of summer holidays at your grandparents: juicy berries, fresh ripe strawberries, smooth and soft with a refreshing finish. Enjoy it with or without food.",
+          "price":22.5,
+          "category":2,
+          "rating":4.9,
+          "image":"1.png"
+       }
+    }
+ ]
