@@ -82,11 +82,7 @@ a{
 
 
 
-.logo-font {
-    text-transform: uppercase;
-}
-
-.main-logo-link {
+.navbar-brand {
     width: fit-content;
 }
 
