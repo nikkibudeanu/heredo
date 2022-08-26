@@ -24,15 +24,22 @@ video {
       opacity: 0.9;
     }
 
-    .overlay-content {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100vw;
-        height: 60vh;
+    .overlay-content img{
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
     }
 
+    .overlay-nav {
+      position: fixed;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100vw;
+      height: 60vh;
+  }
 
 /* scroll down arrow */
 
@@ -91,7 +98,7 @@ a{
 }
 
 .border-black {
-  border: 1px solid black !important;
+  border: 2px solid black !important;
 }
 
 .bg-black {
