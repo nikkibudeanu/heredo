@@ -41,6 +41,10 @@ video {
       height: 60vh;
   }
 
+  .top-menu{
+    width: 100%;
+  }
+
 /* scroll down arrow */
 
 
@@ -112,6 +116,7 @@ z-index: -1;
 }
 
 
+
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
@@ -133,3 +138,21 @@ z-index: -1;
           padding-top: 164px;
       }
   }
+
+
+    /* fixed top navbar only on small mediul*/
+    @media (max-width: 700px) {
+    .navbar-brand{
+      display: none;
+    }
+
+    .top-menu{
+      background-color: aliceblue;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .top-menu .wrap  {
+      display: flex;
+      justify-content: end;
+    }
+}
