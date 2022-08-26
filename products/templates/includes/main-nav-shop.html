@@ -1,0 +1,46 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">Dry/Sweet</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Wines
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="wines-link">
+                <a href="{% url 'products' %}?category=red-wine" class="dropdown-item">Red wines</a>
+                <a href="{% url 'products' %}?category=white-and-rose-wine" class="dropdown-item">White and Rosé wines</a>
+                <a href="{% url 'products' %}?category=sparkling" class="dropdown-item">Sparkling and Champagne</a>
+                <a href="{% url 'products' %}?category=red-wine,white-and-rose-wine,sparkling" class="dropdown-item">All Wine</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="gifts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Gifts
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="gifts-link">
+                <a href="{% url 'products' %}?category=gift-cards" class="dropdown-item">Gift cards</a>
+                <a href="{% url 'products' %}?category=gifts" class="dropdown-item">Gifts</a>
+                <a href="{% url 'products' %}?category=gift-cards, gifts" class="dropdown-item">All Gifts</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=mistery-box" id="mistery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mystery Boxes
+            </a>
+        </li>
+    </ul>
+</div> 
+
