@@ -24,12 +24,22 @@ video {
       opacity: 0.9;
     }
 
+    .overlay-content{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.2);
+      width: 100vw;
+      height: 100vh;
+    }
+
     .overlay-content img{
       position: fixed;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 70%;
+      filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(106%);
     }
 
     .overlay-nav {
@@ -41,10 +51,9 @@ video {
       height: 60vh;
   }
 
-  .top-menu{
-    width: 100%;
+  .nav-item a:hover{
+    text-shadow: 2px 4px 4px rgba(246, 255, 252, 0.47);
   }
-
 /* scroll down arrow */
 
 
@@ -81,13 +90,19 @@ h2,
 h3,
 a{
     font-family: 'Montserrat', serif;
+    color: white;
 
 }
 
 
+.top-menu{
+display: flex;
+justify-content: space-between;
+}
 
 .navbar-brand {
     width: fit-content;
+
 }
 
 
@@ -145,14 +160,4 @@ z-index: -1;
     .navbar-brand{
       display: none;
     }
-
-    .top-menu{
-      background-color: aliceblue;
-      width: 100%;
-      margin: 0 auto;
-    }
-    .top-menu .wrap  {
-      display: flex;
-      justify-content: end;
-    }
-}
+  }
