@@ -62,6 +62,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',# required by allauth - allows allauth to access http request object
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                 'bag.contexts.bag_contents',
+
             ],
         },
     },
