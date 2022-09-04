@@ -2,8 +2,8 @@
 <div class="navbar" id="main-nav-shop">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+            <a class="logo-font font-weight-bold nav-link  mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products  <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -14,8 +14,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Wines
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="wines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Wines <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="wines-link">
                 <a href="{% url 'products' %}?category=red-wine" class="dropdown-item">Red wines</a>
@@ -26,8 +26,8 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="gifts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Gifts
+            <a class="logo-font font-weight-bold nav-link  mr-5" href="#" id="gifts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Gifts <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gifts-link">
                 <a href="{% url 'products' %}?category=gift-cards" class="dropdown-item">Gift cards</a>
@@ -36,7 +36,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=mistery-box" id="mistery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link " href="{% url 'products' %}?category=mistery-box" id="mistery-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mystery Boxes
             </a>
         </li>
