@@ -104,6 +104,11 @@ a,
     font-family: 'Cardo', serif;
 }
 
+.delivery{
+  font-style: italic;
+  font-size: 20px;
+}
+
 
 .top-menu{
 display: flex;
@@ -165,13 +170,23 @@ z-index: -1;
 }
 
 #main-nav-shop a{
-  padding: 5px 25px;
-  border: 2px solid #A45D5D;
-  color: #A45D5D;
+  color: black !important;
+  border: 1px solid #FFC069;
+  padding: 5px 15px;
+}
+
+#main-nav-shop a:hover{
+  background: #FFC069;
 }
 
 #main-nav-shop .dropdown-item{
   border: none;
+}
+
+#main-nav-shop .dropdown-item:hover{
+background-color: #FFC069;
+text-shadow: none;
+color:#EFEFEF;
 }
 
 /* Slightly larger container on xl screens */
