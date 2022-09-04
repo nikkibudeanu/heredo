@@ -5,8 +5,8 @@
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
-        </div>
     </div>
+</div>
 </div>
 
 
@@ -29,7 +29,7 @@
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            {% include 'includes/main-nav-shop.html' %}
+            {% include 'products/includes/main-nav-shop.html' %}
         </nav>
         <hr class="w-50 mb-3">
 
@@ -39,66 +39,73 @@
         <div class="col text-black">
             <h4 class="logo-font delivery my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
         </div>
+        </div>
 
-    <div class="row">
-        <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2"></div>
-            <div class="row ">
-                {% for product in products %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0 ">
-                        {% if product.image %}
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
-                        {% else %}
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ product.name }}">
-                        </a>
-                        {% endif %}
-                        <div class="card-body pb-0">
-                            <p class="mb-0 name">{{ product.name }}</p>
-                        </p>
-                        </div>
-                        <div class="card-footer bg-white pt-0 border-0 text-left">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                    {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
-                                        5</small>
-                                    {% else %}
-                                    <small class="text-muted">No Rating</small>
-                                    {% endif %}
+        <div class="row">
+            <div class="product-container col-10 offset-1">
+                <div class="row mt-1 mb-2"></div>
+                <div class="row ">
+                    {% for product in products %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card h-100 border-0">
+                            {% if product.image %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ product.image.url }}"
+                                    alt="{{ product.name }}">
+                            </a>
+                            {% else %}
+                            <a href="">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                    alt="{{ product.name }}">
+                            </a>
+                            {% endif %}
+
+                            <div class="product-name">{{ product.name }}
+                            </div>
+                            <div class="product-overview">
+                                <div class="product-overview">
+                                    <div class="row text-center">
+                                        <div class="col-xs-4">
+                                            <h3>$</h3>
+                                            <p>{{ product.price }}</p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <h3><i class="fas fa-star mr-1"></i></h3>
+                                            <p>{% if product.rating %}
+                                                <small class="text-muted text-center">{{ product.rating }} /
+                                                    5</small>
+                                                {% else %}
+                                                <small class="text-muted  text-center">No Rating</small>
+                                                {% endif %}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {% if forloop.counter|divisibleby:1 %}
+                    <div class="col-12 d-sm-none mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:2 %}
+                    <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:3 %}
+                    <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:4 %}
+                    <div class="col-12 d-none d-xl-block mb-5">
+                        <hr>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
                 </div>
-                {% if forloop.counter|divisibleby:1 %}
-                <div class="col-12 d-sm-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:2 %}
-                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:3 %}
-                <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% if forloop.counter|divisibleby:4 %}
-                <div class="col-12 d-none d-xl-block mb-5">
-                    <hr>
-                </div>
-                {% endif %}
-                {% endfor %}
             </div>
         </div>
     </div>
-</div>
-{% endblock %}
+    {% endblock %}
