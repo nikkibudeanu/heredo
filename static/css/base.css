@@ -4,7 +4,7 @@ html{
 
 body{
     height: calc(100vh - 164px);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Monserrat', sans-serif;
     background-color: #EFEFEF;
 }
 
@@ -99,7 +99,7 @@ h1,
 h2, 
 h3,
 a{
-    font-family: 'Montserrat', serif;
+    font-family: 'Cardo', serif;
     color: white;
 
 }
@@ -131,7 +131,6 @@ justify-content: space-between;
 }
 
 .btn-outline-gold{
-  background: white;
   color: black !important;
   border: 1px solid #FFC069;
 }
