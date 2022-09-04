@@ -5,6 +5,7 @@ html{
 body{
     height: calc(100vh - 164px);
     font-family: 'Roboto', sans-serif;
+    background-color: #EFEFEF;
 }
 
 .video-container{
@@ -39,7 +40,7 @@ video {
       left: 50%;
       transform: translate(-50%, -50%);
       width: 75%;
-      filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(192deg) brightness(104%) contrast(106%);
+      filter: invert(83%) sepia(82%) saturate(4200%) hue-rotate(308deg) brightness(100%) contrast(105%);
     }
 
     #main-nav{
@@ -129,15 +130,31 @@ justify-content: space-between;
   background: #000 !important;
 }
 
+.btn-outline-gold{
+  background: white;
+  color: black !important;
+  border: 1px solid #FFC069;
+}
+
+.btn-outline-gold:hover,
+.btn-outline-gold:active,
+.btn-outline-gold:focus{
+  background: #FFC069;
+}
+
 .overlay {
 height: 100%;
 width: 100%;
 top: 0;
 left: 0;
 position: fixed;
-background: white;
+background-color: #EFEFEF;
 z-index: -1;
 }
+
+
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 
 
 #main-nav-shop{
@@ -145,6 +162,8 @@ z-index: -1;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
+  background-color: #EFEFEF;
+
 
 }
 
