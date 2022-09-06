@@ -46,8 +46,8 @@
                 <div class="row mt-1 mb-2"></div>
                 <div class="row ">
                     {% for product in products %}
-                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                        <div class="card h-100 border-0">
+                    <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <div class="card border-0">
                             {% if product.image %}
                             <a href="{% url 'product_detail' product.id %}">
                                 <img class="card-img-top img-fluid" src="{{ product.image.url }}"
@@ -62,24 +62,22 @@
 
                             <div class="product-name">{{ product.name }}
                             </div>
-                            <div class="product-overview">
                                 <div class="product-overview">
                                     <div class="row text-center">
-                                        <div class="col-xs-4">
+                                        <div class="col-sm">
                                             <h3>$</h3>
                                             <p>{{ product.price }}</p>
                                         </div>
-                                        <div class="col-xs-4">
+                                        <div class="col-sm">
                                             <h3><i class="fas fa-star mr-1"></i></h3>
                                             <p>{% if product.rating %}
-                                                <small class="text-muted text-center">{{ product.rating }} /
+                                                <small class="text-muted ">{{ product.rating }} /
                                                     5</small>
                                                 {% else %}
-                                                <small class="text-muted  text-center">No Rating</small>
+                                                <small class="text-muted ">No Rating</small>
                                                 {% endif %}</p>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>

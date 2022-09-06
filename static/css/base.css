@@ -138,7 +138,7 @@ justify-content: space-between;
 
 
 .card img{
-  filter: brightness(80%);
+  filter: brightness(60%);
   transition: all 0.15s linear;
 
 
@@ -153,7 +153,7 @@ justify-content: space-between;
   color: #FFF;
   padding: 15px 20px;
   font-family: 'Cardo', sans-serif;
-  background: linear-gradient(140deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+  background: linear-gradient(140deg, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.0) 70%);
   transition: all 0.15s linear;
 
 }
