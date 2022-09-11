@@ -134,6 +134,8 @@ justify-content: space-between;
   position: relative;
   margin: 10px auto;
   cursor: pointer;
+  height: 100%;
+
 }
 
 
@@ -255,6 +257,24 @@ background-color: #FFC069;
 text-shadow: none;
 color:#EFEFEF;
 }
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 20px;
+  z-index: 99999999999;
+}
+
+.custom-toast {
+  overflow: visible;
+}
+
+.toast-capper {
+  height: 5px;
+}
+
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
