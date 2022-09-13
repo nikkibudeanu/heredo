@@ -9,7 +9,7 @@
 <img  src="media/readme/mockup.png">
 
 
-Live app link [here](https://woofmeapp.herokuapp.com/)
+Live app link [here](https://heredo.herokuapp.com/)
 
 
 
@@ -17,7 +17,7 @@ Live app link [here](https://woofmeapp.herokuapp.com/)
 1. [Introduction](#Introduction)
 2. [UX](#UX)
     1. [Ideal User Demographic]
-    2. [User Stories]
+    2. [User Stories](###User Stories)
     3. [Development Planes]
     4. [Design]
 3. [Features]
@@ -97,6 +97,7 @@ Live app link [here](https://woofmeapp.herokuapp.com/)
 ## 2. Scope 
 
 As a project owner, I would like to create :
+
 
 
 [Back to top ⇧](#)
@@ -180,29 +181,28 @@ Test cases were linked with every User story presented above, and can be found i
 * Sprint 1
 
   + Setup Django 
-  + Heroku Deployment 
   + Create User Stories in Github
 
 
 * Sprint 2
-  + Create User Profile
-  + Create Register Page
-  + Create Login Page 
+  + Setup Allauth
+  + Setup Home App
+
   
 
 * Sprint 3
-  + Create all models
+  + Setup Products app
 
 
 * Sprint 4
-  + Create Add Review feature 
-  + Upload an image on breed review
-  + Add rating breed feature
+  + Setup Bag App
 
 
 * Sprint 5
 
-  + Create a search by breed
+  + Setup Checkout app
+  + Heroku Deployment 
+
 
 
 
