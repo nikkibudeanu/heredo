@@ -55,12 +55,36 @@ Live app link [here](https://woofmeapp.herokuapp.com/)
 <details>
 <summary> As a user, I would like to be able to:  </summary>
 
+1. Login/Register to the platform.
+2. View all products. 
+3. Filter products by wine type, gifts, mistery box.
+4. Sort products by category, rating and price. 
+5. View a detailed page of each product.
+6. Add to cart a desired product.
+7. Delete or update quantity of the product in cart. 
+8. Checkout safely.
+9. Receive order confirmation.
+
+
 </details>
 
 <details>
 <summary>
  As a logged user, I would like to be able to:
 </summary>
+
+ 
+</details>
+
+
+<details>
+<summary>
+ As an admin, I would like to be able to:
+</summary>
+
+1. Add a new product.
+2. Delete/Update product.
+
  
 </details>
 
