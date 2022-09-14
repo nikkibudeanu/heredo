@@ -50,6 +50,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'heredo.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
