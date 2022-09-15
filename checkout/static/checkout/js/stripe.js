@@ -1,8 +1,8 @@
 // Inspired from https://stripe.com/docs/payments/accept-a-payment?platform=web&ui=elements
 
 // Remove quote marks
-var stripePublickey = $('#id_stripe_public_key').text().slice(1, -1);
-var clientSecret = $('#id_client_secret').text().slice(1, -1);
+var stripe_public_key = $('#id_stripe_public_key').text().slice(1, -1);
+var client_secret = $('#id_client_secret').text().slice(1, -1);
 
 // Stripe elements + style
 var stripe = Stripe(stripe_public_key);
