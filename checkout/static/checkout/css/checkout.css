@@ -23,6 +23,8 @@
   transition: box-shadow 150ms ease;
 }
 
+/* card payment form style */
+
 .StripeElement--focus,
 .stripe-style-input:focus,
 .stripe-style-input:active {
