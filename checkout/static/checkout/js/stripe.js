@@ -25,7 +25,7 @@ var style = {
 var card = elements.create('card', {style: style});
 card.mount('#card-element');
 
-// Real time errors
+// Real time errors for the card element
 
 card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
