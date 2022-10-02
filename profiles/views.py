@@ -6,14 +6,14 @@ from .forms import UserProfileForm
 
 
 def profile(request):
-    """ Render user profile. """
+    """ Render User profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Success! Profile updated!')
+            messages.success(request, 'Hooray! Your profile is updated!')
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
