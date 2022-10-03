@@ -60,7 +60,17 @@ def product_detail(request, product_id):
 
 def admin_add_product(request):
     """ Admin ads product to the store """
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Success! Your new product was added!')
+            return redirect(reverse('admin_add_product'))
+        else:
+            messages.error(request, 'Oops!Failed to add product. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+        
     template = 'products/admin_add_product.html'
     context = {
         'form': form,
