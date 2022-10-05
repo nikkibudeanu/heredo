@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -58,8 +58,13 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+@login_required
 def admin_add_product(request):
     """ Admin ads product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This feature is available only to store owners.')
+        return redirect(reverse('products'))
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -78,8 +83,13 @@ def admin_add_product(request):
 
     return render(request, template, context)
 
+@login_required
 def admin_edit_product(request, product_id):
     """ Update a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This feature is available only to store owners.')
+        return redirect(reverse('products'))
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -101,8 +111,13 @@ def admin_edit_product(request, product_id):
 
     return render(request, template, context)
 
+@login_required
 def admin_delete_product(request, product_id):
     """ Delete a product from the store if you are an admin """
+    if not request.user.is_superuser:
+        messages.error(request, 'This feature is available only to store owners.')
+        return redirect(reverse('products'))
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
