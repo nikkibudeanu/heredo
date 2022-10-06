@@ -2,81 +2,83 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
-    {% endblock %}
+</div>
+{% endblock %}
 
 {% block content %}
 <section id="home">
-<div class="video-container">
-    <video playsinline autoplay muted loop poster="" id="background-video">
-      <source src="/media/background-video4.mp4" type="video/mp4">
-    </video>
-    <div class="arrow bounce">
-        <a class="fa fa-arrow-down fa-2x" href="#shop"></a>
-    </div>
-</div>
-
-<div class="overlay-content">
-    <img src="/media/heredo-logo.png">
-
-
-    <div class="overlay-nav">
-        <nav class="navbar navbar-expand-lg navbar-light w-100">
-            <div class="container" id="main-nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-auto mx-auto">
-            
-
-                    <li class="nav-item">
-                        <a class="logo-font font-weight-bold nav-link scroll-link text-white  mr-5" href="#shop" id="shop-link"
-                            aria-haspopup="true" aria-expanded="false">
-                            <strong> SHOP</strong>
-                        </a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5" href="#about" id="about-link"
-                            aria-haspopup="true" aria-expanded="false">
-                            About us
-                        </a>
-                    </li>
-        
-                    <li class="nav-item ">
-                        <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5" href="#gallery" id="gallery-link"
-                            aria-haspopup="true" aria-expanded="false">
-                            Gallery
-                        </a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5" href="#vineyard" id="vineyard-link"
-                            aria-haspopup="true" aria-expanded="false">
-                            Vineyard
-                        </a>
-                    </li>
-        
-        
-                    <li class="nav-item">
-                        <a class="logo-font font-weight-bold nav-link scroll-link text-white " href="#contact" id="contact-link"
-                            aria-haspopup="true" aria-expanded="false">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="video-container">
+        <video playsinline autoplay muted loop poster="" id="background-video">
+            <source src="/media/background-video4.mp4" type="video/mp4">
+        </video>
+        <div class="arrow bounce">
+            <a class="fa fa-arrow-down fa-2x" href="#shop"></a>
         </div>
-    </nav>
-
     </div>
 
+    <div class="overlay-content">
+        <img src="/media/heredo-logo.png">
 
-{% endblock %}
+
+        <div class="overlay-nav">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <div class="container" id="main-nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav w-auto mx-auto">
 
 
+                            <li class="nav-item">
+                                <a class="logo-font font-weight-bold nav-link scroll-link text-white  mr-5" href="#shop"
+                                    id="shop-link" aria-haspopup="true" aria-expanded="false">
+                                    <strong> SHOP</strong>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5" href="#about"
+                                    id="about-link" aria-haspopup="true" aria-expanded="false">
+                                    About us
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5"
+                                    href="#gallery" id="gallery-link" aria-haspopup="true" aria-expanded="false">
+                                    Gallery
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5"
+                                    href="#vineyard" id="vineyard-link" aria-haspopup="true" aria-expanded="false">
+                                    Vineyard
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="logo-font font-weight-bold nav-link scroll-link text-white " href="#contact"
+                                    id="contact-link" aria-haspopup="true" aria-expanded="false">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        </div>
+
+        
+
+
+        {% endblock %}

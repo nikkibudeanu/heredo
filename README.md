@@ -73,6 +73,9 @@ Live app link [here](https://heredo.herokuapp.com/)
  As a logged user, I would like to be able to:
 </summary>
 
+1. View order history.
+2. Update personal details. 
+
  
 </details>
 
@@ -97,6 +100,8 @@ Live app link [here](https://heredo.herokuapp.com/)
 ## 2. Scope 
 
 As a project owner, I would like to create :
+
+An online shop and website for the Heredo winery. The goal is to enable its users to get to know more information about the winery, be able to contact the owners, research their products and even buy wine or other products from them. 
 
 
 
@@ -216,6 +221,17 @@ Test cases were linked with every User story presented above, and can be found i
 [Back to top ⇧](#)
 
 ## Features
+
+1. Home Page
+
+2. Products Page
+
+3. Product detail page
+
+4. Admin Product management pages : 
+* add product page
+* edit product page
+* delete product button
 
 [Back to top ⇧](#)
 
