@@ -168,7 +168,7 @@ An online shop and website for the Heredo winery. The goal is to enable its user
 [Back to top ⇧](#)
 
 ## Functional Scope 
-**Woofme Flowchart**
+**Heredo Flowchart**
 
 <img width="500" src="media/readme/flowchart.jpeg">
 
@@ -185,31 +185,32 @@ Test cases were linked with every User story presented above, and can be found i
 
 * Sprint 1
 
-  + Setup Django 
-  + Create User Stories in Github
+  + Base template
+  + Setup Allauth
+
 
 
 * Sprint 2
-  + Setup Allauth
   + Setup Home App
 
   
 
 * Sprint 3
   + Setup Products app
+  + Setup Bag app
 
 
 * Sprint 4
-  + Setup Bag App
+  + Setup Checkout app
+  + Setup Profile app
+  + Toasts
 
 
 * Sprint 5
 
-  + Setup Checkout app
+  + Setup Admin profiles: add/update/delete product
+  + Setup Real Time Email
   + Heroku Deployment 
-
-
-
 
 * Sprint 6
 
