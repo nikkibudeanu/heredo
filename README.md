@@ -170,7 +170,7 @@ An online shop and website for the Heredo winery. The goal is to enable its user
 ## Functional Scope 
 **Woofme Flowchart**
 
-<img width="500" src="media/readme/chart.png">
+<img width="500" src="media/readme/flowchart.jpeg">
 
 **Agile Methodology**
 
