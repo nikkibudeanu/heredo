@@ -6,6 +6,10 @@ body{
     height: calc(100vh - 164px);
     font-family: 'Monserrat', sans-serif;
     background-color: #EFEFEF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
 }
 
 .video-container{
@@ -48,7 +52,6 @@ video {
       left: 50%;
       transform: translateX(-50%);
       z-index: 99;
-      font-size: 20px;
     }
     
 
@@ -103,6 +106,7 @@ a,
 .name,
 .logo-font{
     font-family: 'Cardo', serif;
+
 }
 
 .delivery{

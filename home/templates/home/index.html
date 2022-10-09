@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+{% endblock %}
+
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -18,67 +23,45 @@
         <div class="arrow bounce">
             <a class="fa fa-arrow-down fa-2x" href="#shop"></a>
         </div>
-    </div>
 
-    <div class="overlay-content">
-        <img src="/media/DD.png">
-
-
-        <div class="overlay-nav">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <div class="container" id="main-nav">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav w-auto mx-auto">
+        <div class="overlay-content">
+            <img src="/media/DD.png">
 
 
-                            <li class="nav-item">
-                                <a class="logo-font font-weight-bold nav-link scroll-link text-white  mr-5" href="#shop"
-                                    id="shop-link" aria-haspopup="true" aria-expanded="false">
-                                    <strong> SHOP</strong>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5" href="#about"
-                                    id="about-link" aria-haspopup="true" aria-expanded="false">
-                                    About us
-                                </a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5"
-                                    href="#gallery" id="gallery-link" aria-haspopup="true" aria-expanded="false">
-                                    Gallery
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="logo-font font-weight-bold nav-link scroll-link text-white mr-5"
-                                    href="#vineyard" id="vineyard-link" aria-haspopup="true" aria-expanded="false">
-                                    Vineyard
-                                </a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="logo-font font-weight-bold nav-link scroll-link text-white " href="#contact"
-                                    id="contact-link" aria-haspopup="true" aria-expanded="false">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
+            <div class="overlay-nav">
+                <nav class="navbar navbar-dark navbar-expand">
+                    <div id="main-nav">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link scroll-link" href="#shop">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scroll-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scroll-link" href="#vineyard">Vineyard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scroll-link" href="#gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link scroll-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-
+                </nav>
+            </div>
         </div>
-        </div>
+    </div>
+    {% endblock %}
 
-        
-
-
-        {% endblock %}
+    {% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'home/js/home.js' %}"></script>
+{% endblock %} 
