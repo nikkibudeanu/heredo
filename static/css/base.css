@@ -47,7 +47,7 @@ video {
       filter: invert(83%) sepia(82%) saturate(4200%) hue-rotate(308deg) brightness(100%) contrast(105%);
     }
 
-    #main-nav{
+    #mainNav{
       position: relative;
       left: 50%;
       transform: translateX(-50%);

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
 {% endblock %}
 
 
@@ -15,7 +15,37 @@
 {% endblock %}
 
 {% block content %}
-<section id="home">
+
+<body id="page-top">
+    <div class="overlay-nav">
+        <nav class="navbar navbar-dark navbar-expand" id="mainNav">
+            <div id="main-nav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#vineyard">Vineyard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     <div class="video-container">
         <video playsinline autoplay muted loop poster="" id="background-video">
             <source src="/media/background-video4.mp4" type="video/mp4">
@@ -27,41 +57,59 @@
         <div class="overlay-content">
             <img src="/media/DD.png">
 
-
-            <div class="overlay-nav">
-                <nav class="navbar navbar-dark navbar-expand">
-                    <div id="main-nav">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link scroll-link" href="#shop">Shop</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll-link" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll-link" href="#vineyard">Vineyard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll-link" href="#gallery">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link scroll-link" href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
         </div>
     </div>
-    {% endblock %}
 
-    {% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'home/js/home.js' %}"></script>
-{% endblock %} 
+
+
+
+    <!-- Shop section-->
+    <section class="bg-dark" id="shop">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>ACQUIRE</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
+                        expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
+                        laborum vel, labore ut velit dignissimos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer class="py-5 bg-dark">
+    <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+</footer>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+ window.addEventListener('DOMContentLoaded', event => {
+
+    // Activate Bootstrap scrollspy on the main nav element
+    const mainNav = document.body.querySelector('#mainNav');
+    if (mainNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#mainNav',
+            offset: 74,
+        });
+    };
+
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+
+});
+</script>
+{% endblock %}

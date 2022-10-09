@@ -1,0 +1,26 @@
+/***** Shop *****/
+ 
+.shop {
+    padding: 210px 0;
+}
+ 
+.shop .text {
+    color: #fff;
+}
+ 
+.shop .text h1 {
+    margin-top: 25px;
+    color: #fff;
+}
+ 
+.shop .description {
+    margin: 30px 0 10px 0;
+}
+ 
+.shop .description p {
+    opacity: 0.8;
+}
+ 
+.shop .top-big-link {
+    margin-top: 45px;
+}
