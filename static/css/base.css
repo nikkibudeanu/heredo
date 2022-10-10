@@ -12,6 +12,7 @@ body{
     text-align: center;
 }
 
+
 .video-container{
     position: absolute;
     width: 100%;
@@ -350,7 +351,7 @@ color:#EFEFEF;
 	padding:15px 10px;
 	width:100%;
 	outline:none;
-	border:1px solid #bbb;
+	border:5px solid #bbb;
 	border-radius:20px;
 	display:inline-block;
 	-webkit-box-sizing:border-box;
@@ -365,7 +366,10 @@ color:#EFEFEF;
 }
 
 .allauth-form-inner-content input::placeholder {
-  color: #aab7c4;
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
 }
 
 .allauth-form-inner-content button,
