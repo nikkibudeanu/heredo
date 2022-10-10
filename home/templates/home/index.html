@@ -17,6 +17,21 @@
 {% block content %}
 
 <body id="page-top">
+
+    <div class="video-container" >
+        <video playsinline autoplay muted loop poster="" id="background-video">
+            <source src="../media/background-video4.mp4" type="video/mp4">
+        </video>
+        <div class="arrow bounce">
+            <a class="fa fa-arrow-down fa-2x" href="#shop"></a>
+        </div>
+
+        <div class="overlay-content">
+            <img src="/media/DD.png">
+
+        </div>
+    </div>
+    
     <div class="overlay-nav">
         <nav class="navbar navbar-dark navbar-expand" id="mainNav">
             <div id="main-nav">
@@ -46,20 +61,10 @@
         </nav>
     </div>
 
-    <div class="video-container">
-        <video playsinline autoplay muted loop poster="" id="background-video">
-            <source src="/media/background-video4.mp4" type="video/mp4">
-        </video>
-        <div class="arrow bounce">
-            <a class="fa fa-arrow-down fa-2x" href="#shop"></a>
-        </div>
 
-        <div class="overlay-content">
-            <img src="/media/DD.png">
 
-        </div>
-    </div>
-
+    <div  data-spy="scroll" data-target="#mainNav" data-offset="0">
+</div>
 
 
 
