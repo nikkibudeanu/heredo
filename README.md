@@ -157,7 +157,7 @@ An online shop and website for the Heredo winery. The goal is to enable its user
 * Colors
 
 
-<img width="300" src="media/readme/color_palette.jpg">
+<img width="300" src="media/readme/color_palette.png">
 
 
 * Font selection
