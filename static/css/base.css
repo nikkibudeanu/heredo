@@ -1,5 +1,8 @@
 html{
-    height:100%;
+    width: 100%;
+    height: 100%;
+    scroll-padding-top: 70px; /* height of sticky header */
+
 }
 
 body{
@@ -10,68 +13,47 @@ body{
     font-weight: 300;
     line-height: 30px;
     text-align: center;
-}
-
-#upper-nav{
-  background-color:transparent;
-
-}
-
-.video-container{
-    position: absolute;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+
 }
 
-video {
-      object-fit: cover;
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0.9;
-    }
 
-    .overlay-content{
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.5);
-      width: 100vw;
-      height: 100vh;
-    }
 
-    .overlay-content img{
-      position: fixed;
-      top: 35%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 75%;
-      filter: invert(83%) sepia(82%) saturate(4200%) hue-rotate(308deg) brightness(100%) contrast(105%);
-    }
+section{
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 
-    #mainNav{
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 99;
-    }
-    
+#background-video {
+  position: fixed;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: -1;
+}
 
-    .overlay-nav {
-      position: fixed;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100vw;
-      height: 60vh;
-  }
+header{
+  background-color: #fff;
 
-  .nav-item a:hover{
-    text-shadow: 2px 4px 4px rgba(246, 255, 252, 0.47);
-  }
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin:auto;
+}
+
+.clearfix {
+  clear: both;
+}
 /* scroll down arrow */
 
 
@@ -137,6 +119,10 @@ a,
   cursor: pointer;
   height: 100%;
 
+}
+
+nav a{
+  color:#000;
 }
 
 
@@ -405,8 +391,6 @@ color: #fff;
   background-color: #222;
   border-color: #222;
 }
-
-
 
 
 /* Slightly larger container on xl screens */

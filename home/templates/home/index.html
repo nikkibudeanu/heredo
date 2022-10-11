@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
-{% endblock %}
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -16,137 +12,91 @@
 
 {% block content %}
 
-<body>
-
-    <div class="video-container" >
-        <video playsinline autoplay muted loop poster="" id="background-video">
-            <source src="{{ MEDIA_URL }}background-video4.mp4" type="video/mp4">
-        </video>
-        <div class="arrow bounce">
-            <a class="fa fa-arrow-down fa-2x" href="#shop"></a>
+<header>
+    <div class="header-content">
+        <div class="inner">
+            <video playsinline autoplay muted loop poster="" id="background-video" style="z-index: -1;">
+                <source src="{{ MEDIA_URL }}background-video4.mp4" type="video/mp4">
+            </video>
+            <div class="callout">
+                <img src="{{ MEDIA_URL }}heredo-logo.png">
+              </div>
         </div>
-
-        <div class="overlay-content">
-            <img  src="{{ MEDIA_URL }}heredo-logo.png">
-        </div>
-    
-    <div class="overlay-nav">
-        <nav class="navbar navbar-dark navbar-expand" id="mainNav">
-            <div id="main-nav">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#shop">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#vineyard">Vineyard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#gallery">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    </div>
+    </div>
+<nav id="topNav" class="navbar navbar-expand">
+    <div class="container justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#vineyards">Vineyard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" data-toggle="modal" title="Shop with us" href="#shopModal">SHOP</a>
+                </li>
+            </ul>
     </div>
 </div>
+</nav>
+</header>
 
 
 
-    <div  data-spy="scroll" data-target="#mainNav" data-offset="0">
-
-            <!-- Shop section-->
-    <section class="bg-dark" id="shop">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h2>ACQUIRE</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
-                        expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
-                        laborum vel, labore ut velit dignissimos.</p>
-                </div>
+<div id="shopModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-xs-center">Bootstrap 4 Theme</h2>
+                <h6 class="text-xs-center">A free, responsive template</h6>
+                <p class="text-xs-center">
+                    This is a customized, single page example template that demonstrates some of the new features to check out in Bootstrap 4. Some of the features include Google Montserrat fonts, animation using Dan Eden's animate.css and the WOW jQuery plugin to watch the scrolling.
+                </p>
+                <p class="text-xs-center"><a href="http://www.bootstrapzero.com">Download at BootstrapZero</a></p>
+                <br>
+                <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
             </div>
         </div>
-    </section>
-</div>
-
-<div  data-spy="scroll" data-target="#mainNav" data-offset="0">
-
-    <!-- About section-->
-<section class="bg-dark" id="about">
-<div class="container px-4">
-    <div class="row gx-4 justify-content-center">
-        <div class="col-lg-8">
-            <h2>ACQUIRE</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
-                expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
-                laborum vel, labore ut velit dignissimos.</p>
-        </div>
     </div>
 </div>
-</section>
-</div>
 
-
-<div  data-spy="scroll" data-target="#mainNav" data-offset="0">
-
-    <!-- Vineyard section-->
-<section class="bg-dark" id="vineyard">
-<div class="container px-4">
-    <div class="row gx-4 justify-content-center">
-        <div class="col-lg-8">
-            <h2>ACQUIRE</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
-                expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
-                laborum vel, labore ut velit dignissimos.</p>
-        </div>
-    </div>
-</div>
-</section>
-</div>
-
-
-
-</body>
 
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
- window.addEventListener('DOMContentLoaded', event => {
+(function($) {
+    "use strict";
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+    $('body').scrollspy({
+        target: '#topNav',
+        offset: 60
     });
 
-});
+    new WOW().init();
+    
+    $('a.page-scroll').bind('click', function(event) {
+        var $ele = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($ele.attr('href')).offset().top - 60)
+        }, 1450, 'easeInOutExpo');
+        event.preventDefault();
+    });
+    
+
+    $('#galleryModal').on('show.bs.modal', function (e) {
+       $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
+    });
+
+})(jQuery);
+
 </script>
 {% endblock %}
