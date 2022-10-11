@@ -323,8 +323,14 @@ color:#EFEFEF;
 }
 
 .allauth-form-inner-content input {
-  border-color: #000;
-  border-radius: 0;
+  border: 0;
+  padding: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
