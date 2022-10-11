@@ -133,13 +133,21 @@ An online shop and website for the Heredo winery. The goal is to enable its user
 <img width="500" src="media/readme/wireframes/product_detail.png">
 
 
-### 4. wireframe
+### 4. "BAG" wireframe
 
 
-<img width="500" src="media/readme/wireframes/5.png">
+<img width="500" src="media/readme/wireframes/BAG.png">
 
 
-### 5.  wireframes
+### 4. "Checkout" wireframe
+
+
+<img width="500" src="media/readme/wireframes/Checkout.png">
+
+
+
+
+### 6. "Allauth" wireframes
 
  + Login page:
 
