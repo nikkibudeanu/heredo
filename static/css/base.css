@@ -12,6 +12,10 @@ body{
     text-align: center;
 }
 
+.upper-nav{
+  display: flex;
+  justify-content: space-between;
+}
 
 .video-container{
     position: absolute;
