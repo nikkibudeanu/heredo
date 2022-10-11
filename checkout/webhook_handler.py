@@ -7,7 +7,6 @@ from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
 
-
 import json
 import time
 
@@ -17,10 +16,8 @@ class StripeWH_Handler:
     def __init__(self, request):
         self.request = request
 
-        self.request = request
-
     def _send_confirmation_email(self, order):
-        """Send a confirmation email"""
+        """Send the user a confirmation email"""
         cust_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
@@ -62,7 +59,7 @@ class StripeWH_Handler:
             if value == "":
                 shipping_details.address[field] = None
 
-        # Save info when the option is checked.
+        # Update profile information if save_info was checked
         profile = None
         username = intent.metadata.username
         if username != 'AnonymousUser':
