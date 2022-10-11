@@ -3,6 +3,10 @@
 
 
 <p align=center>
+This project is the website for Heredo family, my family's winery founded back in 2000s. </br>
+We officially gave it a name last year and started branding this year. 
+</br>
+Heredo is all about wine culture and family heritage. Check it out to find more about our vineyards and buy yourself a bottle or more of good quality organic wine.
 
  </p>
 
@@ -16,14 +20,15 @@ Live app link [here](https://heredo.herokuapp.com/)
 ## Table of contents
 1. [Introduction](#Introduction)
 2. [UX](#UX)
-    1. [Ideal User Demographic]
-    2. [User Stories](###User Stories)
-    3. [Development Planes]
-    4. [Design]
+    1. [User Stories](###User Stories)
+    3. [Strategy(##Strategy)
+    4. [Scope](##Scope)
+    5. [Structure](##Structure)
+    6. [Skeleton](##Skeleton)
+    7. [Surface](##Surface)
 3. [Features]
-    1. [Design Features]
-    2. [Existing Features]
-    3. [Features to Implement in the future]
+    1. [Existing Features]
+    2. [Features to Implement in the future]
 4. [Issues and Bugs]
 5. [Technologies Used]
      1. [Main Languages Used]
@@ -95,24 +100,35 @@ Live app link [here](https://heredo.herokuapp.com/)
 
  + **Project Goal**
   
+  Create a project that allows its users to view, buy wine, create an account, view order history and have a simple, straightforward experience on Heredo winery's website.
 
 
 ## 2. Scope 
 
 As a project owner, I would like to create :
 
-An online shop and website for the Heredo winery. The goal is to enable its users to get to know more information about the winery, be able to contact the owners, research their products and even buy wine or other products from them. 
-
+* a simple, straightforward website with an intuitive UX experience.
+* Clear and easy navigation for the user through each of Heredo's features.
+* a visually appealing website on all devices.
 
 
 [Back to top ⇧](#)
 
 ## 3. Structure
 
+* The main Navbar  is fixed on top to facilitate Woofme users to navigate easily and pleasantly. 
+* Layout is clear to allow Heredo users to navigate easily. 
+* Login/Logout/Register options are present on the navbar to ensure that Woofme users can perform each of the actions easily.
+* Enabling website admin to add/delete/edit product if logged in. 
+* Home page with extra information about the winery and links to access the online store. 
+* A secure and straightforward payment system to ensure the user has a pleasant experience when buying our wine.
+
 
 [Back to top ⇧](#)
 
 ## 4. Skeleton
+
+All wireframes are creating using Figma. 
 
 
 [Back to top ⇧](#)
@@ -189,7 +205,6 @@ An online shop and website for the Heredo winery. The goal is to enable its user
 <details>
 <summary>All sprints are described here.</summary>
 
-Test cases were linked with every User story presented above, and can be found in TESTING.md(TESTING.md) - Automated testing section. 
 
 * Sprint 1
 
@@ -312,7 +327,7 @@ Command:  ` pip3 freeze > requirements.txt`.
 
 ## Media
 
-+ All pictures and images used in this project are from [Pexels](https://pexels.com).
++ Some pictures and images used in this project are from [Pexels](https://pexels.com) and some pictures are taken by me personally as this is my sister's winery.
 
 ### Work based on other code
 
