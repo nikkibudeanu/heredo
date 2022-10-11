@@ -12,9 +12,9 @@ body{
     text-align: center;
 }
 
-.upper-nav{
-  display: flex;
-  justify-content: space-between;
+#upper-nav{
+  background-color:transparent;
+
 }
 
 .video-container{
