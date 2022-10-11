@@ -323,18 +323,8 @@ color:#EFEFEF;
 }
 
 .allauth-form-inner-content input {
-	margin:15px 0;
-	padding:15px 10px;
-	width:100%;
-	outline:none;
-	border:5px solid #bbb;
-	border-radius:20px;
-	display:inline-block;
-	-webkit-box-sizing:border-box;
-	   -moz-box-sizing:border-box;
-	        box-sizing:border-box;
-    -webkit-transition:0.2s ease all;
-	   
+  border-color: #000;
+  border-radius: 0;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -342,10 +332,7 @@ color:#EFEFEF;
 }
 
 .allauth-form-inner-content input::placeholder {
-	color: #8597a3;
-	position: absolute;
-	top: 1.5rem;
-	transition: .25s ease;
+  color: #aab7c4;
 }
 
 .allauth-form-inner-content button,
@@ -376,6 +363,10 @@ display: inline-block;
 color: #fff;
   background-color: #222;
   border-color: #222;
+}
+
+.allauth-form-inner-content a {
+color: #17a2b8; /* text-info */
 }
 
 
