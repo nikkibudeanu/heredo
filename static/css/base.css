@@ -318,8 +318,10 @@ color:#EFEFEF;
 /* Allauth form formatting */
 
 .allauth-form-inner-content {
-  display:flex;
-  justify-content: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%);
 }
 
 .allauth-form-inner-content p {
