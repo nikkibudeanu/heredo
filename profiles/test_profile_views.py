@@ -44,3 +44,26 @@ class TestProfilesView(TestCase):
         self.assertTemplateUsed(response, 'profiles/profile.html')
 
 
+    def test_url(self):
+        """
+        Test if logged in user can access their profile page
+        """
+        login = self.client.login(username='test_user',
+                                  password='test_password')
+        response = self.client.get('/profiles/')
+        self.assertTrue(login)
+        self.assertEqual(response.status_code, 200)
+
+
+    def test_get_order_detail_page(self):
+        """
+        Test if user can see their order history
+        """
+        self.client.login(username='test_user1', password='test_password')
+        test_user = User.objects.get(username='test_user')
+        order = Order.objects.get(email=test_user.email)
+        response = self.client.get('/profiles/order_history/' +
+                                   order.order_number)
+        self.assertEqual(response.status_code, 200)
+
+ 
