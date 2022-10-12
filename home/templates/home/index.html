@@ -14,38 +14,44 @@
 
 <header>
     <div class="header-content">
-        <div class="inner">
-            <video playsinline autoplay muted loop poster="" id="background-video" style="z-index: -1;">
-                <source src="{{ MEDIA_URL }}background-video4.mp4" type="video/mp4">
-            </video>
-            <div class="callout">
-                <img src="{{ MEDIA_URL }}heredo-logo.png">
-              </div>
-        </div>
+
+        <div class="jumbotron  jumbotron-fluid">
+            <div class="inner">
+                <video playsinline autoplay muted loop poster="" id="background-video" style="z-index: -1;">
+                    <source src="{{ MEDIA_URL }}background-video4.mp4" type="video/mp4">
+                </video>
+                <div class="callout">
+                    <img src="{{ MEDIA_URL }}heredo-logo.png">
+                  </div>
+            </div>
+            <p class="lead">
+                <nav id="topNav" class="navbar navbar-expand">
+                    <div class="container justify-content-center">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#vineyards">Vineyard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" data-toggle="modal" title="Shop with us" href="#shopModal">SHOP</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                </nav>            </p>
+          </div>
+
     </div>
     </div>
-<nav id="topNav" class="navbar navbar-expand">
-    <div class="container justify-content-center">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#vineyards">Vineyard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" data-toggle="modal" title="Shop with us" href="#shopModal">SHOP</a>
-                </li>
-            </ul>
-    </div>
-</div>
-</nav>
+
 </header>
 
 
