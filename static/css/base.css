@@ -19,7 +19,6 @@ body{
 
 .jumbotron{
   position: relative;
-  z-index:-101;
 }
 
 #background-video{
