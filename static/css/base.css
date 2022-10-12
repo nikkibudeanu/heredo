@@ -473,23 +473,21 @@ color:#EFEFEF;
 /* wine animation*/
 
 .wineanimation{
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 650px;
+  height: 300px;
   margin: 0px 0px 0 0px;
-  padding: 0 auto;
 }
 .bottle-section{
   position: absolute;
   width: 200px;
   height: 180px;
   margin: 250px 650px 50px 500px;
-  background-color: #6CCFF0;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  animation: tiltBottle 5s 10 linear;
+  animation: tiltBottle 5s 1 linear;
   animation-fill-mode: forwards;
   z-index: 2;
 }
@@ -563,7 +561,7 @@ color:#EFEFEF;
   background-color: #2F3233;
   opacity: 0.5;
   border-radius: 50%;
-  animation: disappearShadow 5s 10 linear;
+  animation: disappearShadow 5s 1 linear;
   animation-fill-mode: forwards;
   z-index: 1;
 }
@@ -590,12 +588,11 @@ color:#EFEFEF;
   width: 40px;
   height: 10px;
   margin: 295px 560px 155px 685px;
-  background-color: #6CCFF0;
-  border-top: 10px solid #722F37;
-  border-right: 3px dashed #722F37;
+  border-top: 10px solid #391509;
+  border-right: 3px dashed #391509;
   border-top-right-radius: 1000%;
   opacity: 0;
-  animation: dropWine 3s 10 linear;
+  animation: dropWine 3s 1 linear;
   animation-delay: 1s;
   animation-fill-mode: forwards;
   z-index: 1;
@@ -624,7 +621,6 @@ color:#EFEFEF;
   width: 80px;
   height: 105px;
   margin: 455px 630px 75px 690px;
-  background-color: #6CCFF0;				
   z-index: 1;
 }
 .glass-main{
@@ -650,7 +646,7 @@ color:#EFEFEF;
   height: 35px;
   width: 40px;
   margin: 0px 5px 5px 5px;
-  background-color: #722F37;
+  background-color: #391509;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   opacity: 0.5;
