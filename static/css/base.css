@@ -209,13 +209,13 @@ nav a{
 
 .btn-outline-gold{
   color: black !important;
-  border: 1px solid #FFC069;
+  border: 1px solid #EC994B;
 }
 
 .btn-outline-gold:hover,
 .btn-outline-gold:active,
 .btn-outline-gold:focus{
-  background: #FFC069;
+  background: #EC994B;
 }
 
 .overlay {
@@ -238,12 +238,12 @@ z-index: -1;
 
 #main-nav-shop a{
   color: black !important;
-  border: 1px solid #FFC069;
+  border: 1px solid #EC994B;
   padding: 5px 15px;
 }
 
 #main-nav-shop a:hover{
-  background: #FFC069;
+  background: #EC994B;
 }
 
 #main-nav-shop .dropdown-item{
@@ -252,7 +252,7 @@ z-index: -1;
 }
 
 #main-nav-shop .dropdown-item:hover{
-background-color: #FFC069;
+background-color: #EC994B;
 text-shadow: none;
 color:#EFEFEF;
 }
@@ -344,13 +344,27 @@ color:#EFEFEF;
 
 .button-shop {
   border-radius: 4px;
-  background-color:#d35400;
+  background-color:#EC994B;
   border: none;
   padding: 20px;
   width: 200px;
   transition: all 0.5s;
 }
 
+
+.button-shop span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#shop a{
+  text-decoration:none;
+  color:#fff;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 3rem;
+}
 
 .button-shop span {
   cursor: pointer;
