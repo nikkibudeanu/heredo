@@ -17,15 +17,19 @@ body{
 }
 
 
-.header-content{
-  overflow: hidden;
+header{
+  background-color: #34262B;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 
 }
 
 section{
   min-height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 
 #background-video {
