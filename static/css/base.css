@@ -13,13 +13,13 @@ body{
     line-height: 30px;
     text-align: center;
     width: 100%;
-    background-color: #7BA1C1;
+    background-color: #fff;
 
 }
 
 #topNav{
   position: relative;
-  color: #ffffff;
+  color: #A0847A;
   z-index: 2;
 }
 
