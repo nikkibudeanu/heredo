@@ -37,14 +37,11 @@ Live app link [here](https://heredo.herokuapp.com/)
 6. [Testing](#Testing)
      1. [Testing.md]
 7. [Deployment](#Deployment)
-     1. [Deploying on Heroku]
-     2. [Forking the Repository]
-     3. [Creating a Clone]
 8. [Credits]
      1. [Content]
      2. [static/Media]
      3. [Code]
-9. [Acknowledgements]
+9. [Acknowledgements](#Acknowledgements)
 
 
 
