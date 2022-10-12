@@ -41,7 +41,7 @@ body{
 .content .image{
   position: relative;
   width: 800px;
-  height: 400px;
+  height: 800px;
   overflow: hidden;
 }
 
@@ -169,7 +169,7 @@ h4,
 a,
 .name,
 .logo-font{
-    font-family: 'Cardo', serif;
+  font-family: 'Noto Serif', serif;
 
 }
 
