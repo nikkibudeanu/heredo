@@ -25,7 +25,13 @@ body{
 .jumbotron{
   position: relative;
   overflow: hidden;
-  height: 800px;
+  height: 600px;
+  z-index: 0;
+
+}
+
+.about{
+  height:600px;
 }
 
 
