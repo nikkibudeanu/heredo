@@ -342,6 +342,41 @@ color:#EFEFEF;
 
 /* Shop button on home page */
 
+.button-shop {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+
+.button-shop span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-shop span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-shop:hover span {
+  padding-right: 25px;
+}
+
+.button-shop:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 
 
 /* wine animation*/
