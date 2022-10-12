@@ -230,18 +230,7 @@ z-index: -1;
 }
 
 #main-nav-shop .dropdown-item{
-  margin: 0;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 100%;
-  list-style: none;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  visibility: hidden;
-  z-index: -1;
-  opacity: 0;
+  border: none;
   transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);
 }
 
