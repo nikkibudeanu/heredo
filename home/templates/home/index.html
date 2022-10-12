@@ -54,7 +54,7 @@
               </h1>
               <br>
               <a class="button-shop" href="{% url 'products' %}"><span>Shop here</span></a>
-          	<div class="wineanimation">
+              <div class="wineanimation">
                 <div class="bottle-section">
                     <div class="bottle-top"></div>
                     <div class="bottle-mid"></div>
@@ -85,19 +85,22 @@
 
 
         <section id="about" class="sec-about pt-5 pb-5">
-            <div class="container">
-              <div class="row justify-content-center text-center">
-                <div class="col-md-10 col-lg-8">
-                  <h1 class="h1">About us</h1>
-                <hr>
-              </div>
-                <div class="col-md-10 col-lg-8">
-                  <p class="mt-4 mb-4">OWNERS OLARESCU FAMILY</p>
-                  <img src="{{ MEDIA_URL }}family.jpg" width="600px">
-                </div>
+
+          <div class="container">
+            <h1 class="main-title">About</h1>
+            <div class="content">
+              <div class="image">
+                <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+                            </div>
+              <div class="text-box">
+                <h4>Olarescu Family</h4>
+                <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant camera.</p>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
+
+
   
         
           <section id="sec-pricing" class="sec-pricing">
@@ -274,6 +277,9 @@
 
 {% block postloadjs %}
 {{ block.super }}
+
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 <script type="text/javascript">
 
 $(() => {
@@ -289,6 +295,23 @@ $(() => {
     }
   });
 });
+
+//scroll animation about page
+
+ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
 
 //code pen https://codepen.io/sebastian-szyja/pen/QWwxZEq
 var TxtRotate = function(el, toRotate, period) {
