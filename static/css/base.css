@@ -82,7 +82,8 @@ body{
 
 #topNav a{
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
 }
 
 #topNav a:hover{
