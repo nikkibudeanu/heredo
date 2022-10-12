@@ -17,6 +17,10 @@ body{
 }
 
 
+.inner{
+  overflow: hidden;
+
+}
 
 section{
   min-height: 100vh;
