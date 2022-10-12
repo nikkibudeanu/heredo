@@ -135,15 +135,6 @@ body{
 }
 
 
-h1,h2 {
-  font-weight: 200;
-  margin: 0.4em 0;
-}
-h1 { font-size: 3.5em; }
-h2 {
-  color: #888;
-  font-size: 2em;
-}
 
 header{
   background-color: transparent;
@@ -432,8 +423,8 @@ color:#EFEFEF;
   border-radius: 4px;
   background-color:#EC994B;
   border: none;
-  padding: 20px;
-  width: 200px;
+  padding: 10px;
+  width: 100px;
   transition: all 0.5s;
 }
 
@@ -449,7 +440,7 @@ color:#EFEFEF;
   text-decoration:none;
   color:#fff;
   font-family: 'Noto Serif', serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .button-shop span {
@@ -808,6 +799,7 @@ color: #17a2b8; /* text-info */
 
 body {
     height: calc(100vh - 116px);
+    
 }
 
 .display-4.logo-font.text-black {
