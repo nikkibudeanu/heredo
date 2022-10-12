@@ -16,6 +16,9 @@ body{
 
 }
 
+#topNav{
+  z-index:99999;
+}
 
 .jumbotron{
   position: relative;
