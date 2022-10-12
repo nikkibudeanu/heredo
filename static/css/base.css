@@ -343,13 +343,13 @@ color:#EFEFEF;
 
 /* wine animation*/
 
-.drinkingAnimation{
+.wineanimation{
   position: relative;
   width: 100%;
   height: 650px;
   margin: 0px 0px 0 0px;
 }
-.bottleDiv{
+.bottle-section{
   position: absolute;
   width: 200px;
   height: 180px;
@@ -377,7 +377,7 @@ color:#EFEFEF;
     transform: rotate(0deg);
   }
 }
-.bottleNeck{
+.bottle-top{
   position: absolute;
   width: 22px;
   height: 100px;
@@ -386,7 +386,7 @@ color:#EFEFEF;
   border-radius: 20%;
   z-index: 3;
 }
-.bottleBody{
+.bottle-body{
   position: absolute;
   width: 60px;
   height: 100px;
@@ -396,7 +396,7 @@ color:#EFEFEF;
   border-bottom-right-radius: 20%;
   z-index: 3;
 }
-.bottleBall{
+.bottle-mid{
   position: absolute;
   width: 60px;
   height: 60px;
@@ -405,7 +405,7 @@ color:#EFEFEF;
   background-color: black;
   z-index: 3;
 }
-.bottleLabel{
+.bottle-label{
   position: absolute;
   width: 50px;
   height: 65px;
@@ -415,7 +415,7 @@ color:#EFEFEF;
   border-bottom-right-radius: 10%;
   z-index: 3;
 }
-.withinLabel{
+.inner-label{
   position: absolute;
   width: 20px;
   height: 65px;
@@ -425,7 +425,7 @@ color:#EFEFEF;
   border-bottom-right-radius: 10%;
   z-index: 3;
 }
-.bottleShadow{
+.bottle-shadow{
   position: absolute;
   width: 100px;
   height: 20px;
@@ -455,14 +455,14 @@ color:#EFEFEF;
       left: 0px;
     }
 }
-.wineDrops{
+.wine-dropping{
   position: absolute;
   width: 40px;
   height: 10px;
   margin: 295px 560px 155px 685px;
   background-color: #6CCFF0;
-  border-top: 10px solid orange;
-  border-right: 3px dashed #F5A905;
+  border-top: 10px solid #722F37;
+  border-right: 3px dashed #722F37;
   border-top-right-radius: 1000%;
   opacity: 0;
   animation: dropWine 3s 1 linear;
@@ -489,7 +489,7 @@ color:#EFEFEF;
   }
 }
 
-.glassDiv{
+.glass-section{
   position: absolute;
   width: 80px;
   height: 105px;
@@ -497,7 +497,7 @@ color:#EFEFEF;
   background-color: #6CCFF0;				
   z-index: 1;
 }
-.glassMain{
+.glass-main{
   position: absolute;
   width: 50px;
   height: 40px;
@@ -506,7 +506,7 @@ color:#EFEFEF;
   border-radius: 10%;
   z-index: 3;
 }
-.glassBall{
+.glass-mid{
   position: absolute;
   width: 50px;
   height: 40px;
@@ -515,18 +515,18 @@ color:#EFEFEF;
   background-color: black;				
   z-index: 3;
 }
-.wineBall{
+.wine-mid{
   position: absolute;
   height: 35px;
   width: 40px;
   margin: 0px 5px 5px 5px;
-  background-color: #F5A905;
+  background-color: #722F37;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   opacity: 0.5;
   z-index: 3;
 }
-.uncoverWine{
+.uncover-wine{
   position: absolute;
   height: 35px;
   width: 40px;
@@ -548,7 +548,7 @@ color:#EFEFEF;
   }
 }
 
-.glassStem{
+.glass-stem{
   position: absolute;
   width: 6px;
   height: 45px;
@@ -556,7 +556,7 @@ color:#EFEFEF;
   background-color: black;
   z-index: 3;
 }
-.glassStand{
+.glass-stand{
   position: absolute;
   width: 50px;
   height: 8px;
@@ -566,7 +566,7 @@ color:#EFEFEF;
   background-color: black;
   z-index: 3;
 }
-.glassShadow{
+.glass-shadow{
   position: absolute;
   width: 80px;
   height: 15px;
