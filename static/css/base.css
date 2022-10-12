@@ -20,6 +20,10 @@ body{
 #topNav{
   position: relative;
   z-index: 2;
+
+}
+
+#topNav a{
   color: #fff;
   font-size: 1rem;
 }
@@ -41,8 +45,8 @@ body{
 
 #background-video{
   position: absolute;
-  height: 600px;
-  width: 100%;
+  width: auto;
+  height: auto;
   min-height: 100%;
   min-width: 100%;
   left: 50%;
