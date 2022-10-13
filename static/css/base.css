@@ -9,6 +9,19 @@ html, body {
   overflow-x: hidden;
 }
 
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh;
+}
+section:nth-of-type(2n) {
+    background-color: #FE4B74;
+  }
+
+
 
 body{
   position: relative;
@@ -23,13 +36,6 @@ body{
 
 }
 
-#about{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 100px;
-}
 
 .main-title{
   font-size: 4em;
