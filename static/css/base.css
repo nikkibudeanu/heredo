@@ -555,7 +555,6 @@ color:#EFEFEF;
 	width: 1000px;
 	overflow: hidden;
 	margin: 50px auto;
-	background: white;
 }
 
 .gallery {
@@ -619,7 +618,7 @@ color:#EFEFEF;
   border-radius: 5px;
 }
 #cards_landscape_wrap .card-flyer .image-box{
-  background: #ffffff;
+  background: #F1EEE9;
   overflow: hidden;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
   border-radius: 5px;
@@ -647,7 +646,7 @@ color:#EFEFEF;
   padding: 30px 18px;
 }
 #cards_landscape_wrap .card-flyer{
-  background: #FFFFFF;
+  background: #F1EEE9;
   margin-top: 20px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -709,13 +708,19 @@ color:#EFEFEF;
   color: #aab7c4;
 }
 
+.allauth-form-inner-content input[type='checkbox'] {
+  border-bottom: 2px solid #c0c0c0;
+  outline: none;
+}
+
+
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 /* btn */
 display: inline-block;
 background: #EC994B;
 border: none;
-color: #fff;
+color: #15133C;
 cursor: pointer;
 height: 50px;
 font-size: 1.2em;
@@ -723,7 +728,7 @@ letter-spacing: 0.05em;
 text-align: center;
 text-transform: uppercase;
 transition: background 0.3s ease-in-out;
-padding: 10px;
+padding: 10px 20px;
 }
 
 .allauth-form-inner-content button:hover,
@@ -736,6 +741,10 @@ padding: 10px;
   transform:scale(1.15);
 }
 
+.allauth-form-inner-content input a{
+  color:#15133C;
+}
+
 .card-allauth{
   padding-top: 80px; 
   padding-bottom: 80px;
@@ -743,6 +752,7 @@ padding: 10px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
   
 }
 
