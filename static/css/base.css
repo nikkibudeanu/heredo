@@ -157,7 +157,7 @@ header{
   flex-wrap: wrap;
 }
 
-.card-home{
+#card-home{
   position: relative;
   flex: 1;
   max-width: 300px;
@@ -172,11 +172,11 @@ header{
 
 .icon{
   font-size: 32px;
-  color: #ea8685;
+  color: #EC994B;
   transition: .3s linear;
 }
 
-.card-home:hover .icon{
+#card-home:hover .icon{
   transform: scale(4);
   opacity: 0;
 }
@@ -202,13 +202,13 @@ header{
   font-weight: 500;
 }
 
-.card-home:hover h3{
+#card-home:hover h3{
   opacity: 1;
   top: 46px;
   transition: .3s linear .3s;
 }
 
-.card-home:hover span{
+#card-home:hover span{
   opacity: 1;
   bottom: 46px;
   transition: .3s linear .3s;
@@ -216,7 +216,7 @@ header{
 
 
 @media screen and (max-width:900px){
-  .card-home{
+  #card-home{
       flex: 100%;
       max-width: 500px;
   }
