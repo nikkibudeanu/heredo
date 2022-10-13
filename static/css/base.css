@@ -603,7 +603,7 @@ color:#EFEFEF;
 /*----  Main Style  ----*/
 #cards_landscape_wrap{
   text-align: center;
-  background: #F7F7F7;
+  background: #F1EEE9;
 }
 
 #cards_landscape_wrap a{
@@ -625,7 +625,7 @@ color:#EFEFEF;
   -o-transition:all .9s ease;
   -ms-transition:all .9s ease; 
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 #cards_landscape_wrap .card-flyer:hover .image-box img{
   opacity: 0.7;
