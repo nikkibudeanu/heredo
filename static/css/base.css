@@ -90,31 +90,20 @@ body{
 #topNav{
   position: relative;
   z-index: 2;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #topNav a{
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
+  word-spacing: 30px;
 }
 
 #topNav a:hover{
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-  }
-  
-  @-webkit-keyframes shine {
-    from {
-      -webkit-mask-position: 150%;
-    }
-    
-    to {
-      -webkit-mask-position: -50%;
-    }
-  }
-
+}
 
 
 .jumbotron{
@@ -138,7 +127,7 @@ body{
   top: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
-  margin-bottom: 50px;
+  padding: 100px;
 
 }
 
