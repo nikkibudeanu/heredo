@@ -109,7 +109,7 @@ body{
 .jumbotron{
   position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 100vh;
   z-index: 0;
 
 }
@@ -152,13 +152,6 @@ body{
   height: 100%;
   width: 100%;
   background: rgba(255,0,255,0.2); 
-}
-
-
-
-header{
-  background-color: transparent;
-
 }
 
 
