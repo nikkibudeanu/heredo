@@ -548,7 +548,9 @@ color:#EFEFEF;
   right: 0;
 }
 
-
+.full-width{
+	width: 100vw
+}
 
 /* Allauth form formatting */
 
