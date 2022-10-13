@@ -549,240 +549,61 @@ color:#EFEFEF;
 }
 
 
+/* Shop section container */
 
-/* wine animation*/
+.container-shop {
+  position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+}
 
-.wineanimation{
+.overlay-shop {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 500px;
-  margin: 0px 0px 0 0px;
-  border: ;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
 }
-.bottle-section{
+
+.container-shop:hover .overlay-shop {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+img {
   position: absolute;
-  width: 200px;
-  height: 180px;
-  margin: 250px 650px 50px 500px;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  animation: tiltBottle 5s 1 linear;
-  animation-fill-mode: forwards;
-  z-index: 2;
+  width: 500px;
+  height: 300px;
+  left: 0;
 }
-@keyframes tiltBottle{
-  0%{
-  
-  }
-  20%{
-    transform: rotate(60deg);
-  }
-  80%{
-    transform: rotate(60deg);
-  }
-  100%{
-    transform: rotate(0deg);
-  }
-}
-.bottle-top{
+
+.button-shop {
   position: absolute;
-  width: 22px;
-  height: 100px;
-  margin: 0px 89px 150px 89px;
-  background-color: black;
-  border-radius: 20%;
-  z-index: 3;
-}
-.bottle-body{
-  position: absolute;
-  width: 60px;
-  height: 100px;
-  margin: 100px 70px 20px 70px;
-  background-color: black;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
-  z-index: 3;
-}
-.bottle-mid{
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin: 70px 70px 20px 70px;
-  background-color: black;
-  z-index: 3;
-}
-.bottle-label{
-  position: absolute;
-  width: 50px;
-  height: 65px;
-  margin: 110px 85px 20px 75px;
-  background-color: white;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  z-index: 3;
-}
-.inner-label{
-  position: absolute;
-  width: 20px;
-  height: 65px;
-  margin: 0px 0px 0px 30px;
-  background-color: lightgrey;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-  z-index: 3;
-}
-.bottle-shadow{
-  position: absolute;
-  width: 100px;
-  height: 20px;
-  margin: 435px 680px 185px 580px;
-  background-color: #2F3233;
-  opacity: 0.5;
-  border-radius: 50%;
-  animation: disappearShadow 5s 1 linear;
-  animation-fill-mode: forwards;
-  z-index: 1;
-}
-@keyframes disappearShadow{
-    0%{
-      width: 100px;
-      left: 0px;
-    }
-  20%{
-      width: 140px;
-      left: -80px;
-    }
-  80%{
-      width: 140px;
-      left: -80px;
-    }
-  100%{
-      width: 100px;
-      left: 0px;
-    }
-}
-.wine-dropping{
-  position: absolute;
-  width: 40px;
-  height: 10px;
-  margin: 295px 560px 155px 685px;
-  border-top: 10px solid #391509;
-  border-right: 3px dashed #391509;
-  border-top-right-radius: 1000%;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
   opacity: 0;
-  animation: dropWine 3s 1 linear;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  z-index: 1;
-}
-@keyframes dropWine{
-  0%{
-  
-  }
-  30%{
-    height: 150px;
-    opacity: 1;
-  }
-  70%{
-    height: 150px;
-    opacity: 1;
-  }
-  100%{
-    height: 10px;
-    opacity: 0;
-    width: 0 px;
-  }
+  transition: opacity .35s ease;
 }
 
-.glass-section{
-  position: absolute;
-  width: 80px;
-  height: 105px;
-  margin: 455px 630px 75px 690px;
+.button-shop a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
   z-index: 1;
 }
-.glass-main{
-  position: absolute;
-  width: 50px;
-  height: 40px;
-  margin: 0 15px 80px 15px;
-  background-color: black;				
-  border-radius: 10%;
-  z-index: 3;
-}
-.glass-mid{
-  position: absolute;
-  width: 50px;
-  height: 40px;
-  margin: 20px 15px 50px 15px;
-  border-radius: 50%;
-  background-color: black;				
-  z-index: 3;
-}
-.wine-mid{
-  position: absolute;
-  height: 35px;
-  width: 40px;
-  margin: 0px 5px 5px 5px;
-  background-color: #391509;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  opacity: 0.5;
-  z-index: 3;
-}
-.uncover-wine{
-  position: absolute;
-  height: 35px;
-  width: 40px;
-  margin: 0px 0px 0px 0px;
-  background-color: black;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  animation: showWine 1.5s 1 linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-  z-index: 3;
-}
-@keyframes showWine{
-  to{
-    border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 0%;
-    height: 0px;
-    margin: 0px 0px 35px 0;
-  }
+
+.container-shop:hover .button-shop {
+  opacity: 1;
 }
 
-.glass-stem{
-  position: absolute;
-  width: 6px;
-  height: 45px;
-  margin: 60px 37px 0px 37px;
-  background-color: black;
-  z-index: 3;
-}
-.glass-stand{
-  position: absolute;
-  width: 50px;
-  height: 8px;
-  margin: 100px 15px 0px 15px;
-  border-top-right-radius: 100%;
-  border-top-left-radius: 100%;
-  background-color: black;
-  z-index: 3;
-}
-.glass-shadow{
-  position: absolute;
-  width: 80px;
-  height: 15px;
-  margin: 553px 555px 67px 705px;
-  background-color: #2F3233;
-  opacity: 0.4;
-  border-radius: 50%;
-  z-index: 3;
-}
+
 
 /* Allauth form formatting */
 

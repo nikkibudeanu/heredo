@@ -46,45 +46,25 @@
         </header>
 
         <section id="shop" class="sec-shop pt-5 pb-5">
-          <div class="wineanimation">
             <h2>Do you fancy some
                 <span
                    class="text-rotate"
                    data-period="2000"
                    data-rotate='[ "red wine?", "rosé?", "champagne?", "white wine?"]'></span>
               </h2>
+
+              <div class="container-shop">
+                <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+                <div class="overlay-shop"></div>
+                <a class="button-shop" href="{% url 'products' %}"><span>SHOP</span></a>
+              </div>
               <br>
-              <a class="button-shop" href="{% url 'products' %}"><span>Shop here</span></a>
-                <div class="bottle-section">
-                    <div class="bottle-top"></div>
-                    <div class="bottle-mid"></div>
-                    <div class="bottle-body"></div>
-                    <div class="bottle-label">
-                        <div class="inner-label"></div>
-                    </div>
-                </div>
-                <div class="bottle-shadow"></div>
-                
-                <div class="wine-dropping"></div>
-                
-                <div class="glass-section">
-                    <div class="glass-main"></div>
-                    <div class="glass-mid">
-                        <div class="wine-mid">
-                            <div class="uncover-wine"></div>
-                        </div>
-                    </div>
-                    <div class="glass-stem"></div>
-                    <div class="glass-stand"></div>
-                </div>
-                <div class="glass-shadow"></div>
-                
-            </div>
           </section>
         
         <hr>
 
         <section id="about" class="sec-about pt-5 pb-5">
+
 
           <div class="container">
             <h1 class="main-title">About</h1>
@@ -104,6 +84,7 @@
         
           <section id="sec-contact" class="sec-contact pt-5 pb-5">
             <div class="container">
+              <h1 class="main-title">Contact</h1>
               <div class="contact-info">
                 <div class="card" id="card-home">
                   <i class="icon fas fa-envelope"></i>
