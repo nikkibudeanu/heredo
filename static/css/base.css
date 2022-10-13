@@ -551,13 +551,6 @@ color:#EFEFEF;
 
 /* Shop section container */
 
-.container-shop {
-  position: relative;
-  margin-top: 50px;
-  width: 500px;
-  height: 300px;
-}
-
 .overlay-shop {
   position: absolute;
   top: 0;
@@ -573,12 +566,7 @@ color:#EFEFEF;
   background: rgba(0, 0, 0, .3);
 }
 
-img {
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  left: 0;
-}
+
 
 .button-shop {
   position: absolute;
