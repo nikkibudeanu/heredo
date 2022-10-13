@@ -20,7 +20,7 @@
       "fields":{
          "sku":"pp5001340156",
          "name":"Cabernet-Sauvignon",
-         "description":"...",
+         "description":"Cabernet Sauvignon is well known for its firm tannins and full and rich taste, including such notes as blackcurrant, as well as woodsy flavors, such as cedar, oak, and herbs. The wine also contains great potential for aging, thanks to its high rate of tannins and perceptible acidity.",
          "price":29.5,
          "category":1,
          "rating":5,
@@ -34,7 +34,7 @@
       "fields":{
          "sku":"pp5001340157",
          "name":"Chardonnay",
-         "description":"...",
+         "description":"Oaked Chardonnays are rich, full-bodied and have additional flavors of vanilla, butter and even caramel from the oak.",
          "price":21.5,
          "category":2,
          "rating":4.9,
@@ -48,11 +48,11 @@
       "fields":{
          "sku":"pp5001340158",
          "name":"Gift Card",
-         "description":"...",
+         "description":"Perfect idea fo a birthday, anniversary or any ocassion present.",
          "price":25,
          "category":5,
          "rating":5,
-         "image":"25.png"
+         "image":"25.jpg"
       }
    },
    {
@@ -61,11 +61,11 @@
       "fields":{
          "sku":"pp5001340159",
          "name":"Gift Card",
-         "description":"...",
+         "description":"Perfect idea fo a birthday, anniversary or any ocassion present.",
          "price":50,
          "category":5,
          "rating":5,
-         "image":"50.png"
+         "image":"50.jpg"
       }
    },
    {
@@ -74,11 +74,76 @@
       "fields":{
          "sku":"pp5001340160",
          "name":"Gift Card",
-         "description":"...",
+         "description":"Perfect idea for a birthday, anniversary or any ocassion present.",
          "price":100,
          "category":5,
          "rating":5,
-         "image":"100.png"
+         "image":"100.jpg"
       }
-   }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340163",
+         "name":"Gift Box for Women",
+         "description":"Perfect idea for a birthday, anniversary or Valentines's day. Make your woman happy with a good quality wine, home made chocolate and fruits. ",
+         "price":45,
+         "category":4,
+         "rating":4.5,
+         "image":"14.jpg"
+      }
+   },
+      {
+         "pk":8,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp5001340164",
+            "name":"Gift Box for Men",
+            "description":"Perfect idea for a birthday, anniversary or Valentines's day. Make your husband/father/friend happy with a good quality wine, home made chocolate and fruits. ",
+            "price":45,
+            "category":4,
+            "rating":4.8,
+            "image":"13.jpg"
+         }
+      },
+         {
+            "pk":9,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340165",
+               "name":"Gift Box",
+               "description":"Perfect idea for a birthday, anniversary or Valentines's day. Make your friend happy with a good quality wine, home made chocolate and fruits. ",
+               "price":43.9,
+               "category":4,
+               "rating":4.9,
+               "image":"15.jpg"
+            }
+         },
+         {
+            "pk":10,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340166",
+               "name":"Valentine's day gift",
+               "description":"Perfect red sparkling to enjoy with your second half on Valentine's day. Decorated with chocolates and petal roses.",
+               "price":31.9,
+               "category":4,
+               "rating":4.9,
+               "image":"16.jpg"
+            }
+         },
+         {
+            "pk":11,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340167",
+               "name":"Merlot",
+               "description":"Red fruits, easy tannins and a soft finish are the characteristics of Merlot wine. But there's more to Merlot than being smooth. ",
+               "price":22.5,
+               "category":1,
+               "rating":4.95,
+               "image":"17.jpg"
+            }
+         }
  ]
