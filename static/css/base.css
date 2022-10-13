@@ -731,9 +731,13 @@ transition: background 0.3s ease-in-out;
 
 }
 
-.allauth-form-inner-content a {
-color: #17a2b8; /* text-info */
+.card-allauth{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+  background-color: #fff;
+  
 }
+
 
 
 /* Slightly larger container on xl screens */
