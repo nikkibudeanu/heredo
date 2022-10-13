@@ -606,6 +606,11 @@ color:#EFEFEF;
   background: #F1EEE9;
 }
 
+#cards_landscape_wrap .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+
 #cards_landscape_wrap a{
   text-decoration: none;
   outline: none;

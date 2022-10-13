@@ -2,328 +2,339 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
 {% endblock %}
 
 
 {% block content %}
+
 <body>
-<header>
-        <div class="jumbotron  jumbotron-fluid">
-                <video playsinline autoplay muted loop poster="" id="background-video" style="z-index: -1;">
-                    <source src="{{ MEDIA_URL }}background-video5.mp4" type="video/mp4">
-                </video>
-                <div class="callout">
-                    <img src="{{ MEDIA_URL }}heredo-logo.png">
-            </div>
-                <nav id="topNav" class="navbar navbar-expand">
-                    <div class="container justify-content-center">
-                            <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#shop">SHOP</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#vineyards">Vineyard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#contact">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link page-scroll" href="#gallery">Gallery</a>
-                                </li>
+  <header>
+    <div class="jumbotron  jumbotron-fluid">
+      <video playsinline autoplay muted loop poster="" id="background-video" style="z-index: -1;">
+        <source src="{{ MEDIA_URL }}background-video5.mp4" type="video/mp4">
+      </video>
+      <div class="callout">
+        <img src="{{ MEDIA_URL }}heredo-logo.png">
+      </div>
+      <nav id="topNav" class="navbar navbar-expand">
+        <div class="container justify-content-center">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#shop">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#vineyards">Vineyard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#gallery">Gallery</a>
+            </li>
 
-                            </ul>
-                    </div>
-                </nav>  
-                </div>
-        </header>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-        <section id="shop" class="sec-shop pt-5 pb-5">
-            <h2>Do you fancy some
-                <span
-                   class="text-rotate"
-                   data-period="2000"
-                   data-rotate='[ "red wine?", "rosé?", "champagne?", "white wine?"]'></span>
-              </h2>
-              <br>
+  <section id="shop" class="sec-shop pt-5 pb-5">
+    <h2>Do you fancy some
+      <span class="text-rotate" data-period="2000"
+        data-rotate='[ "red wine?", "rosé?", "champagne?", "white wine?"]'></span>
+    </h2>
+    <br>
 
-                     <!-- Shop/Login Cards -->
+    <!-- Shop/Login Cards -->
     <div id="cards_landscape_wrap">
       <div class="container">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <div class="card-flyer">
-                          <div class="text-box">
-                              <div class="image-box">
-                                <img src="{{ MEDIA_URL }}family.jpg" width="500px">
-                              </div>
-                              <div class="text-container">
-                                  <h6>Would you like to login to your account?</h6>
-                                  <br>
-                                  <a class="button-shop" href="{% url 'account_login' %}"><span> LOGIN <i class="fas fa-sign-in-alt"></i></span></a>
-                                </div>
-                          </div>
-                      </div>
-                  </a>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img src="{{ MEDIA_URL }}family.jpg" width="500px">
+                </div>
+                <div class="text-container">
+                  <h6>Would you like to login to your account?</h6>
+                  <br>
+                  <a class="button-shop" href="{% url 'account_login' %}"><span> LOGIN <i
+                        class="fas fa-sign-in-alt"></i></span></a>
+                </div>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                      <div class="card-flyer">
-                          <div class="text-box">
-                              <div class="image-box">
-                                <img src="{{ MEDIA_URL }}family.jpg" width="500px">
-                              </div>
-                              <div class="text-container">                                    
-                                  <h6>Would you like to visit our store?</h6>
-                                  <br>
-                                    <a class="button-shop" href="{% url 'products' %}"><span> SHOP <i class="fas fa-store"></i></span></a>
-                                  </div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-
+            </div>
+            </a>
           </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="card-flyer">
+              <div class="text-box">
+                <div class="image-box">
+                  <img src="{{ MEDIA_URL }}family.jpg" width="500px">
+                </div>
+                <div class="text-container">
+                  <h6>Would you like to visit our store?</h6>
+                  <br>
+                  <a class="button-shop" href="{% url 'products' %}"><span> SHOP <i class="fas fa-store"></i></span></a>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+
+        </div>
       </div>
-  </div>
-          </section>
-        
-        <hr>
+    </div>
+  </section>
+
+  <hr>
 
 
-        <section id="about" class="sec-about pt-5 pb-5">
+  <section id="about" class="sec-about pt-5 pb-5">
 
 
-          <div class="container">
-            <h1 class="main-title">About</h1>
-            <div class="content">
-              <div class="image">
-                <img src="{{ MEDIA_URL }}family.jpg" width="600px">
-                            </div>
-              <div class="text-box">
-                <h4>Olarescu Family</h4>
-                <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant camera.</p>
-              </div>
-            </div>
+    <div class="container">
+      <h1 class="main-title">About</h1>
+      <div class="content">
+        <div class="image">
+          <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+        </div>
+        <div class="text-box">
+          <h4>Olarescu Family</h4>
+          <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant
+            camera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="vineyards" class="sec-about pt-5 pb-5">
+
+
+    <div class="container">
+      <h1 class="main-title">About</h1>
+      <div class="content">
+        <div class="image">
+          <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+        </div>
+        <div class="text-box">
+          <h4>Olarescu Family</h4>
+          <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant
+            camera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <hr>
+
+  <section id="sec-contact" class="sec-contact pt-5 pb-5">
+    <div class="container">
+      <h1 class="main-title">Contact</h1>
+      <div class="contact-info">
+        <div class="card" id="card-home">
+          <i class="icon fas fa-envelope"></i>
+          <div class="card-content">
+            <h3>Email</h3>
+            <span>heredo@gmail.com</span>
           </div>
-        </section>
+        </div>
 
-        <hr>
-
-        <section id="vineyards" class="sec-about pt-5 pb-5">
-
-
-          <div class="container">
-            <h1 class="main-title">About</h1>
-            <div class="content">
-              <div class="image">
-                <img src="{{ MEDIA_URL }}family.jpg" width="600px">
-                            </div>
-              <div class="text-box">
-                <h4>Olarescu Family</h4>
-                <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant camera.</p>
-              </div>
-            </div>
+        <div class="card " id="card-home">
+          <i class="icon fas fa-phone"></i>
+          <div class="card-content">
+            <h3>Phone Number</h3>
+            <span>+373601198866</span>
           </div>
-        </section>
+        </div>
+
+        <div class="card" id="card-home">
+          <i class="icon fas fa-map-marker-alt"></i>
+          <div class="card-content">
+            <h3>Location</h3>
+            <span>Republic of Moldova</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="gallery" class="sec-contact pt-5 pb-5">
+    <div id="container-gallery">
+      <h1 class="main-title">Gallery</h1>
 
 
-        
-          <section id="sec-contact" class="sec-contact pt-5 pb-5">
-            <div class="container">
-              <h1 class="main-title">Contact</h1>
-              <div class="contact-info">
-                <div class="card" id="card-home">
-                  <i class="icon fas fa-envelope"></i>
-                  <div class="card-content">
-                    <h3>Email</h3>
-                    <span>heredo@gmail.com</span>
-                  </div>
-                </div>
-              
-                <div class="card " id="card-home">
-                  <i class="icon fas fa-phone"></i>
-                  <div class="card-content">
-                    <h3>Phone Number</h3>
-                    <span>+373601198866</span>
-                  </div>
-                </div>
-              
-                <div class="card" id="card-home">
-                  <i class="icon fas fa-map-marker-alt"></i>
-                  <div class="card-content">
-                    <h3>Location</h3>
-                    <span>Republic of Moldova</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      <div class="gallery">
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
+        </div>
+
+      </div>
+  </section>
+  <hr>
 
 
-          <section id="gallery" class="sec-contact pt-5 pb-5">
-            <div id="container-gallery">
-              <h1 class="main-title">Gallery</h1>
+  <footer class="footer">
+    <div class="container">
+      <ul class="list-inline mb-0 text-center">
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-twitter"></span></a>
+        </li>
 
- 
-              <div class="gallery">
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-google-plus"></span></a>
+        </li>
 
-                <div class="gallery-item">
-                  <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
-                </div>
-            
-                <div class="gallery-item">
-                  <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
-                </div>
-            
-                <div class="gallery-item">
-                  <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
-                </div>
-            
-                <div class="gallery-item">
-                  <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
-                </div>
-            
-                <div class="gallery-item">
-                  <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
-                </div>
-            
-                <div class="gallery-item">
-                  <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="300px">
-                </div>
-            
-              </div>
-          </section>
-        
-        
-          <footer class="footer">
-            <div class="container">
-              <ul class="list-inline mb-0 text-center">
-                <li class="list-inline-item">
-                  <a href=""><span class="fa fa-twitter"></span></a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a href=""><span class="fa fa-google-plus"></span></a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a href=""><span class="fa fa-instagram"></span></a>
-                </li>
-                
-                <li class="list-inline-item">
-                  <a href=""><span class="fa fa-envelope-o"></span></a>
-                </li>
-              </ul>
-            </div>
-          </footer>
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-instagram"></span></a>
+        </li>
+
+        <li class="list-inline-item">
+          <a href=""><span class="fa fa-envelope-o"></span></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 
 
 
-{% endblock %}
+  {% endblock %}
 
-{% block postloadjs %}
-{{ block.super }}
+  {% block postloadjs %}
+  {{ block.super }}
 
-<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
+    $(() => {
+      $('a[href*="#"]:not([href="#"])').click((e) => {
+        const target = $(e.target.hash);
 
-$(() => {
-  $('a[href*="#"]:not([href="#"])').click((e) => {
-    const target = $(e.target.hash);
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
 
-    if (target.length) {
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-
-      return false;
-    }
-  });
-});
-
-//scroll animation about page
-
-ScrollReveal({
-        //reset: true,
-        distance: '60px',
-        duration: 2500,
+          return false;
+        }
       });
+    });
 
-      //target elements, and specify options to create reveal animations
-      ScrollReveal().reveal('.sec-about .image', { delay: 600, origin: 'left' });
-      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+    //scroll animation about page
 
-//code pen https://codepen.io/sebastian-szyja/pen/QWwxZEq
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+    ScrollReveal({
+      //reset: true,
+      distance: '60px',
+      duration: 2500,
+    });
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+    //target elements, and specify options to create reveal animations
+    ScrollReveal().reveal('.sec-about .image', {
+      delay: 600,
+      origin: 'left'
+    });
+    ScrollReveal().reveal('.text-box', {
+      delay: 700,
+      origin: 'right'
+    });
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
+    //code pen https://codepen.io/sebastian-szyja/pen/QWwxZEq
+    var TxtRotate = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    TxtRotate.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
 
-  var that = this;
-  var delta = 300 - Math.random() * 100;
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
 
-  if (this.isDeleting) { delta /= 2; }
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
+      var that = this;
+      var delta = 300 - Math.random() * 100;
 
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
+      if (this.isDeleting) {
+        delta /= 2;
+      }
 
-window.onload = function() {
-  var elements = document.getElementsByClassName('text-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".text-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('text-rotate');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".text-rotate > .wrap { border-right: 0.08em solid #666 }";
+      document.body.appendChild(css);
+    };
 
 
 
-Resources
-
-</script>
-{% endblock %}
+    Resources
+  </script>
+  {% endblock %}
 </body>
