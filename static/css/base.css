@@ -694,8 +694,7 @@ color:#EFEFEF;
 }
 
 
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
+.allauth-form-inner-content button{
 /* btn */
 display: inline-block;
 background: #EC994B;

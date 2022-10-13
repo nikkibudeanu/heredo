@@ -117,11 +117,8 @@
             </div>
             {% else %}
             <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-gold rounded-0 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Back to Shop</span>
+            <a href="{% url 'products' %}" class="btn rounded-0 btn-lg">
+                <span class="text-uppercase btn-outline-gold ">Back to Shop</span>
             </a>
             {% endif %}
         </div>
