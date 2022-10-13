@@ -125,6 +125,12 @@ body{
 
 }
 
+.jumbotron-hr{
+  width: 100px;
+  border: 0;
+  border-top: 3px double #fafafa;
+}
+
 
 
 #background-video{
@@ -599,10 +605,13 @@ color:#EFEFEF;
 
 /* Shop section on home page */
 
-/*----  Main Style  ----*/
+
+#shop{
+  background: #fafafa;
+}
 #cards_landscape_wrap{
   text-align: center;
-  background: #fafafa;
+  background: #F1EEE9;
 }
 
 #cards_landscape_wrap .container{
@@ -618,7 +627,7 @@ color:#EFEFEF;
   border-radius: 5px;
 }
 #cards_landscape_wrap .card-flyer .image-box{
-  background: #F1EEE9;
+  background: #fafafa;
   overflow: hidden;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
   border-radius: 5px;
