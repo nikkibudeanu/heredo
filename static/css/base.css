@@ -126,9 +126,15 @@ body{
 }
 
 .jumbotron-hr{
-  width: 100px;
+  width: 300px;
   border: 0;
   border-top: 3px double #fafafa;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+
 }
 
 
@@ -144,6 +150,14 @@ body{
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
   z-index: 1;
+}
+
+#background-video:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,0,255,0.2); 
 }
 
 
