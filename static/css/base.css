@@ -708,8 +708,8 @@ color:#EFEFEF;
   color: #aab7c4;
 }
 
-.allauth-form-inner-content input[type='checkbox'] {
-  border-bottom: 2px solid #c0c0c0;
+.checkboxinput {
+  border: 2px solid #15133C;
   outline: none;
 }
 
