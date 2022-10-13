@@ -531,7 +531,7 @@ color:#EFEFEF;
 }
 
 .button-shop span:after {
-  content: '»';
+  content: '>';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -548,18 +548,56 @@ color:#EFEFEF;
   right: 0;
 }
 
-.full-width{
-	width: 100vw;
-  position: absolute;
-  height: auto;
-  min-height: 100%;
-  min-width: 100%;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-  z-index: 1;
+/* Gallery container*/
+
+
+#container-gallery {
+	width: 1000px;
+	overflow: hidden;
+	margin: 50px auto;
+	background: white;
 }
+
+
+/*photobanner*/
+
+.photobanner {
+	height: 233px;
+	width: 3550px;
+	margin-bottom: 80px;
+}
+
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 40s linear infinite;
+	   -moz-animation: bannermove 40s linear infinite;
+	    -ms-animation: bannermove 40s linear infinite;
+	     -o-animation: bannermove 40s linear infinite;
+	        animation: bannermove 40s linear infinite;
+}
+
+@keyframes bannermove {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -1250px;
+ }
+
+}
+
+
+
+@-webkit-keyframes bannermove{
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1250px;
+ }
+
+}
+
 
 /* Allauth form formatting */
 

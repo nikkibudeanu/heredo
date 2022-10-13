@@ -53,8 +53,8 @@
                    data-rotate='[ "red wine?", "rosé?", "champagne?", "white wine?"]'></span>
               </h2>
               <br>
-              <img src="{{ MEDIA_URL }}winepour.jpg"  class="full-width">
-              <a class="button-shop" href="{% url 'products' %}"><span><i class="fas fa-store"></i></span></a>
+              <a class="button-shop" href="{% url 'products' %}"><span> SHOP <i class="fas fa-store"></i></span></a>
+              <a class="button-shop" href="{% url 'account_login' %}"><span> LOGIN <i class="fas fa-sign-in-alt"></i></span></a>
     
           </section>
         
@@ -109,6 +109,29 @@
               </div>
             </div>
           </section>
+
+
+          <section id="gallery" class="sec-contact pt-5 pb-5">
+            <div id="container-gallery">
+              <h1 class="main-title">Gallery</h1>
+
+    
+              <!-- Each image is 200px by 200px -->
+              <div class="photobanner">
+                <img class="first" src="{{ MEDIA_URL }}family.jpg" width="200px"/>
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+                <img src="{{ MEDIA_URL }}family.jpg" width="200px">
+              </div>
+          </div>
+          </section>
+        
         
           <footer class="footer">
             <div class="container">
