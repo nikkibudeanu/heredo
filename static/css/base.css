@@ -169,7 +169,7 @@ body{
   position: relative;
   flex: 1;
   max-width: 300px;
-  height: 140px;
+  height: 90px;
   background-color: #EC994B;
   margin: 20px;
   cursor: pointer;
@@ -179,7 +179,7 @@ body{
 }
 
 .icon{
-  font-size: 32px;
+  font-size: 20px;
   color: #15133C;
   transition: .3s linear;
 }
