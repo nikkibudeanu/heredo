@@ -9,7 +9,7 @@ def contact(request):
     if request.method == "POST":
         if contact_form.is_valid():
             contact_form.save()
-            messages.success(request, "Your email was sent to Caitlin")
+            messages.success(request, "Your email was sent to Heredo")
             return redirect("home")
     template = "contact/contact.html"
     context = {
