@@ -57,8 +57,8 @@
     <!-- Shop/Login Cards -->
     <div id="cards_landscape_wrap">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-4">
+        <div class="row ">
+          <div class="col-lg-5 mb-4 mx-auto">
             <a href="{% url 'account_login' %}">
               <div class="card-flyer">
                 <div class="text-box-card">
@@ -75,7 +75,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-6 mb-4">
+          <div class="col-lg-5 mb-4">
             <a href="{% url 'products' %}">
               <div class="card-flyer">
                 <div class="text-box-card">
@@ -112,9 +112,7 @@
             </div>
             <div class="text-box">
               <h4>Olarescu Family</h4>
-              <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog
-                instant
-                camera.</p>
+              <p>With a dream to grow the inherited business, Cristina and Adrian founded Heredo in 2021. Already familiar with the wine-making culture, they were excited to get the chance to be the new stewards of the iconic red barn founded in 1990's by Cristina's Father. </p>
             </div>
           </div>
         </div>
@@ -130,8 +128,18 @@
       <div class="row">
         <div class="col-lg-12 mb-2 ">
           <div class="content">
+            <div class="image">
+              <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+            </div>
+            <div class="text-box">
+              <h3> Explore HEREDO vineyards</h3>
+              <p>Our estate vineyard sits at 1467 ft. along the Lipoveni valley in the shadow of the picturesque hills. 
+                It's situated on Gura Galbenei lands on Moldova's pride soil. <br>
+                It has the best sunset viewpoints.
 
-
+              </p>
+            </div>
+          </div>
           </div>
         </div>
       </div>

@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'marketing.apps.MarketingConfig',
     'home',
     'products',
     'bag',
@@ -235,7 +234,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
-MAILCHIMP_API_KEY = '27b38e6f7f220071ef626b24112d0525-us9'
-MAILCHIMP_REGION = 'us9'
-MAILCHIMP_MARKETING_AUDIENCE_ID = '0bb788b5dc' 
