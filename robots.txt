@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /checkout/
+Sitemap: https://heredo.herokuapp.com/sitemap.xml
