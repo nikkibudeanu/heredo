@@ -244,6 +244,12 @@ All wireframes are creating using Figma.
 ## Features
 
 1. Home Page
+* Shop section
+* About section
+* Vineyards section
+* Contact section
+* Gallery section
+* Footer
 
 2. Products Page
 
@@ -254,6 +260,21 @@ All wireframes are creating using Figma.
 * edit product page
 * delete product button
 
+5. Bag Page
+
+6. Empty Bag Page
+
+7. Checkout success page. 
+
+8. Profile page.
+
+9. Allauth pages:
+* Login
+* Register
+
+10. Header nav:
+* Login button
+* Bag button
 [Back to top ⇧](#)
 
 ## Future Features
