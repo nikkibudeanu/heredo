@@ -60,35 +60,36 @@
         <div class="row">
           <div class="col-lg-6 mb-4">
             <a href="{% url 'account_login' %}">
-            <div class="card-flyer">
-              <div class="text-box-card">
-                <div class="image-box">
-                  <img src="{{ MEDIA_URL }}firstcard.jpeg" width="250px">
-                </div>
-                <div class="text-container">
-                  <h6>Would you like to login/register?</h6>
-                  <br>
-                  <a class="button-shop" href="{% url 'account_login' %}"><span> LOGIN <i
-                        class="fas fa-sign-in-alt"></i></span></a>
+              <div class="card-flyer">
+                <div class="text-box-card">
+                  <div class="image-box">
+                    <img src="{{ MEDIA_URL }}firstcard.jpeg" width="250px">
+                  </div>
+                  <div class="text-container">
+                    <h6>Would you like to login/register?</h6>
+                    <br>
+                    <a class="button-shop" href="{% url 'account_login' %}"><span> LOGIN <i
+                          class="fas fa-sign-in-alt"></i></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
             </a>
           </div>
           <div class="col-lg-6 mb-4">
             <a href="{% url 'products' %}">
-            <div class="card-flyer">
-              <div class="text-box-card">
-                <div class="image-box">
-                  <img src="{{ MEDIA_URL }}secondcard.jpeg" width="250px">
-                </div>
-                <div class="text-container">
-                  <h6>Would you like to visit our store?</h6>
-                  <br>
-                  <a class="button-shop" href="{% url 'products' %}"><span> SHOP <i class="fas fa-store"></i></span></a>
+              <div class="card-flyer">
+                <div class="text-box-card">
+                  <div class="image-box">
+                    <img src="{{ MEDIA_URL }}secondcard.jpeg" width="250px">
+                  </div>
+                  <div class="text-container">
+                    <h6>Would you like to visit our store?</h6>
+                    <br>
+                    <a class="button-shop" href="{% url 'products' %}"><span> SHOP <i
+                          class="fas fa-store"></i></span></a>
+                  </div>
                 </div>
               </div>
-            </div>
             </a>
           </div>
 
@@ -101,42 +102,37 @@
 
 
   <section id="about" class="sec-about pt-5 pb-5">
-
-
     <div class="container">
       <h2 class="main-title">About Heredo family</h2>
       <div class="row">
         <div class="col-lg-12 mb-2 ">
-      <div class="content">
-        <div class="image">
-          <img src="{{ MEDIA_URL }}family.jpg" width="600px">
-        </div>
-        <div class="text-box">
-          <h4>Olarescu Family</h4>
-          <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant
-            camera.</p>
+          <div class="content">
+            <div class="image">
+              <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+            </div>
+            <div class="text-box">
+              <h4>Olarescu Family</h4>
+              <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog
+                instant
+                camera.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
     </div>
   </section>
 
   <hr>
 
-  <section id="vineyards" class="sec-about pt-5 pb-5">
-
-
+  <section id="vineyards" class="sec-vineyards pt-5 pb-5">
     <div class="container">
-      <h2 class="main-title">Vineyards of Heredo family</h2>
-      <div class="content">
-                <div class="text-box">
-          <h4>Olarescu Family</h4>
-          <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant
-            camera.</p>
-        </div>
-        <div class="image">
-          <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+      <h2 class="main-title">Vineyards of Heredo</h2>
+      <div class="row">
+        <div class="col-lg-12 mb-2 ">
+          <div class="content">
+            
+  
+          </div>
         </div>
       </div>
     </div>
@@ -210,31 +206,6 @@
       </div>
 
   </section>
-  <hr>
-
-
-  <footer class="footer">
-    <div class="container">
-      <ul class="list-inline mb-0 text-center">
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-twitter"></span></a>
-        </li>
-
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-google-plus"></span></a>
-        </li>
-
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-instagram"></span></a>
-        </li>
-
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-envelope-o"></span></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
 
 
 
@@ -263,18 +234,18 @@
     //scroll animation about page
 
     ScrollReveal({
-      //reset: true,
-      distance: '60px',
+      reset: true,
+      distance: '100px',
       duration: 2500,
     });
 
     //target elements, and specify options to create reveal animations
     ScrollReveal().reveal('.sec-about .image', {
-      delay: 600,
+      delay: 300,
       origin: 'left'
     });
     ScrollReveal().reveal('.text-box', {
-      delay: 700,
+      delay: 300,
       origin: 'right'
     });
 
@@ -337,8 +308,6 @@
       css.innerHTML = ".text-rotate > .wrap { border-right: 0.08em solid #666 }";
       document.body.appendChild(css);
     };
-
-
   </script>
   {% endblock %}
 </body>
