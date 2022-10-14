@@ -58,7 +58,7 @@ body{
   overflow: hidden;
 }
 
-.content .image img{
+.content .image-about img, .content .image-vineyards img{
   z-index: 111;
   position: absolute;
   top: 0;
@@ -69,7 +69,8 @@ body{
   border-radius: 10px;
 }
 
-.content .text-box{
+.content .text-box-about,
+.content .text-box-vineyards{
   z-index: 222;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -80,7 +81,8 @@ body{
   transform: translate(-80px, 50px);
 }
 
-.content .text-box h4{
+.content .text-box-about h4,
+.content .text-box-vineyards h4{
   font-size: 2em;
   margin-bottom: 10px;
 }

@@ -32,7 +32,7 @@
               <a class="nav-link page-scroll" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="#vineyards">Vineyard</a>
+              <a class="nav-link page-scroll" href="#vineyards">Vineyards </a>
             </li>
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#contact">Contact</a>
@@ -104,14 +104,14 @@
 
 
     <div class="container">
-      <h1 class="main-title">About</h1>
+      <h2 class="main-title">About Heredo family</h2>
       <div class="row">
         <div class="col-lg-12 mb-2 ">
       <div class="content">
-        <div class="image">
+        <div class="image-about">
           <img src="{{ MEDIA_URL }}family.jpg" width="600px">
         </div>
-        <div class="text-box">
+        <div class="text-box-about">
           <h4>Olarescu Family</h4>
           <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant
             camera.</p>
@@ -124,19 +124,19 @@
 
   <hr>
 
-  <section id="vineyards" class="sec-about pt-5 pb-5">
+  <section id="vineyards" class="sec-vineyards pt-5 pb-5">
 
 
     <div class="container">
-      <h1 class="main-title">Vineyards</h1>
+      <h2 class="main-title">Vineyards of Heredo family</h2>
       <div class="content">
-        <div class="image">
-          <img src="{{ MEDIA_URL }}family.jpg" width="600px">
-        </div>
-        <div class="text-box">
+        <div class="text-box-vineyards">
           <h4>Olarescu Family</h4>
           <p>Capture and share your favorite moments with an instant classic, the new Polaroid OneStep 2 analog instant
             camera.</p>
+        </div>
+        <div class="image-vineyards">
+          <img src="{{ MEDIA_URL }}family.jpg" width="600px">
         </div>
       </div>
     </div>
@@ -147,7 +147,7 @@
 
   <section id="sec-contact" class="sec-contact pt-5 pb-5">
     <div class="container">
-      <h1 class="main-title">Contact</h1>
+      <h2 class="main-title">Contact Heredo</h2>
       <div class="contact-info">
         <div class="card" id="card-home">
           <i class="icon fas fa-envelope"></i>
@@ -180,7 +180,7 @@
 
   <section id="gallery" class="sec-contact pt-5 pb-5">
     <div id="container-gallery">
-      <h1 class="main-title">Gallery</h1>
+      <h2 class="main-title">Heredo Gallery</h2>
       <div class="gallery">
 
         <div class="gallery-item">
@@ -269,14 +269,23 @@
     });
 
     //target elements, and specify options to create reveal animations
-    ScrollReveal().reveal('.sec-about .image', {
-      delay: 600,
+    ScrollReveal().reveal('.sec-about .image-about', {
+      delay: 400,
       origin: 'left'
     });
-    ScrollReveal().reveal('.text-box', {
-      delay: 700,
+    ScrollReveal().reveal('.text-box-about', {
+      delay: 300,
       origin: 'right'
     });
+    ScrollReveal().reveal('.text-box-vineyards', {
+      delay: 400,
+      origin: 'left'
+    });
+    ScrollReveal().reveal('.sec-vineyards .image-vineyards', {
+      delay: 300,
+      origin: 'right'
+    });
+
 
     //code pen https://codepen.io/sebastian-szyja/pen/QWwxZEq
     var TxtRotate = function (el, toRotate, period) {
