@@ -11,7 +11,10 @@ html{
 
 }
 
+.sec-vineyards .image:hover{
+  transform: scale(1.15);
 
+}
 
 section {
   width: 100%;
