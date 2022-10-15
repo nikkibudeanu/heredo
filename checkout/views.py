@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -12,6 +13,7 @@ from bag.contexts import bag_contents
 
 import stripe
 import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -29,14 +31,14 @@ def cache_checkout_data(request):
             processed at the moment. Please try again later.')
         return HttpResponse(content=e, status=400)
 
- 
+
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
-        
+
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -76,17 +78,18 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "Ooops! One of the items in your bag is not available anymore. "
+                        "Ooops! One of the items in your bag is not available."
                         "Go ahead and rech us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('payment_success', args=[order.order_number]))
+            return redirect(
+                reverse('payment_success', args=[order.order_number]))
         else:
             messages.error(request, 'Oops, ERROR! \
-                Please double check your information.')     
+                Please double check your information.')
     else:
         bag = request.session.get('bag', {})
         if not bag:
@@ -120,7 +123,6 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -163,9 +165,9 @@ def payment_success(request, order_number):
         if user_profile_form.is_valid():
             user_profile_form.save()
 
-
     messages.success(request, f'Hooray! Order completed succesfully! \
-        Your order number is :  {order_number}. Check your email:  {order.email} for a confirmation.')
+        Your order number is :  {order_number}. \
+            Check your email:  {order.email} for a confirmation.')
 
     if 'bag' in request.session:
         del request.session['bag']

@@ -43,7 +43,6 @@ class TestProfilesView(TestCase):
         self.assertTrue(login)
         self.assertTemplateUsed(response, 'profiles/profile.html')
 
-
     def test_url(self):
         """
         Test if logged in user can access their profile page
@@ -53,7 +52,6 @@ class TestProfilesView(TestCase):
         response = self.client.get('/profiles/')
         self.assertTrue(login)
         self.assertEqual(response.status_code, 200)
-
 
     def test_get_order_detail_page(self):
         """
@@ -65,5 +63,3 @@ class TestProfilesView(TestCase):
         response = self.client.get('/profiles/order_history/' +
                                    order.order_number)
         self.assertEqual(response.status_code, 200)
-
- 

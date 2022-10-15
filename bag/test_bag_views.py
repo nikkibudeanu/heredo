@@ -17,7 +17,7 @@ class TestViews(TestCase):
 
     def test_add_to_bag(self):
         """
-        Test if user can add to bag 
+        Test if user can add to bag
         """
         product = Product.objects.create(
             name='Test Product',

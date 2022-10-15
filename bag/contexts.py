@@ -3,6 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+
 def bag_contents(request):
 
     bag_items = []
@@ -21,14 +22,15 @@ def bag_contents(request):
         })
 
     if total_sum < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = total_sum * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+        delivery = total_sum * Decimal(
+            settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total_sum
     else:
         delivery = 0
         free_delivery_delta = 0
-    
+
     grand_total = delivery + total_sum
-    
+
     context = {
         'bag_items': bag_items,
         'total_sum': total_sum,

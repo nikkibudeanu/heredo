@@ -68,4 +68,3 @@ class TestProductsViews(TestCase):
         self.client.login(username='test_super_user', password='test_password')
         response = self.client.get('/products/add/')
         self.assertTemplateUsed(response, 'products/admin_add_product.html')
-

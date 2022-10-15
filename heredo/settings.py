@@ -4,16 +4,9 @@ import dj_database_url
 if os.path.isfile("env.py"):
     import env
 
-
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -43,9 +36,6 @@ INSTALLED_APPS = [
     'contact',
     'wishlist',
     'questions',
-    
-
-    #extra
     'crispy_forms',
     'storages',
 
@@ -77,14 +67,14 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',# required by allauth - allows allauth to access http request object
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
                 'django.template.context_processors.media',
 
             ],
-             'builtins': [
+            'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
             ]
@@ -93,7 +83,6 @@ TEMPLATES = [
 ]
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
-
 
 
 AUTHENTICATION_BACKENDS = [
@@ -105,7 +94,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
-
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
@@ -125,7 +113,7 @@ WSGI_APPLICATION = 'heredo.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
         }
 else:
     DATABASES = {
@@ -135,10 +123,6 @@ else:
         }
     }
 
-
-
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -155,9 +139,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -182,7 +163,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-
 if 'USE_AWS' in os.environ:
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
@@ -204,7 +184,6 @@ if 'USE_AWS' in os.environ:
 
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    
 
 
 FREE_DELIVERY_THRESHOLD = 50
@@ -215,11 +194,11 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Stripe 
+# Stripe
 FREE_DELIVERY_THRESHOLD = 50
-STANDARD_DELIVERY_PERCENTAGE =10
+STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51LYBaOEqAJbeRep0mf1bdGQvOvm0XYUeT32IRVBgDR8aDISffJaYN8Wnq7rsATTwvba2NMItSOZuhfUKAugNSb5Z00ytpMiMYe')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'heredo@example.com'

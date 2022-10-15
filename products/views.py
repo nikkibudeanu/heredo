@@ -7,7 +7,6 @@ from .models import Product, Category
 from .forms import ProductForm
 
 
-
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -31,7 +30,7 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -47,6 +46,7 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
+
 def product_detail(request, product_id):
     """ A view to show product details """
 
@@ -58,11 +58,13 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def admin_add_product(request):
     """ Admin ads product to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This feature is available only to store owners.')
+        messages.error(
+            request, 'This feature is available only to store owners.')
         return redirect(reverse('products'))
 
     if request.method == 'POST':
@@ -72,10 +74,12 @@ def admin_add_product(request):
             messages.success(request, 'Success! Your new product was added!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Oops!Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Oops!Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/admin_add_product.html'
     context = {
         'form': form,
@@ -83,11 +87,13 @@ def admin_add_product(request):
 
     return render(request, template, context)
 
+
 @login_required
 def admin_edit_product(request, product_id):
     """ Update a product from the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This feature is available only to store owners.')
+        messages.error(
+            request, 'This feature is available only to store owners.')
         return redirect(reverse('products'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -98,7 +104,9 @@ def admin_edit_product(request, product_id):
             messages.success(request, 'Success! Your product is updated!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Oops! Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Oops! Failed to update product.\
+                     Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are updating {product.name}')
@@ -111,11 +119,13 @@ def admin_edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def admin_delete_product(request, product_id):
     """ Delete a product from the store if you are an admin """
     if not request.user.is_superuser:
-        messages.error(request, 'This feature is available only to store owners.')
+        messages.error(
+            request, 'This feature is available only to store owners.')
         return redirect(reverse('products'))
 
     product = get_object_or_404(Product, pk=product_id)

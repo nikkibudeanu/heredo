@@ -301,16 +301,6 @@ All wireframes are creating using Figma.
 
 
 
-### 6. "Allauth" wireframes
-
- + Login page:
-
-<img width="500" src="media/readme/wireframes/3.png">
-
-+ Register page:
-
-<img width="500" src="media/readme/wireframes/4.png">
-
 [Back to top ⇧](#)
 
 ## 5. Surface

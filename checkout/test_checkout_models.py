@@ -1,7 +1,7 @@
 """Test Checkout Models"""
 from django.test import TestCase
 from django.contrib.auth.models import User
-from .models import Order 
+from .models import Order
 
 
 class TestCheckoutModels(TestCase):
@@ -28,7 +28,6 @@ class TestCheckoutModels(TestCase):
             street_address1='Test address',
             county='Test country',
         )
-
 
     def test_order_number(self):
         """

@@ -22,7 +22,8 @@ def faq_page(request):
 def add_faq(request):
     """ Form for add questiona and answer """
     if not request.user.is_superuser:
-        messages.error(request, 'This feature is only available for store owners.')
+        messages.error(
+            request, 'This feature is only available for store owners.')
         return redirect(reverse('home'))
 
     questions = Question.objects.all()
@@ -52,7 +53,8 @@ def add_faq(request):
 def edit_faq(request, question_id):
     """ Edit a faq on faq page """
     if not request.user.is_superuser:
-        messages.error(request, 'This feature is only available for store owners.')
+        messages.error(
+            request, 'This feature is only available for store owners.')
         return redirect(reverse('home'))
 
     question = get_object_or_404(Question, pk=question_id)
@@ -84,7 +86,8 @@ def edit_faq(request, question_id):
 def delete_faq(request, question_id):
     """ Delete FAQ"""
     if not request.user.is_superuser:
-        messages.error(request, 'This feature is only available for store owners.')
+        messages.error(
+            request, 'This feature is only available for store owners.')
         return redirect(reverse('home'))
     question = get_object_or_404(Question, pk=question_id)
     question.delete()

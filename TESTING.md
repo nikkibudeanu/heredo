@@ -9,45 +9,16 @@ Please see below all tests.
 ## Automatic tests
 
 ### **HEREDO** 
-Manual and automated testing was conducted on heredo app, users app as well as the project URLs.
+Automated tests were performed on the apps: bag, checkout, home, products, profiles. Please see below: 
 
-<p><img src="media/readme/unittests/overall.png"></p>
+<p><img src="media/readme/tests_overall.png"></p>
 
 ========================================================================================
 
-### **Home App** 
-Almost all functions on the users' app were tested automatically using unit tests. Manual testing was performed on the other tests to ensure there are no errors.
-
-* Views
-<p><img src="media/readme/unittests/views-home.png"></p>
-
-
-<details>
-<summary>
-User Stories covered by tests.
-
-+  
-+ 
-
-</summary>
-
-</details>
-========================================================================================
-
-### **bag app** 
-
-* Views 
-<p><img src="media/readme/unittests/views-bag.png"></p>
-
-
-
-### **Checkout app** 
-
-
-+ **woofme**
+Manual tests were conducted on the other apps and the ones mentioned above too. 
 
    
-   ## Integration Test Case
+## Integration Test Case
 
 
 + On this project, the Incremental Testing method was used.
@@ -62,33 +33,89 @@ User Stories covered by tests.
 |:----:|:----:|:----:|
 | 1 | Click Login navbar button| To be directed to the Login page.|
 | 2 | Click the Logo navbar button| To be directed to the home page|
-| 3 | Click login's navbar button | To be directed to the Login Page|
+| 3 | Click register navbar button | To be directed to the Register Page|
 | 4 | Click bag navbar button | To be directed to the bag page. |
 
 ### **Login**
 
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
+| 1 | Click sing in button when fields are empty.| To receive an alert for required fields.|
+| 2 | Click sign in button when fields are completed| To receive a login-success message.|
+
+
 
 ### **Register**
+| 1 | Click register navbar button | To be directed to the Register Page|
+| 2 | Click register button on page when data is invalid| Receive and alert|
+| 3 | Click register button on page when data is valid| To be directed to verification email page|
+| 4 | Click link in the email .| To be directed to a verify email page|
+| 5 | Click verify email button.| To be directed to the login page|
+
 
 ### **Product page**
 
+| 1 | Click card | To be directed to the product detail page|
+| 2 | As an admin: click remove button on products | To receive an alert for removed button|
+| 3 | As an admin: click update button on products | To receive an alert that you are updating a product and to be redirected to edit product page|
+
+
+
+
 ### **Product Detail page**
+
+| 1 | Click add to bag button | To receive an alert that an item is added to bag|
+| 2 | Click the increment/decrement icons| To update the quantity.|
+| 3 | Click back to shop button| To be directed to the products page|
+| 4 | Click add to wishlist button.| To receive and alert than an items is added to the wishlist.|
+| 2 | As an admin: click remove button on products | To receive an alert for removed button|
+| 3 | As an admin: click update button on products | To receive an alert that you are updating a product and to be redirected to edit product page|
+
+
+### **Bag**
+
+| 1 | Click update button | To see the quantity updating and receive and alert.|
+| 2 | Click remove button| To remove item from bag and receive an alert.|
+| 3 | Click Secure Checkout button on bag page| To be directed to the checkout page.|
+
+
 
 ### **Checkout**
 
+| 1 | Click complete order button when fields are empty.| To receive an alert.|
+| 2 | Click Adjust bag button| To be directed to the bag page.|
+
+
  ### **Profile**
 
- ### **Admin Product Management Page**
+ | 1 | Click update information button  | To be save the new information|
+| 2 | Click order number| To be directer to a order summary page.|
+| 3 | Click back to profile button on order summary page.| To be directed to the profile page.|
 
-### **Home page navbar**
+
+ ### **Admin Panel**
+
+ | 2 | Click FAQ | To be directed to the FAQ page|
+
+
+ ### **Admin Product Management Page**
+ | 1 | Click products book button | To be directed to the add a product page.|
+ | 2 | Click Back to admin Pannel button | To be directed to the admin pannel|
+
+### **Home page navbar and buttons**
+
+| 1 | Click each nav item| To be scrolled down to the section|
+| 2 | Click shop and login button on shop section| To be directed to account login and products pages.|
+| 3 | Click contact button| To be directed to the contact page|
+| 4 | Click faq button| To be directed to the faq page|
 
 ### **Shop navbar menu **
 
-
-
-
-
-### **Shop section - home page **
+| 1 | Click each dropdown button | To collapse dropdown items|
+| 2 | Click red wine link| To be rendered only the red wine products| - performed for all wines and gifts|
+| 3| Click by price link| To be rendered only the products from cheapest to most expensive|
+| 4| Click by rating link| To be rendered only the products from highest to lowest rating|
+| 5| Click by category link| To be rendered only the products split according to categories|
 
 
 ### **Footer** 
@@ -98,16 +125,9 @@ User Stories covered by tests.
 | 1 | Click on the social media buttons| To be directed to social media pages. |
 
 
-### **Buttons**
-
-The following buttons were tested:
-
-
-
-
 ## Python (PEP8) Validation
 
-###  **Woofme App** 
+###  **Heredo** 
 
 <p float="left">
         <img src="media/readme/pep8/heredo-settings.png" width="400" height="200" />
@@ -162,6 +182,34 @@ The following buttons were tested:
 
 
 </p>
+
+### **Contact** 
+
+
+<p float="left">
+        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
+
+
+</p>
+
+### **Wishlist** 
+
+
+<p float="left">
+        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
+
+
+</p>
+
+### **Questions** 
+
+
+<p float="left">
+        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
+
+
+</p>
+
 
 
 ## HTML Code Validation

@@ -15,9 +15,11 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Hooray! Your profile was updated successfully')
+            messages.success(
+                request, 'Hooray! Your profile was updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(
+                request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -48,6 +50,7 @@ def order_history(request, order_number):
 
     return render(request, template, context)
 
+
 @login_required
 def admin_profile(request):
     """ Display admin account overview"""
@@ -57,6 +60,7 @@ def admin_profile(request):
 
     template = 'profiles/admin_profile.html'
     return render(request, template)
+
 
 @login_required
 def products_management(request):
