@@ -65,13 +65,13 @@ a:hover {
 }
 .ft-title {
   color: #fff;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   padding-bottom: 0.625rem;
 }
 
 /* Footer main */
 .ft-main {
-  padding: 1.25rem 1.875rem;
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -84,10 +84,6 @@ a:hover {
   .ft-main {
     justify-content: space-evenly;
   }
-}
-.ft-main-item {
-  padding: 1.25rem;
-  min-width: 12.5rem;
 }
 
 /* Mailchimp | Newsletter form */
