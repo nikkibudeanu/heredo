@@ -130,11 +130,9 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 ###  **Heredo** 
 
 <p float="left">
-        <img src="media/readme/pep8/heredo-settings.png" width="400" height="200" />
-        <img src="media/readme/pep8/heredo-test-views.png" width="400" height="200" />
-        <img src="media/readme/pep8/heredo-urls.png" width="400" height="200" />
-        <img src="media/readme/pep8/heredo-views.png" width="400" height="200" />
-
+        <img src="media/readme/pep8/heredo_settings.png" width="400" height="200" />
+        <img src="media/readme/pep8/heredo_urls.png" width="400" height="200" />
+        <img src="media/readme/pep8/heredo_apps.png" width="400" height="200" />
 </p>
 
 
@@ -142,35 +140,43 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 ###  **Bag App** 
 
 <p float="left">
-        <img src="media/readme/pep8/s.png" width="400" height="200" />
+        <img src="media/readme/pep8/bag_apps.png" width="400" height="200" />
+        <img src="media/readme/pep8/bag_context.png" width="400" height="200" />
+        <img src="media/readme/pep8/bag_test_vs.png" width="400" height="200" />
+        <img src="media/readme/pep8/bag_urls.png" width="400" height="200" />
+        <img src="media/readme/pep8/bag_views.png" width="400" height="200" />
+
+
 </p>
+
 
 ### **Checkout** 
 
-
 <p float="left">
-        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
-
-
+        <img src="media/readme/pep8/checkout_admin.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_apps.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_forms.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_models.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_signals.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_urls.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_views.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_wh_handler.png" width="400" height="200" />
+        <img src="media/readme/pep8/checkout_wh.png" width="400" height="200" />
 </p>
 
 ### **Home** 
 
-
 <p float="left">
-        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
-
-
+        <img src="media/readme/pep8/home_vs_urls.png" width="400" height="200" />
+        <img src="media/readme/pep8/home_test_vs.png" width="400" height="200" />
 </p>
-
 
 ### **Products** 
 
 
 <p float="left">
-        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
-
-
+        <img src="media/readme/pep8/products_all.png" width="400" height="200" />
+        <img src="media/readme/pep8/products_tests.png" width="400" height="200" />
 </p>
 
 
@@ -178,7 +184,8 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 <p float="left">
-        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
+        <img src="media/readme/pep8/profiles_all.png" width="400" height="200" />
+        <img src="media/readme/pep8/profiles_tests.png" width="400" height="200" />
 
 
 </p>
@@ -187,16 +194,17 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 <p float="left">
-        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
-
-
+        <img src="media/readme/pep8/contact_admin.png" width="400" height="200" />
+        <img src="media/readme/pep8/contact_models.png" width="400" height="200" />
+        <img src="media/readme/pep8/contact_urls.png" width="400" height="200" />
+        <img src="media/readme/pep8/contact_views.png" width="400" height="200" />
 </p>
 
 ### **Wishlist** 
 
 
 <p float="left">
-        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
+        <img src="media/readme/pep8/wishlist_all.png" width="400" height="200" />
 
 
 </p>
@@ -205,7 +213,7 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 <p float="left">
-        <img src="media/readme/pep8/app-admin.png" width="400" height="200" />
+        <img src="media/readme/pep8/questions_all.png" width="400" height="200" />
 
 
 </p>
