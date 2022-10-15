@@ -1,7 +1,31 @@
+/* Body, html, links and text */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1,
+h2, 
+h3,
+h4,
+a
+{
+  font-family: 'Noto Serif', serif;
+  text-decoration: none;
+
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+p{
+  font-size: 1rem;
 }
 
 a{
@@ -21,22 +45,6 @@ html{
     scroll-padding-top: 70px; /* height of sticky header */
 
 }
-
-.sec-vineyards .image:hover{
-  transform: scale(1.01);
-
-}
-
-section {
-  width: 100%;
-  padding: 0 7%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  height: 100vh;
-}
-
-
 
 body{
   position: relative;
@@ -337,28 +345,7 @@ padding: 10px;
   }
 }
 
-h1,
-h2, 
-h3,
-h4,
-a
-{
-  font-family: 'Noto Serif', serif;
-  text-decoration: none;
 
-}
-
-h1{
-  font-size: 2rem;
-}
-
-h2{
-  font-size: 1.5rem;
-}
-
-p{
-  font-size: 1rem;
-}
 .delivery{
   font-style: italic;
   font-size: 20px;
