@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'profiles',
     'contact',
     'wishlist',
+    'questions',
     
 
     #extra

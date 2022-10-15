@@ -1,12 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
-
 from .models import UserProfile
-from .forms import UserProfileForm
-
 from checkout.models import Order
+from .forms import UserProfileForm
 
 
 @login_required
@@ -50,3 +47,23 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+@login_required
+def admin_profile(request):
+    """ Display admin account overview"""
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry only store owners can do that.')
+        return redirect(reverse('home'))
+
+    template = 'profiles/admin_profile.html'
+    return render(request, template)
+
+@login_required
+def products_management(request):
+    """ Display products managment page where admin
+    can choose to add a product """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry only store owners can do that.')
+        return redirect(reverse('home'))
+    template = 'profiles/products_management.html'
+    return render(request, template)
