@@ -5,7 +5,7 @@ from profiles.models import UserProfile
 
 
 class Wishlist(models.Model):
-    """ Wishlist model to store users favourite books"""
+    """ Wishlist model to store users favourite products"""
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE,
                              related_name='user_wishlist',
                              null=False, blank=False)
@@ -13,4 +13,4 @@ class Wishlist(models.Model):
         Product, on_delete=models.CASCADE, null=False, blank=False)
 
     def __str__(self):
-        return self.book.title
+        return self.product.name

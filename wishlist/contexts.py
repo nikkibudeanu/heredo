@@ -11,7 +11,7 @@ def wishlist_list_items(request):
         list_to_display = []
         wishlist_content = Wishlist.objects.filter(user=user)
         for item in wishlist_content:
-            list_to_display.append(item.book)
+            list_to_display.append(item.product)
     else:
         list_to_display = []
     return {
