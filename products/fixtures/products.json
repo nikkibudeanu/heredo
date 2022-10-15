@@ -145,5 +145,96 @@
                "rating":4.95,
                "image":"17.jpg"
             }
+         },
+         {
+            "pk":12,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340169",
+               "name":"Pink Champagne",
+               "description":"The palate is surprisingly but pleasantly sparkling, instantly seductive and velvety. ",
+               "price":18.5,
+               "category":3,
+               "rating":5,
+               "image":"19.jpg"
+            }
+         },
+         {
+            "pk":13,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340171",
+               "name":"Moldova Red",
+               "description":"Moldovan red wine, homemade, fully organic. ",
+               "price":10,
+               "category":1,
+               "rating":5,
+               "image":"23.jpg"
+            }
+         },
+         {
+            "pk":14,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340172",
+               "name":"Mistery Red",
+               "description":"Explore new wines with Heredo winery. Trust us on this one, it's THE red wine.",
+               "price":15,
+               "category":6,
+               "rating":4.5,
+               "image":"33.jpg"
+            }
+         },
+         {
+            "pk":15,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340173",
+               "name":"Mistery white",
+               "description":"Explore new wines with Heredo winery. Trust us on this one, it's THE white wine.",
+               "price":15,
+               "category":6,
+               "rating":4.6,
+               "image":"33.jpg"
+            }
+         },
+         {
+            "pk":15,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340175",
+               "name":"Mistery box - 2020",
+               "description":"Explore new wines with Heredo winery. Trust us on this one, it's a box of carefully selected wines from 2020.",
+               "price":50,
+               "category":6,
+               "rating":4.6,
+               "image":"11.jpg"
+            }
+         },
+         {
+            "pk":16,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340176",
+               "name":"Mistery box - 2021",
+               "description":"Explore new wines with Heredo winery. Trust us on this one, it's a box of carefully selected wines from 2021.",
+               "price":45,
+               "category":6,
+               "rating":4.9,
+               "image":"12.jpg"
+            }
+         },
+         {
+            "pk":16,
+            "model":"products.product",
+            "fields":{
+               "sku":"pp5001340178",
+               "name":"Mother's day gift",
+               "description":"It's Mother's day! Make your mother happy with a bottle of wine, handmade chocolates by Heredo and hand picked flowers from Heredo estate Herbarium",
+               "price":60,
+               "category":4,
+               "rating":5,
+               "image":"13.jpg"
+            }
          }
  ]
