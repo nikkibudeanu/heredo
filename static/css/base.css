@@ -65,9 +65,7 @@ a:hover {
   padding-bottom: 0.625rem;
 }
 /* Sticks footer to bottom */
-.container {
-  flex: 1;
-}
+
 /* Footer main */
 .ft-main {
   padding: 1.25rem 1.875rem;
@@ -121,6 +119,11 @@ input[type="submit"] {
   margin: 0.5rem;
   font-size: 1.25rem;
   list-style: none;
+}
+
+.ft-sociallist a:hover{
+color: #EC994B;
+font-size: 1.3rem;
 }
 
 
