@@ -31,13 +31,11 @@ body{
   position: relative;
     height: calc(100vh - 164px);
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
     font-weight: 300;
     line-height: 30px;
     text-align: center;
     width: 100%;
     background-color: #fff;
-    ;
 
 }
 
@@ -50,29 +48,23 @@ body{
 /* Footer */
 
 footer {
-  background-color: #555;
-  color: #bbb;
+  background-color: #15133C;
+  color: #e9e9e9;
   line-height: 1.5;
 }
 footer a {
   text-decoration: none;
-  color: #eee;
+  color: #fff;
 }
 a:hover {
   text-decoration: underline;
 }
 .ft-title {
   color: #fff;
-  font-family: "Merriweather", serif;
   font-size: 1.375rem;
   padding-bottom: 0.625rem;
 }
 /* Sticks footer to bottom */
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
 .container {
   flex: 1;
 }
@@ -108,7 +100,7 @@ input[type="email"] {
   margin-top: 0.3125rem;
 }
 input[type="submit"] {
-  background-color: #00d188;
+  background-color: #EC994B;
   color: #fff;
   cursor: pointer;
   border: 0;
@@ -122,31 +114,15 @@ input[type="submit"] {
 .ft-social-list {
   display: flex;
   justify-content: center;
-  border-top: 1px #777 solid;
+  border-top: 1px #15133C solid;
   padding-top: 1.25rem;
 }
 .ft-social-list li {
   margin: 0.5rem;
   font-size: 1.25rem;
+  list-style: none;
 }
-/* Footer legal */
-.ft-legal {
-  padding: 0.9375rem 1.875rem;
-  background-color: #333;
-}
-.ft-legal-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.ft-legal-list li {
-  margin: 0.125rem 0.625rem;
-  white-space: nowrap;
-}
-/* one before the last child */
-.ft-legal-list li:nth-last-child(2) {
-    flex: 1;
-}
+
 
 
 .main-title{
