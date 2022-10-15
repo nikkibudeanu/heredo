@@ -58,10 +58,12 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: #EC9947;
+  font-size: 1.5rem;
 }
-a:hover {
-  text-decoration: underline;
+footer a:hover {
+  color: #EC994B;
+  font-size: 1.3rem;
 }
 .ft-title {
   color: #fff;
@@ -119,11 +121,6 @@ a:hover {
   margin: 0.5rem;
   font-size: 1.25rem;
   list-style: none;
-}
-
-.ft-sociallist a:hover{
-color: #EC994B;
-font-size: 1.3rem;
 }
 
 
