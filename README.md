@@ -53,46 +53,57 @@ Live app link [here](https://heredo.herokuapp.com/)
 
 ### User Stories
 
+**Epic: Admin/Store Owner**
+
+| ID  | Content                                                                                                                                                   |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | As a **store owner** I can log in so that I have full access to the store backend                                                                         |
+| 2   | As a **store owner** I can add new product to the shop so that I can make sure the website is up to date                                                  |                                            |
+| 3   | As a **store owner** I can edit/delete products so that I can make sure the website is up to date                                                         |                                                             | 4   | As a **store owner** I have created Facebook shop page to increase traffic on my website                                                                  |
+| 10  | As a **store owner** I can read and respond to users questions sent by contact form                                                                       |
+
+**Epic: Navigation**
+
+| ID  | Content                                                                                                                      |
+| --- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 12  | As a **user** I can see an interesting home page so that I can understand what shop sells                                    |
+| 13  | As a **user** I can easily navigate through the site so that I can view desired content                                      |
+| 14  | As a **user** I can easily find a navigation bar and footer so that I can see what content there is on the website           |
+| 15  | Aa a **user** I can easily see the products list so that I can see what the store has to offer                               |
+| 16  | As a **user** I can sort products by rating, price and category so that I can easily find what I'm looking for                   |
+| 17  | As a **user** I can see the product details page so that I can see its name, rating, price, short description, year of harvest and ratings  |
 
 
-<details>
-<summary> As a user, I would like to be able to:  </summary>
+**Epic: Purchase**
+| ID | Content |
+| --- | ----------- |
+| 18 | As a **user** I can increase/decrease the quantity of the desired product.|
+| 19 | As a **user** I can add a selected products into the shopping bag.|
+| 20 | As a **user** I can see the shopping bag summary and total cost.|
+| 21 | As a **user** I can remove items from shopping bag.|
+| 22 | As a **user** I can put in my card details.|
+| 23 | As a **user** I receive order confirmations on the email.|
 
-1. Login/Register to the platform.
-2. View all products. 
-3. Filter products by wine type, gifts, mistery box.
-4. Sort products by category, rating and price. 
-5. View a detailed page of each product.
-6. Add to cart a desired product.
-7. Delete or update quantity of the product in cart. 
-8. Checkout safely.
-9. Receive order confirmation.
+**Epic: User Interaction**
 
-
-</details>
-
-<details>
-<summary>
- As a logged user, I would like to be able to:
-</summary>
-
-1. View order history.
-2. Update personal details. 
-
- 
-</details>
+| ID  | Content                                                                                                                                |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 24 | As a **user** I get alerts about any changes I have made so that I have a clear understanding of what has been completed/updated/removed      |
+| 25  | As a **user** I can connect to the social media sites so that I can follow them and keep up to date with their products and promotions |
+| 26  | As a **user** I can contact the bookstore so that I can find out any information that I require                                        |
+| 27 | As a **user** I can receive a contact confirmation email to let me know that my email has been sent                                    |
 
 
-<details>
-<summary>
- As an admin, I would like to be able to:
-</summary>
 
-1. Add a new product.
-2. Delete/Update product.
+**Epic: Accounts**
 
- 
-</details>
+| ID  | Content                                                                                                                  |
+| --- | ------------------------------------------------------------------------------------------------------------------------ |
+| 28  | As a **user** I can easily see if I'm logged-in or logged-out so that I can be sure what my status is                    |
+| 29  | As a **user** I can log in/out off my account if I wish so that I can connect or disconnect from the website             |
+| 30  | As a **user** I can register for an account so that I can use features for logged-in users                               |
+| 31  | As a **user** I can receive a confirmation email when creating an account so that I know the registration was successful |
+| 32  | As a **logged-in User** I can have my details saved so that I don't have to retype my address every time                 |
 
 ## 1. Strategy
 
