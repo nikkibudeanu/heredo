@@ -81,21 +81,14 @@
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                         </div>
+                        {% endif %}
                     </li>
 
-                    <li class="list-inline-item">
-                        <a href="{% url 'wishlist' %}" class="dropdown-item">        
-                            <div class="text-center">
-                                <div><i class="fas fa-heart"></i></div>
-                                <p class="my-0">Wishlist</p>
-                            </div>
-                        </a>
-                    </li>
-                    {% endif %}
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
