@@ -107,7 +107,9 @@
             </div>
             <div class="text-box">
               <h4>Olarescu Family</h4>
-              <p>With a dream to grow the inherited business, Cristina and Adrian founded Heredo in 2021. Already familiar with the wine-making culture, they were excited to get the chance to be the new stewards of the iconic red barn founded in 1990's by Cristina's Father. </p>
+              <p>With a dream to grow the inherited business, Cristina and Adrian founded Heredo in 2021. Already
+                familiar with the wine-making culture, they were excited to get the chance to be the new stewards of the
+                iconic red barn founded in 1990's by Cristina's Father. </p>
             </div>
           </div>
         </div>
@@ -119,27 +121,28 @@
 
   <section id="vineyards" class="sec-vineyards pt-5 pb-5">
     <div id="cards_landscape_wrap">
-    <div class="container">
-      <h2 class="main-title">Vineyards of Heredo</h2>
-      <div class="row">
-        <div class="col-lg-12 mb-2 ">
-          <div class="content">
-            <div class="image responsive">
-              <img src="{{ MEDIA_URL }}family.jpg" width="600px">
-            </div>
-            <div class="text-box">
-              <h3> Explore HEREDO vineyards</h3>
-              <p>Our estate vineyard sits at 1467 ft. along the Lipoveni valley in the shadow of the picturesque hills. 
-                It's situated on Gura Galbenei lands on Moldova's pride soil. <br>
-                It has the best sunset viewpoints.
+      <div class="container">
+        <h2 class="main-title">Vineyards of Heredo</h2>
+        <div class="row">
+          <div class="col-lg-12 mb-2 ">
+            <div class="content">
+              <div class="image responsive">
+                <img src="{{ MEDIA_URL }}family.jpg" width="600px">
+              </div>
+              <div class="text-box">
+                <h3> Explore HEREDO vineyards</h3>
+                <p>Our estate vineyard sits at 1467 ft. along the Lipoveni valley in the shadow of the picturesque
+                  hills.
+                  It's situated on Gura Galbenei lands on Moldova's pride soil. <br>
+                  It has the best sunset viewpoints.
 
-              </p>
+                </p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
-      </div>
+    </div>
     </div>
   </section>
 
@@ -175,82 +178,82 @@
         </div>
       </div>
       <br>
-      </div>
-      <div class="text-container">
-        <h2>Got a question or want to find out more about Heredo?</h2>
-        <br>
-        <a class="btn-outline-gold" href="{% url 'contact' %}"><span> Contact us <i
-              class="fas fa-store"></i></span></a>
-      </div>
+    </div>
+    <div class="text-container">
+      <h2>Got a question or want to find out more about Heredo?</h2>
+      <br>
+      <a class="btn-outline-gold" href="{% url 'contact' %}"><span> Contact us <i class="fas fa-store"></i></span></a>
+      <a class="btn-outline-gold" href="{% url 'faq_page' %}"><span> FAQ <i class="fas fa-store"></i></span></a>
+    </div>
 
-      <h2>Subscribe to the Heredo mailing list to get exclusive offers straight
-        to
-        your inbox!</h2>
+    <h2>Subscribe to the Heredo mailing list to get exclusive offers straight
+      to
+      your inbox!</h2>
 
   </section>
 
 
   <div id="cards_landscape_wrap">
 
-  <section id="gallery" class="sec-contact pt-5 pb-5">
-    <div id="container-gallery">
-      <h2 class="main-title">Heredo Gallery</h2>
-      <div class="gallery">
+    <section id="gallery" class="sec-contact pt-5 pb-5">
+      <div id="container-gallery">
+        <h2 class="main-title">Heredo Gallery</h2>
+        <div class="gallery">
 
-        <div class="gallery-item">
-          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="350px">
+          <div class="gallery-item">
+            <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="350px">
+          </div>
+
+          <div class="gallery-item">
+            <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="350px">
+          </div>
+
+          <div class="gallery-item">
+            <img class="gallery-image" src="{{ MEDIA_URL }}dami.jpeg" width="350px">
+          </div>
+
+          <div class="gallery-item">
+            <img class="gallery-image" src="{{ MEDIA_URL }}domi.jpeg" width="350px">
+          </div>
+
+          <div class="gallery-item">
+            <img class="gallery-image" src="{{ MEDIA_URL }}struguri.jpg" width="350px">
+          </div>
+
+          <div class="gallery-item">
+            <img class="gallery-image" src="{{ MEDIA_URL }}wine.jpg" width="350px">
+          </div>
+
         </div>
 
-        <div class="gallery-item">
-          <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="350px">
-        </div>
+    </section>
 
-        <div class="gallery-item">
-          <img class="gallery-image" src="{{ MEDIA_URL }}dami.jpeg" width="350px">
-        </div>
+    <footer class="footer">
+      <div class="container">
+        <ul class="list-inline mb-0 text-center">
+          <li class="list-inline-item">
+            <a href=""><span class="fa fa-twitter"></span></a>
+          </li>
 
-        <div class="gallery-item">
-          <img class="gallery-image" src="{{ MEDIA_URL }}domi.jpeg" width="350px">
-        </div>
+          <li class="list-inline-item">
+            <a href=""><span class="fa fa-google-plus"></span></a>
+          </li>
 
-        <div class="gallery-item">
-          <img class="gallery-image" src="{{ MEDIA_URL }}struguri.jpg" width="350px">
-        </div>
+          <li class="list-inline-item">
+            <a href=""><span class="fa fa-instagram"></span></a>
+          </li>
 
-        <div class="gallery-item">
-          <img class="gallery-image" src="{{ MEDIA_URL }}wine.jpg" width="350px">
-        </div>
+          <li class="list-inline-item">
+            <a href=""><span class="fa fa-envelope-o"></span></a>
+          </li>
 
+          <li class="list-inline-item">
+            <a href="{% url 'faq_page' %}"><span class="fas fa-question"></span></a>
+          </li>
+        </ul>
       </div>
-
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <ul class="list-inline mb-0 text-center">
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-twitter"></span></a>
-        </li>
-
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-google-plus"></span></a>
-        </li>
-
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-instagram"></span></a>
-        </li>
-
-        <li class="list-inline-item">
-          <a href=""><span class="fa fa-envelope-o"></span></a>
-        </li>
-
-        <li class="list-inline-item">
-          <a href="{% url 'faq_page' %}"><span class="fas fa-question"></span></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 
 
 

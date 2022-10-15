@@ -11,7 +11,7 @@ Check it out to find more about our vineyards and buy yourself a bottle or more 
 
  </p>
 
-<img  src="media/readme/mockup.png">
+<img  src="media/readme/mockup.jpg">
 
 
 Live app link [here](https://heredo.herokuapp.com/)

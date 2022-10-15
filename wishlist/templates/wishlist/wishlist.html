@@ -53,10 +53,6 @@
                                 </div>
                             </td>
                             <td>
-                                €{{ product.sort_price }}
-
-                            </td>
-                            <td>
                                 <div class="btn logo-font p-0">
 
                                     <a href="{% url 'remove_from_wishlist' product.id %}"
@@ -70,7 +66,7 @@
                     </tbody>
                 </table>
                 {% else %}
-                <p>No products in wishlist</p>
+                <p>No books in wishlist</p>
                 {% endif %}
             </div>
         </div>
