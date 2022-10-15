@@ -11,7 +11,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="text-black">{{ product.name }}</h2>
+            <h1 class="text-black">{{ product.name }}</h1>
             <hr class="w-50 mb-1 mx-auto">
         </div>
     </div>
@@ -27,7 +27,7 @@
     </div>
     <hr class="w-50 mb-1 mx-auto">
 
-    <div id="delivery-banner" class="row text-center">
+    <div id="delivery-banner" class="row ">
         <div class="col text-black">
             <h4 class="logo-font delivery my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
         </div>
@@ -35,7 +35,7 @@
     
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="image-container my-5">
+            <div class="image-container my-5 mx-3">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -48,9 +48,9 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-details-container mb-5 mt-md-5">
+            <div class="product-details-container mb-5 mt-md-5 text-left">
                 <p class="mb-0">{{ product.name }}</p>
-                <p class="lead mb-0 text-center font-weight-bold">${{ product.price }}</p>
+                <p class="lead mb-0 font-weight-bold">${{ product.price }}</p>
 
                 {% if product.year %}
                 <p class="small mt-1 mb-0">
