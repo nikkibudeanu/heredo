@@ -41,6 +41,10 @@ body{
 
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 .main-title{
   font-size: 3em;
@@ -820,10 +824,6 @@ body {
 
 .increment-qty, .decrement-qty {
     padding: .25rem .5rem !important;
-}
-
-.jumbotron-image{
-width: 200px;
 }
 
 }
