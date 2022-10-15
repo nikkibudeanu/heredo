@@ -11,7 +11,7 @@ Check it out to find more about our vineyards and buy yourself a bottle or more 
 
  </p>
 
-<img  src="media/readme/mockup.jpg">
+<img align=center width="500" src="media/readme/mockup.jpg">
 
 
 Live app link [here](https://heredo.herokuapp.com/)
@@ -25,22 +25,21 @@ Live app link [here](https://heredo.herokuapp.com/)
     3. [Strategy(##Strategy)
     4. [Scope](##Scope)
     5. [Structure](##Structure)
+       1. Existing Features
+       2. Potential Features
     6. [Skeleton](##Skeleton)
     7. [Surface](##Surface)
-3. [Features]
-    1. [Existing Features]
-    2. [Features to Implement in the future]
-4. [Issues and Bugs]
-5. [Technologies Used]
+3. [Issues and Bugs]
+4. [Technologies Used]
      1. [Frameworks, Libraries & Programs Used]
-6. [Testing](#Testing)
+5. [Testing](#Testing)
      1. [Testing.md]
-7. [Deployment](#Deployment)
-8. [Credits]
+6. [Deployment](#Deployment)
+7. [Credits]
      1. [Content]
      2. [static/Media]
      3. [Code]
-9. [Acknowledgements](#Acknowledgements)
+8. [Acknowledgements](#Acknowledgements)
 
 
 
@@ -90,6 +89,7 @@ Live app link [here](https://heredo.herokuapp.com/)
 | 25  | As a **user** I can connect to the social media sites so that I can follow them and keep up to date with their products and promotions |
 | 26  | As a **user** I can contact the bookstore so that I can find out any information that I require                                        |
 | 27 | As a **user** I can receive a contact confirmation email to let me know that my email has been sent                                    |
+| 38  | As a **logged-in User** I can save selected products to my whishlist for later purchase                                                |
 
 
 
@@ -97,11 +97,11 @@ Live app link [here](https://heredo.herokuapp.com/)
 
 | ID  | Content                                                                                                                  |
 | --- | ------------------------------------------------------------------------------------------------------------------------ |
-| 28  | As a **user** I can easily see if I'm logged-in or logged-out so that I can be sure what my status is                    |
-| 29  | As a **user** I can log in/out off my account if I wish so that I can connect or disconnect from the website             |
-| 30  | As a **user** I can register for an account so that I can use features for logged-in users                               |
-| 31  | As a **user** I can receive a confirmation email when creating an account so that I know the registration was successful |
-| 32  | As a **logged-in User** I can have my details saved so that I don't have to retype my address every time                 |
+| 29  | As a **user** I can easily see if I'm logged-in or logged-out so that I can be sure what my status is                    |
+| 30  | As a **user** I can log in/out off my account if I wish so that I can connect or disconnect from the website             |
+| 31 | As a **user** I can register for an account so that I can use features for logged-in users                               |
+| 32  | As a **user** I can receive a confirmation email when creating an account so that I know the registration was successful |
+| 33  | As a **logged-in User** I can have my details saved so that I don't have to retype my address every time                 |
 
 ## 1. Strategy
 
@@ -123,13 +123,144 @@ As a project owner, I would like to create :
 
 ## 3. Structure
 
-* The main Navbar  is fixed on top to facilitate Woofme users to navigate easily and pleasantly. 
-* Layout is clear to allow Heredo users to navigate easily. 
-* Login/Logout/Register options are present on the navbar to ensure that Woofme users can perform each of the actions easily.
-* Enabling website admin to add/delete/edit product if logged in. 
-* Home page with extra information about the winery and links to access the online store. 
-* A secure and straightforward payment system to ensure the user has a pleasant experience when buying our wine.
 
+### **Home Page**
+
+_Navigation bar - scroll down:_
+
+- The home page navigation menu is present on the hero section of the home page. It has scroll-links for the sections below.
+- Navigation bar has links for SHOP, ABOUT, VINEYARDS, CONTACT, GALLERY sections below.
+
+
+<p align="center">
+<img src="assets/documents/readme/main_nav" width="500" height="100%">
+</p>
+
+
+_Navigation bar- header:_
+
+1. _Account - Login/Register:_
+
+- The Login/Register feature is located in the upper right corner and offers the user to log in or register for an account as well as log out of the site
+- When the user is logged in links for 'Login' and 'Register' will change to 'My Profile', 'Logout' and Wishlist.
+- The admin user has extra access that allow them to add, update and remove products from the store and also questions in the FAQ.
+
+<p align="center">
+<img src="assets/documents/readme/login_icon.png" width="500" height="100%">
+</p>
+
+
+2. _Shopping bag:_
+
+- The bag is also situated on the top right corner of the site and it is always visible for the user throughout all the pages. With one click they can access their shopping bag to see what is in there, update quantity or remove product from cart.
+- The navbar is fully responsive.
+
+<p align="center">
+<img src="assets/documents/readme/bag_icon.png" width="500" height="100%">
+</p>
+
+
+_Footer:_
+
+- Appears on every page and contains Social links, FAQ quick link.
+- Social links are opened in a new tab to avoid dragging users from our site
+
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+### **User Profile**
+
+- A logged-in user can access the My account link, this page displayed links to personal details and previous orders.
+- The personal details page is where the user can update their default shipping/billing address, change email address and password
+- The previous order displays a list of all the orders previously made by the user
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+
+### **Wishlist**
+
+- Wishlist displays the list of items the user has saved to their wishlist, with the ability to remove the product
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+
+
+### **Admin**
+
+- Admin can preform full CRUD functionalliy without having to enter the default 'admin panel' from django
+- Admin can add Products from 'Products Managment' link in the account menu from the navigation bar
+- Admin can add FAQ's from 'FAQ's' link
+- Admin can edit/delete products from all products page and product details page
+- Admin can edit/delete FAQ from 'FAQ Managemnt' and FAQ's page.
+- Admin can mark Questions from FAQ as published or draft
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+
+
+### **All Products**
+
+- The All Products page shows all the products in Heredo store.
+- Each product has an image, year of harvest, rating and price, description.
+- Each product card is clickable and takes users to the product details page
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+
+### **Shop navbar**
+
+- All products, Wines, Gifts, Mistery box
+- Wines: Red wine, White and Rosé, Sparkling and Champagne
+- Gifts : Gift cards, Gifts
+- Mistery box
+
+### **Product Details Page**
+
+- The Product Details Page displays all the information about the product
+- Page main body of the page will display image, description, year of harvest, price, rating, name.
+- After the main body content user can select quantity and add it to the shopping bag or wishlist
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+### **Checkout Page**
+
+- Once the site users have made their last decision about what to purchase and they are happy with it. At the checkout the site user can enter and save their personal details and see a summary of what they are about to purchase before entering their card details
+- If the checkout was successful the user is taken to the 'payment success' page, which displays the order number and delivery details. They should also get an email.
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+### **Shopping Bag**
+
+- The shopping bag page provides an overview of all of the items added by the user
+- The information is displayed in a table that has product name, image, quantity, price and subtotal
+- The user can amend the quantity of each product and also remove it from this page
+- Buttons to proceed to the checkout or to back to shop are located at the end of the page
+
+<p align="center">
+<img src="assets/documents/readme/footer.png" width="500" height="100%">
+</p>
+
+
+
+## Future Features
+
+- Add review system
+- Stock app
+- Social accounts sign-on
 
 [Back to top ⇧](#)
 
@@ -239,10 +370,14 @@ All wireframes are creating using Figma.
 * Sprint 5
 
   + Setup Admin profiles: add/update/delete product
-  + Setup Real Time Email
+  + Setup Contact App
   + Heroku Deployment 
 
 * Sprint 6
+  + Setup FAQ App
+  + Setup Wishlist App
+
+* Sprint 7
 
   + Create final tests + TESTING file
   + README file
@@ -250,50 +385,6 @@ All wireframes are creating using Figma.
 </details>
 
 [Back to top ⇧](#)
-
-## Features
-
-1. Home Page
-* Shop section
-* About section
-* Vineyards section
-* Contact section
-* Gallery section
-* Footer
-
-2. Products Page
-
-3. Product detail page
-
-4. Admin Product management pages : 
-* add product page
-* edit product page
-* delete product button
-
-5. Bag Page
-
-6. Empty Bag Page
-
-7. Checkout success page. 
-
-8. Profile page.
-
-9. Allauth pages:
-* Login
-* Register
-
-10. Header nav:
-* Login button
-* Bag button
-[Back to top ⇧](#)
-
-## Future Features
-
-I would like to implement the following features: 
-
-
-[Back to top ⇧](#)
-
 
 ## Frameworks, Libraries & Programs Used
 [GitHub](https://github.com/) - Holds the repository of my project, GitHub connects to GitPod and Heroku.
@@ -336,7 +427,9 @@ All code validation and test details can be found [here](TESTING.md).
 
 | Bugs              | Solutions |
 | ---               | --------- |
-| When deploying, the website CSS and database were failing on Heroku. | Debug Update and transfer all data to Postgres. A model did not have a slug as per old migrations.
+| When deploying, the website CSS and database were failing on Heroku. | Debug Update and transfer all data to Postgres. A model did not have a field as per old migrations.|
+| Wishlist items were not rendering on the wishlist page| |
+|
 
 [Back to top ⇧](#)
 
@@ -646,7 +739,7 @@ Stripe is needed to handle the checkout process when a payment is made. You will
 
 ## Media
 
-+ Some pictures and images used in this project are from [Pexels](https://pexels.com) and some pictures are taken by me personally as this is my sister's winery.
++ Some pictures and images used in this project are from [Pexels](https://pexels.com) and some pictures are taken by me personally.
 
 ### Work based on other code
 
