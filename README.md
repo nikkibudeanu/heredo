@@ -5,8 +5,9 @@
 <p align=center>
 This project is the website for Heredo family, my family's winery founded back in 2000s. </br>
 We officially gave it a name last year and started branding this year. 
+Heredo is all about wine culture and family heritage. 
 </br>
-Heredo is all about wine culture and family heritage. Check it out to find more about our vineyards and buy yourself a bottle or more of good quality organic wine.
+Check it out to find more about our vineyards and buy yourself a bottle or more of good quality organic wine.
 
  </p>
 
