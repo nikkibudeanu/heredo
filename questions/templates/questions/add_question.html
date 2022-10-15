@@ -11,7 +11,7 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mx-auto pb-3">
             <hr>
             <h2 class="logo-font mb-4 mt-5">FAQ's Managment</h2>
             <h5 class="text-muted">Add Question & Answer</h5>
@@ -26,7 +26,7 @@
                 {{ form|crispy}}
                 <div class="text-right">
                     <a href="{% url 'add_faq' %}" class="btn logo-font btn-style rounded">Cancel</a>
-                    <button class="btn logo-font btn-style rounded" type="submit">Add FAQ</button>
+                    <button class="btn-outline-gold" type="submit">Add FAQ</button>
 
                 </div>
             </form>
@@ -78,7 +78,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-md-6 text-right mt-2 mb-5">
+        <div class="col-12 col-md-6 mt-2 mb-5 mx-auto pt-3">
             <a href="{% url 'admin_profile' %}" class="btn logo-font btn-style rounded">Back to Admin Profile</a>
             <a href="{% url 'faq_page' %}" class="btn logo-font btn-style rounded">FAQ's</a>
         </div>

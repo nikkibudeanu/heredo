@@ -6,6 +6,13 @@
 
 a{
   text-decoration: none;
+  color:#15133C
+}
+
+a:hover{
+    text-decoration: none;
+    color:#15133C
+
 }
 
 html{
@@ -259,6 +266,10 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.contact-button{
+padding: 10px;
 }
 
 #card-home{
