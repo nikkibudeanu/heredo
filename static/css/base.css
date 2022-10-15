@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 html{
     width: 100%;
     height: 100%;
@@ -64,7 +68,6 @@ a:hover {
   font-size: 1.375rem;
   padding-bottom: 0.625rem;
 }
-/* Sticks footer to bottom */
 
 /* Footer main */
 .ft-main {
@@ -87,24 +90,25 @@ a:hover {
   min-width: 12.5rem;
 }
 
-/* Footer main | Newsletter form */
-form {
-  display: flex;
-  flex-wrap: wrap;
-}
-input[type="email"] {
-  border: 0;
-  padding: 0.625rem;
-  margin-top: 0.3125rem;
-}
-input[type="submit"] {
+/* Mailchimp | Newsletter form */
+.mailchimp-button {
   background-color: #EC994B;
-  color: #fff;
+  color: #15133C;
   cursor: pointer;
-  border: 0;
   padding: 0.625rem 0.9375rem;
   margin-top: 0.3125rem;
 }
+
+.mailchimp-button:hover {
+  background-color: #EC9947;
+}
+
+#mc_embed_signup {
+  background: #15133C;
+  clear: left;
+  font: 14px;
+}
+
 /* Footer social */
 .ft-social {
   padding: 0 1.875rem 1.25rem;

@@ -30,10 +30,10 @@
               <a class="nav-link page-scroll ml-4" href="#vineyards">Vineyards </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll ml-4" href="#contact">Contact</a>
+              <a class="nav-link page-scroll ml-4" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll ml-4" href="#gallery">Gallery</a>
+              <a class="nav-link page-scroll ml-4" href="#contact">Contact</a>
             </li>
 
           </ul>
@@ -144,189 +144,193 @@
 
   <hr>
 
-  <div id="contact" class="sec-contact pt-5 pb-5">
-    <div class="container">
-      <h2 class="main-title">Contact us</h2>
-      <div class="contact-info">
-        <div class="card" id="card-home">
-          <i class="icon fas fa-envelope"></i>
-          <div class="card-content">
-            <h3>Email</h3>
-            <span>heredo@gmail.com</span>
-          </div>
-        </div>
-
-        <div class="card " id="card-home">
-          <i class="icon fas fa-phone"></i>
-          <div class="card-content">
-            <h3>Phone Number</h3>
-            <span>+373601198866</span>
-          </div>
-        </div>
-
-        <div class="card" id="card-home">
-          <i class="icon fas fa-map-marker-alt"></i>
-          <div class="card-content">
-            <h3>Location</h3>
-            <span>Republic of Moldova</span>
-          </div>
-        </div>
-      </div>
-      <br>
-    </div>
-    <div class="text-container">
-      <h2>Got a question or want to find out more about Heredo?</h2>
-      <br>
-      <a class="btn-outline-gold" href="{% url 'contact' %}"><span> Contact us <i class="fas fa-store"></i></span></a>
-      <a class="btn-outline-gold" href="{% url 'faq_page' %}"><span> FAQ <i class="fas fa-store"></i></span></a>
-    </div>
-
-    <h2>Subscribe to the Heredo mailing list to get exclusive offers straight
-      to
-      your inbox!</h2>
-
-    </div>
-
-
   <div id="cards_landscape_wrap">
 
-    <div id="gallery" class="sec-contact pt-5 pb-5">
+    <section id="gallery" class="sec-contact pt-5 pb-5 ">
       <div id="container-gallery">
         <h2 class="main-title">Heredo Gallery</h2>
         <div class="gallery">
 
           <div class="gallery-item">
-            <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="350px">
+            <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="250px">
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="350px">
+            <img class="gallery-image" src="{{ MEDIA_URL }}family.jpg" width="250px">
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src="{{ MEDIA_URL }}dami.jpeg" width="350px">
+            <img class="gallery-image" src="{{ MEDIA_URL }}dami.jpeg" width="250px">
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src="{{ MEDIA_URL }}domi.jpeg" width="350px">
+            <img class="gallery-image" src="{{ MEDIA_URL }}domi.jpeg" width="250px">
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src="{{ MEDIA_URL }}struguri.jpg" width="350px">
+            <img class="gallery-image" src="{{ MEDIA_URL }}struguri.jpg" width="250px">
           </div>
 
           <div class="gallery-item">
-            <img class="gallery-image" src="{{ MEDIA_URL }}wine.jpg" width="350px">
+            <img class="gallery-image" src="{{ MEDIA_URL }}wine.jpg" width="250px">
           </div>
 
         </div>
 
       </div>
 
-  </div>
+    </section>
+
+    <div id="contact" class="sec-contact pt-5 pb-5">
+      <div class="container">
+        <h2 class="main-title">Contact us</h2>
+        <div class="contact-info">
+          <div class="card" id="card-home">
+            <i class="icon fas fa-envelope"></i>
+            <div class="card-content">
+              <h3>Email</h3>
+              <span>heredo@gmail.com</span>
+            </div>
+          </div>
+  
+          <div class="card " id="card-home">
+            <i class="icon fas fa-phone"></i>
+            <div class="card-content">
+              <h3>Phone Number</h3>
+              <span>+373601198866</span>
+            </div>
+          </div>
+  
+          <div class="card" id="card-home">
+            <i class="icon fas fa-map-marker-alt"></i>
+            <div class="card-content">
+              <h3>Location</h3>
+              <span>Republic of Moldova</span>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-2 ">
+          <div class="content">
+            <p>Got a question? We're here to answer!</p>
+            <a class="contact-button" href="{% url 'faq_page' %}"><span> FAQ </span></a>
+            </div>
+            </div>
+            <div class="col-lg-12 mb-2 ">
+              <div class="content">
+            <p>If you don't find an answer, drop us a message!</p>
+            <a class="contact-button" href="{% url 'contact' %}"><span> Contact us </i></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
 
 
+    {% endblock %}
 
-  {% endblock %}
+    {% block postloadjs %}
+    {{ block.super }}
 
-  {% block postloadjs %}
-  {{ block.super }}
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      $(() => {
+        $('a[href*="#"]:not([href="#"])').click((e) => {
+          const target = $(e.target.hash);
 
-  <script type="text/javascript">
-    $(() => {
-      $('a[href*="#"]:not([href="#"])').click((e) => {
-        const target = $(e.target.hash);
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
 
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-
-          return false;
-        }
+            return false;
+          }
+        });
       });
-    });
 
-    //scroll animation about page
+      //scroll animation about page
 
-    ScrollReveal({
-      reset: true,
-      distance: '100px',
-      duration: 2500,
-    });
+      ScrollReveal({
+        reset: true,
+        distance: '100px',
+        duration: 2500,
+      });
 
-    //target elements, and specify options to create reveal animations
-    ScrollReveal().reveal('.sec-about .image', {
-      delay: 300,
-      origin: 'left'
-    });
-    ScrollReveal().reveal('.text-box', {
-      delay: 300,
-      origin: 'right'
-    });
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.sec-about .image', {
+        delay: 300,
+        origin: 'left'
+      });
+      ScrollReveal().reveal('.text-box', {
+        delay: 300,
+        origin: 'right'
+      });
 
-    //code pen https://codepen.io/sebastian-szyja/pen/QWwxZEq
-    var TxtRotate = function (el, toRotate, period) {
-      this.toRotate = toRotate;
-      this.el = el;
-      this.loopNum = 0;
-      this.period = parseInt(period, 10) || 2000;
-      this.txt = '';
-      this.tick();
-      this.isDeleting = false;
-    };
-
-    TxtRotate.prototype.tick = function () {
-      var i = this.loopNum % this.toRotate.length;
-      var fullTxt = this.toRotate[i];
-
-      if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-
-      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-      var that = this;
-      var delta = 300 - Math.random() * 100;
-
-      if (this.isDeleting) {
-        delta /= 2;
-      }
-
-      if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-      } else if (this.isDeleting && this.txt === '') {
+      //code pen https://codepen.io/sebastian-szyja/pen/QWwxZEq
+      var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
         this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-      }
+      };
 
-      setTimeout(function () {
-        that.tick();
-      }, delta);
-    };
+      TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
-    window.onload = function () {
-      var elements = document.getElementsByClassName('text-rotate');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-      }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".text-rotate > .wrap { border-right: 0.08em solid #666 }";
-      document.body.appendChild(css);
-    };
-  </script>
-  {% endblock %}
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName('text-rotate');
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-rotate');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".text-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+      };
+    </script>
+    {% endblock %}
 </body>
