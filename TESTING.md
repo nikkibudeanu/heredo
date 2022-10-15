@@ -46,7 +46,9 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 ### **Register**
-| 1 | Click register navbar button | To be directed to the Register Page|
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
+| 1 | Click register navbar button | To be directed to the Register Page. |
 | 2 | Click register button on page when data is invalid| Receive and alert|
 | 3 | Click register button on page when data is valid| To be directed to verification email page|
 | 4 | Click link in the email .| To be directed to a verify email page|
@@ -54,7 +56,8 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 ### **Product page**
-
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
 | 1 | Click card | To be directed to the product detail page|
 | 2 | As an admin: click remove button on products | To receive an alert for removed button|
 | 3 | As an admin: click update button on products | To receive an alert that you are updating a product and to be redirected to edit product page|
@@ -63,7 +66,8 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 ### **Product Detail page**
-
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
 | 1 | Click add to bag button | To receive an alert that an item is added to bag|
 | 2 | Click the increment/decrement icons| To update the quantity.|
 | 3 | Click back to shop button| To be directed to the products page|
@@ -73,7 +77,8 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 ### **Bag**
-
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
 | 1 | Click update button | To see the quantity updating and receive and alert.|
 | 2 | Click remove button| To remove item from bag and receive an alert.|
 | 3 | Click Secure Checkout button on bag page| To be directed to the checkout page.|
@@ -81,36 +86,43 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 ### **Checkout**
-
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
 | 1 | Click complete order button when fields are empty.| To receive an alert.|
 | 2 | Click Adjust bag button| To be directed to the bag page.|
 
 
  ### **Profile**
-
- | 1 | Click update information button  | To be save the new information|
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
+| 1 | Click update information button  | To be save the new information|
 | 2 | Click order number| To be directer to a order summary page.|
 | 3 | Click back to profile button on order summary page.| To be directed to the profile page.|
 
 
  ### **Admin Panel**
-
- | 2 | Click FAQ | To be directed to the FAQ page|
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
+ | 1 | Click FAQ | To be directed to the FAQ page|
 
 
  ### **Admin Product Management Page**
- | 1 | Click products book button | To be directed to the add a product page.|
- | 2 | Click Back to admin Pannel button | To be directed to the admin pannel|
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
+| 1 | Click products book button | To be directed to the add a product page.|
+| 2 | Click Back to admin Pannel button | To be directed to the admin pannel|
 
 ### **Home page navbar and buttons**
-
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
 | 1 | Click each nav item| To be scrolled down to the section|
 | 2 | Click shop and login button on shop section| To be directed to account login and products pages.|
 | 3 | Click contact button| To be directed to the contact page|
 | 4 | Click faq button| To be directed to the faq page|
 
 ### **Shop navbar menu **
-
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
 | 1 | Click each dropdown button | To collapse dropdown items|
 | 2 | Click red wine link| To be rendered only the red wine products| - performed for all wines and gifts|
 | 3| Click by price link| To be rendered only the products from cheapest to most expensive|
@@ -119,7 +131,8 @@ Manual tests were conducted on the other apps and the ones mentioned above too.
 
 
 ### **Footer** 
-
+| Test Case Id | Description | RESULT|
+|:----:|:----:|:----:|
 | Test | Description | RESULT|
 |:----:|:----:|:----:|
 | 1 | Click on the social media buttons| To be directed to social media pages. |

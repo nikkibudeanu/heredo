@@ -314,8 +314,7 @@ All wireframes are creating using Figma.
 
 * Font selection
 
-
-<img width="500" src="media/readme/fonts.png">
+For this project, I have used Oswald for the body and Noto Serif for the headings and links. 
 
 [Back to top ⇧](#)
 
@@ -327,7 +326,8 @@ All wireframes are creating using Figma.
 **Agile Methodology**
 
 
-<img width="500" src="media/readme/agile.png">
+
+Atlassian project board [here](https://heredo.atlassian.net/jira/software/projects/HEREDO/boards/1/roadmap?shared=&atlOrigin=eyJpIjoiNDZlNjIwYTY5M2VhNGU0ZWIyYzQxMTRkOWQyODdkNjgiLCJwIjoiaiJ9)
 
 
 <details>
@@ -418,8 +418,13 @@ All code validation and test details can be found [here](TESTING.md).
 | Bugs              | Solutions |
 | ---               | --------- |
 | When deploying, the website CSS and database were failing on Heroku. | Debug Update and transfer all data to Postgres. A model did not have a field as per old migrations.|
-| Wishlist items were not rendering on the wishlist page| |
-|
+
+
+## Unsolved bugs:
+
+* Wishlist button is collecting the data in the DB as per django admin pannel, but it is not rendering it on the wishlist page.
+
+
 
 [Back to top ⇧](#)
 
@@ -727,15 +732,17 @@ Stripe is needed to handle the checkout process when a payment is made. You will
 
 # Credits
 
+
+
 ## Media
 
 + Some pictures and images used in this project are from [Pexels](https://pexels.com) and some pictures are taken by me personally.
+
++ The jumotron background video is taken from Pexels.
 
 ### Work based on other code
 
 
 [Back to top ⇧](#)
 
-# Acknowledgements
 
-[Back to top ⇧](#)
