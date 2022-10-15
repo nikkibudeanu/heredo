@@ -21,14 +21,19 @@ Live app link [here](https://heredo.herokuapp.com/)
 ## Table of contents
 1. [Introduction](#Introduction)
 2. [UX](#UX)
-    1. [User Stories](###User Stories)
-    3. [Strategy(##Strategy)
+    1. [User Stories](###UserStories)
+    3. [Strategy](##Strategy)
     4. [Scope](##Scope)
     5. [Structure](##Structure)
-       1. Existing Features
-       2. Potential Features
+       1. [Existing Features](##ExistingFeatures)
+       2. [Potential Features](##FutureFeatures)
     6. [Skeleton](##Skeleton)
     7. [Surface](##Surface)
+3.[Sitemap](#sitemap)
+  [Wireframes](#wireframes)
+ [Database schema](#database-schema)
+ [Business Model](#business-model)
+[Marketing](#marketing)
 3. [Issues and Bugs]
 4. [Technologies Used]
      1. [Frameworks, Libraries & Programs Used]
@@ -122,6 +127,8 @@ As a project owner, I would like to create :
 [Back to top ⇧](#)
 
 ## 3. Structure
+
+### Existing Features
 
 
 ### **Home Page**
@@ -317,6 +324,29 @@ All wireframes are creating using Figma.
 For this project, I have used Oswald for the body and Noto Serif for the headings and links. 
 
 [Back to top ⇧](#)
+
+
+# Database schema
+
+<p align="center">
+<img src="assets/documents/readme/database_schema.png" width="1000" height="100%">
+</p>
+
+
+# Marketing 
+- Links to all the social media sites can be found both inside the footer.
+- The newsletter sign up form can also be found in the footer
+- The Facebook link takes you to the Heredo business page which can be found [here](https://www.facebook.com/heredo.md).
+
+
+# Search Engine Optimisation
+I have created a sitemap.xml and robots.txt file to help aid search engines locate the site. To keep user's information safe, any pages that could contain sensitive information has been disallowed in the robots.txt.
+
+
+# Business Model
+
+The business model for this store would be a B2C (Business to Customer) model, as the business would be selling products directly from themselves to the customer
+
 
 ## Functional Scope 
 **Heredo Flowchart**
@@ -746,3 +776,6 @@ Stripe is needed to handle the checkout process when a payment is made. You will
 [Back to top ⇧](#)
 
 
+## Acknowledgements
+
+- Big thanks to everybody from the Code Institute Slack community 
