@@ -92,6 +92,11 @@ body{
   margin-bottom: 10px;
 }
 
+#upper-nav{
+  display:flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
 
 
 #topNav{
