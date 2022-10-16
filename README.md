@@ -774,7 +774,7 @@ Stripe is needed to handle the checkout process when a payment is made. You will
 
 + I have used CodePen for inspiration for many of my features.
 
-The one below is for the text animation on the home page, in the shop section.
+The one below is for the text animation on the home page, in the shop section.<br>
 https://codepen.io/sebastian-szyja/pen/QWwxZEq
 
 
