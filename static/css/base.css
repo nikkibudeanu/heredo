@@ -914,15 +914,6 @@ body {
 display:none;
 }
 
-
-.content .image{
-display: none;
-}
-
-.content .image img{
-display: none;
-}
-
 .content .text-box{
   transform: none;
 }
