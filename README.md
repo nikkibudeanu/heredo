@@ -19,8 +19,8 @@ Live app link [here](https://heredo.herokuapp.com/)
 
 
 ## Table of contents
-1. [Introduction](#Introduction)
-2. [UX](#UX)
+
+1. [UX](#ux)
     1. [User Stories](###UserStories)
     3. [Strategy](##Strategy)
     4. [Scope](##Scope)
@@ -29,23 +29,25 @@ Live app link [here](https://heredo.herokuapp.com/)
        2. [Potential Features](##FutureFeatures)
     6. [Skeleton](##Skeleton)
     7. [Surface](##Surface)
-3.[Sitemap](#sitemap)
-  [Wireframes](#wireframes)
- [Database schema](#database-schema)
- [Business Model](#business-model)
-[Marketing](#marketing)
-3. [Issues and Bugs]
-4. [Technologies Used]
-     1. [Frameworks, Libraries & Programs Used]
-5. [Testing](#Testing)
+
+2. [Sitemap](#sitemap)
+3. [Wireframes](#wireframes)
+4. [Database schema](#database-schema)
+5. [Business Model](#business-model)
+6. [Marketing](#marketing)
+7. [Issues and Bugs]
+8. [Technologies Used](#technologies-used)
+    1. [Frameworks, Libraries & Programs Used]
+9. [Testing](#Testing)
      1. [Testing.md]
-6. [Deployment](#Deployment)
-7. [Credits]
+10. [Deployment](#deployment)
+
+8. [Credits](#credits)
+9. [Credits]
      1. [Content]
      2. [static/Media]
      3. [Code]
-8. [Acknowledgements](#Acknowledgements)
-
+10. [Acknowledgements](#Acknowledgements)
 
 
 ## UX
