@@ -332,7 +332,6 @@ footer a:hover {
     max-width: 400px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transform: translate(-80px, 50px);
 }
 
 .content .text-box h4 {
