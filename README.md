@@ -107,7 +107,7 @@ _Navigation bar - scroll down:_
 
 
 <p align="center">
-<img src="assets/documents/readme/home_page.png" width="500" height="100%">
+<img src="media/readme/home_page.png" width="500" height="100%">
 </p>
 
 
@@ -120,7 +120,7 @@ _Navigation bar- header:_
 - The admin user has extra access that allow them to add, update and remove products from the store and also questions in the FAQ.
 
 <p align="center">
-<img src="assets/documents/readme/main_nav.png" width="500" height="100%">
+<img src="media/readme/main_nav.png" width="500" height="100%">
 </p>
 
 
@@ -137,7 +137,7 @@ _Footer:_
 
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="media/readme/footer.png" width="500" height="100%">
 </p>
 
 ### **User Profile**
@@ -147,11 +147,11 @@ _Footer:_
 - The previous order displays a list of all the orders previously made by the user
 
 <p align="center">
-<img src="assets/documents/readme/logreg.png" width="500" height="100%">
+<img src="media/readme/logreg.png" width="500" height="100%">
 </p>
 
 <p align="center">
-<img src="assets/documents/readme/profile.png" width="500" height="100%">
+<img src="media/readme/profile.png" width="500" height="100%">
 </p>
 
 
@@ -165,18 +165,18 @@ _Footer:_
 - Admin can mark Questions from FAQ as published or draft
 
 <p align="center">
-<img src="assets/documents/readme/admin-panel.png" width="500" height="100%">
+<img src="media/readme/admin-panel.png" width="500" height="100%">
 </p>
 
 If FAQ management was selected, you will be directed to this page. 
 <p align="center">
-<img src="assets/documents/readme/faqm.png" width="500" height="100%">
+<img src="media/readme/faqm.png" width="500" height="100%">
 </p>
 
 If Product management was selected, you will be directed to this page, where you need to select to add a product or edit an existing product. 
 
 <p align="center">
-<img src="assets/documents/readme/prodm.png" width="500" height="100%">
+<img src="media/readme/prodm.png" width="500" height="100%">
 </p>
 
 
@@ -189,7 +189,7 @@ If Product management was selected, you will be directed to this page, where you
 - Each product card is clickable and takes users to the product details page
 
 <p align="center">
-<img src="assets/documents/readme/shop.png" width="500" height="100%">
+<img src="media/readme/shop.png" width="500" height="100%">
 </p>
 
 
@@ -201,7 +201,7 @@ If Product management was selected, you will be directed to this page, where you
 - Mistery box
 
 <p align="center">
-<img src="assets/documents/readme/shop-nav.png" width="500" height="100%">
+<img src="media/readme/shop-nav.png" width="500" height="100%">
 </p>
 
 ### **Product Details Page**
@@ -211,7 +211,7 @@ If Product management was selected, you will be directed to this page, where you
 - After the main body content user can select quantity and add it to the shopping bag or wishlist
 
 <p align="center">
-<img src="assets/documents/readme/details.png" width="500" height="100%">
+<img src="media/readme/details.png" width="500" height="100%">
 </p>
 
 ### **Checkout Page**
@@ -220,13 +220,13 @@ If Product management was selected, you will be directed to this page, where you
 - If the checkout was successful the user is taken to the 'payment success' page, which displays the order number and delivery details. They should also get an email.
 
 <p align="center">
-<img src="assets/documents/readme/checkout.png" width="500" height="100%">
+<img src="media/readme/checkout.png" width="500" height="100%">
 </p>
 
 If a payment is succesful, a user is directed to a 'thank you'  page. 
 
 <p align="center">
-<img src="assets/documents/readme/thank.png" width="500" height="100%">
+<img src="media/readme/thank.png" width="500" height="100%">
 </p>
 
 ### **Shopping Bag**
@@ -237,7 +237,7 @@ If a payment is succesful, a user is directed to a 'thank you'  page.
 - Buttons to proceed to the checkout or to back to shop are located at the end of the page
 
 <p align="center">
-<img src="assets/documents/readme/fbag.png" width="500" height="100%">
+<img src="media/readme/fbag.png" width="500" height="100%">
 </p>
 
 
@@ -246,7 +246,7 @@ If a payment is succesful, a user is directed to a 'thank you'  page.
 - On this page , questions and answers are displayed on cards. 
 
 <p align="center">
-<img src="assets/documents/readme/faq.png" width="500" height="100%">
+<img src="media/readme/faq.png" width="500" height="100%">
 </p>
 
 
@@ -255,15 +255,12 @@ If a payment is succesful, a user is directed to a 'thank you'  page.
 - The contact page is a form of 3 fields : email, name, text.
 
 <p align="center">
-<img src="assets/documents/readme/contact.png" width="500" height="100%">
+<img src="media/readme/contact.png" width="500" height="100%">
 </p>
 
 <p align="center">
-<img src="assets/documents/readme/faq.png" width="500" height="100%">
+<img src="media/readme/faq.png" width="500" height="100%">
 </p>
-
-
-
 
 
 ## Future Features
@@ -308,7 +305,7 @@ All wireframes are creating using Figma.
 
 <img width="500" src="media/readme/wireframes/Checkout.png">
 
-
+No wireframes for Contact/Wishlist/FAQ as these apps were added at a later stage of the project.
 
 
 [Back to top ⇧](#)
@@ -332,7 +329,7 @@ For this project, I have used Oswald for the body and Noto Serif for the heading
 # Database schema
 
 <p align="center">
-<img src="assets/documents/readme/database_schema.png" width="1000" height="100%">
+<img src="media/readme/database_schema.png" width="1000" height="100%">
 </p>
 
 
