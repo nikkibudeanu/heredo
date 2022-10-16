@@ -21,15 +21,6 @@ Live app link [here](https://heredo.herokuapp.com/)
 ## Table of contents
 
 1. [UX](#ux)
-    1. [User Stories](###user-stories)
-    3. [Strategy](##strategy)
-    4. [Scope](##scope)
-    5. [Structure](##structure)
-       1. [Existing Features](##existing-features)
-       2. [Potential Features](##future-features)
-    6. [Skeleton](##skeleton)
-    7. [Surface](##surface)
-
 2. [Sitemap](#sitemap)
 3. [Wireframes](#wireframes)
 4. [Database schema](#database-schema)
