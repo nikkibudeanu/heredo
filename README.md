@@ -107,7 +107,7 @@ _Navigation bar - scroll down:_
 
 
 <p align="center">
-<img src="assets/documents/readme/main_nav" width="500" height="100%">
+<img src="assets/documents/readme/home_page.png" width="500" height="100%">
 </p>
 
 
@@ -120,7 +120,7 @@ _Navigation bar- header:_
 - The admin user has extra access that allow them to add, update and remove products from the store and also questions in the FAQ.
 
 <p align="center">
-<img src="assets/documents/readme/login_icon.png" width="500" height="100%">
+<img src="assets/documents/readme/main_nav.png" width="500" height="100%">
 </p>
 
 
@@ -129,14 +129,10 @@ _Navigation bar- header:_
 - The bag is also situated on the top right corner of the site and it is always visible for the user throughout all the pages. With one click they can access their shopping bag to see what is in there, update quantity or remove product from cart.
 - The navbar is fully responsive.
 
-<p align="center">
-<img src="assets/documents/readme/bag_icon.png" width="500" height="100%">
-</p>
-
 
 _Footer:_
 
-- Appears on every page and contains Social links, FAQ quick link.
+- Appears on every page and contains Social links and newsletter form.
 - Social links are opened in a new tab to avoid dragging users from our site
 
 
@@ -151,23 +147,17 @@ _Footer:_
 - The previous order displays a list of all the orders previously made by the user
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="assets/documents/readme/logreg.png" width="500" height="100%">
 </p>
-
-
-### **Wishlist**
-
-- Wishlist displays the list of items the user has saved to their wishlist, with the ability to remove the product
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="assets/documents/readme/profile.png" width="500" height="100%">
 </p>
-
 
 
 ### **Admin**
 
-- Admin can preform full CRUD functionalliy without having to enter the default 'admin panel' from django
+- Admin can perform full CRUD functionalliy without having to enter the default 'admin panel' from django
 - Admin can add Products from 'Products Managment' link in the account menu from the navigation bar
 - Admin can add FAQ's from 'FAQ's' link
 - Admin can edit/delete products from all products page and product details page
@@ -175,8 +165,20 @@ _Footer:_
 - Admin can mark Questions from FAQ as published or draft
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="assets/documents/readme/admin-panel.png" width="500" height="100%">
 </p>
+
+If FAQ management was selected, you will be directed to this page. 
+<p align="center">
+<img src="assets/documents/readme/faqm.png" width="500" height="100%">
+</p>
+
+If Product management was selected, you will be directed to this page, where you need to select to add a product or edit an existing product. 
+
+<p align="center">
+<img src="assets/documents/readme/prodm.png" width="500" height="100%">
+</p>
+
 
 
 
@@ -187,7 +189,7 @@ _Footer:_
 - Each product card is clickable and takes users to the product details page
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="assets/documents/readme/shop.png" width="500" height="100%">
 </p>
 
 
@@ -198,6 +200,10 @@ _Footer:_
 - Gifts : Gift cards, Gifts
 - Mistery box
 
+<p align="center">
+<img src="assets/documents/readme/shop-nav.png" width="500" height="100%">
+</p>
+
 ### **Product Details Page**
 
 - The Product Details Page displays all the information about the product
@@ -205,7 +211,7 @@ _Footer:_
 - After the main body content user can select quantity and add it to the shopping bag or wishlist
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="assets/documents/readme/details.png" width="500" height="100%">
 </p>
 
 ### **Checkout Page**
@@ -214,7 +220,13 @@ _Footer:_
 - If the checkout was successful the user is taken to the 'payment success' page, which displays the order number and delivery details. They should also get an email.
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="assets/documents/readme/checkout.png" width="500" height="100%">
+</p>
+
+If a payment is succesful, a user is directed to a 'thank you'  page. 
+
+<p align="center">
+<img src="assets/documents/readme/thank.png" width="500" height="100%">
 </p>
 
 ### **Shopping Bag**
@@ -225,8 +237,32 @@ _Footer:_
 - Buttons to proceed to the checkout or to back to shop are located at the end of the page
 
 <p align="center">
-<img src="assets/documents/readme/footer.png" width="500" height="100%">
+<img src="assets/documents/readme/fbag.png" width="500" height="100%">
 </p>
+
+
+### **FAQ**
+
+- On this page , questions and answers are displayed on cards. 
+
+<p align="center">
+<img src="assets/documents/readme/faq.png" width="500" height="100%">
+</p>
+
+
+### **Contact**
+
+- The contact page is a form of 3 fields : email, name, text.
+
+<p align="center">
+<img src="assets/documents/readme/contact.png" width="500" height="100%">
+</p>
+
+<p align="center">
+<img src="assets/documents/readme/faq.png" width="500" height="100%">
+</p>
+
+
 
 
 
