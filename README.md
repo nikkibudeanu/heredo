@@ -20,8 +20,6 @@ Live app link [here](https://heredo.herokuapp.com/)
 ## UX
 
 
-
-
 ### User Stories
 
 **Epic: Admin/Store Owner**

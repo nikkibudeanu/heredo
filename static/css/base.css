@@ -751,7 +751,7 @@ color:#EFEFEF;
   color: #6c757d; /* text-secondary */
 }
 
-.allauth-form-inner-content input:not([for='id_remember'])  {
+.allauth-form-inner-content input {
   border: none;
   border-bottom: 2px solid #e9e9e9;
   color: #15133C;
@@ -760,6 +760,7 @@ color:#EFEFEF;
   transition: border-color 0.3s;
   width: 80%;
 }
+
 
 .allauth-form-inner-content input:focus{
   border-bottom: 2px solid #c0c0c0;
