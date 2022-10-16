@@ -255,7 +255,9 @@
         });
       });
 
-      //scroll animation about page
+      if(window.innerWidth > 600){
+
+      //scroll animation about/vineyards page
       ScrollReveal({
         reset: true,
         distance: '100px',
@@ -271,6 +273,7 @@
         delay: 300,
         origin: 'right'
       });
+    };
 
       var TxtRotate = function (el, toRotate, period) {
         this.toRotate = toRotate;
@@ -281,6 +284,7 @@
         this.tick();
         this.isDeleting = false;
       };
+
 
       TxtRotate.prototype.tick = function () {
         var i = this.loopNum % this.toRotate.length;
