@@ -244,25 +244,27 @@ HTML Validation not perfomed as W3 is not configured for django HTML files and a
 
 ## JavaScript Code Validation
 
-### **add review js** 
+The only errors are linked to JQUERY $ sign. Please see below.
+
+### **home** 
 
 <p float="left">
-        <img src="media/readme/validation/add-review-js-valid.png" width="40%" />
+        <img src="media/readme/jshint/home.png" width="40%" />
 </p>
 
-### **script js** 
+### **stripe** 
 
 
 <p float="left">
-        <img src="media/readme/validation/script-js-valid.png" width="40%" />
+        <img src="media/readme/jshint/stripe.png" width="40%" />
 </p>
 
 
-### **toollip js** 
+### **countryfield** 
 
 
 <p float="left">
-        <img src="media/readme/validation/toolip-js-valid.png" width="40%" />
+        <img src="media/readme/jshint/profiles.png" width="40%" />
 </p>
 
 
