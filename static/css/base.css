@@ -115,6 +115,28 @@ body{
 }
 
 
+#topNav{
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#topNav a{
+  font-family: 'Oswald', sans-serif;
+  color: #EC9947;
+  font-size: 2.5rem;
+  text-transform:uppercase;
+  word-spacing: 50px;
+}
+
+#topNav a:hover{
+  text-shadow: none;
+}
+
+
+
 
 /* Contact info section*/
 
@@ -257,27 +279,6 @@ footer a:hover {
   flex-wrap: nowrap;
 }
 
-
-#topNav{
-  position: relative;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#topNav a{
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-  font-size: 2.5rem;
-  text-transform:uppercase;
-  word-spacing: 50px;
-}
-
-#topNav a:hover{
-  text-shadow: none;
-}
-
 #card-home{
   position: relative;
   flex: 1;
@@ -332,10 +333,7 @@ footer a:hover {
 }
 
 
-.delivery{
-  font-style: italic;
-  font-size: 20px;
-}
+
 
 
 @media screen and (max-width:900px){
@@ -348,8 +346,10 @@ footer a:hover {
 
 
 /* products page */
-
-
+.delivery{
+  font-style: italic;
+  font-size: 20px;
+}
 
 .card {
   max-width: 300px;
