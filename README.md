@@ -17,30 +17,6 @@ Check it out to find more about our vineyards and buy yourself a bottle or more 
 Live app link [here](https://heredo.herokuapp.com/)
 
 
-
-## Table of contents
-
-1. [UX](#ux)
-2. [Sitemap](#sitemap)
-3. [Wireframes](#wireframes)
-4. [Database schema](#database-schema)
-5. [Business Model](#business-model)
-6. [Marketing](#marketing)
-7. [Issues and Bugs]
-8. [Technologies Used](#technologies-used)
-    1. [Frameworks, Libraries & Programs Used]
-9. [Testing](#Testing)
-     1. [Testing.md]
-10. [Deployment](#deployment)
-
-8. [Credits](#credits)
-9. [Credits]
-     1. [Content]
-     2. [static/Media]
-     3. [Code]
-10. [Acknowledgements](#acknowledgements)
-
-
 ## UX
 
 
