@@ -11,7 +11,7 @@ Check it out to find more about our vineyards and buy yourself a bottle or more 
 
  </p>
 
-<img align=center width="500" src="media/readme/mockup.jpg">
+<img width="500" src="media/readme/mockup.jpg">
 
 
 Live app link [here](https://heredo.herokuapp.com/)
@@ -120,7 +120,7 @@ _Navigation bar- header:_
 - The admin user has extra access that allow them to add, update and remove products from the store and also questions in the FAQ.
 
 <p align="center">
-<img src="media/readme/main_nav.png" width="500" height="100%">
+<img src="media/readme/main-nav.png" width="500" height="100%">
 </p>
 
 
@@ -237,7 +237,7 @@ If a payment is succesful, a user is directed to a 'thank you'  page.
 - Buttons to proceed to the checkout or to back to shop are located at the end of the page
 
 <p align="center">
-<img src="media/readme/fbag.png" width="500" height="100%">
+<img src="media/readme/bag.png" width="500" height="100%">
 </p>
 
 
@@ -316,7 +316,7 @@ No wireframes for Contact/Wishlist/FAQ as these apps were added at a later stage
 * Colors
 
 
-<img width="300" src="media/readme/color_palette.png">
+<img width="300" src="media/readme/color-palette.png">
 
 
 * Font selection
@@ -345,7 +345,7 @@ I have created a sitemap.xml and robots.txt file to help aid search engines loca
 
 # Business Model
 
-The business model for this store would be a B2C (Business to Customer) model, as the business would be selling products directly from themselves to the customer
+The business model for this store would be a B2C (Business to Customer) model, as the business would be selling products directly from themselves to the customer.
 
 
 ## Functional Scope 
@@ -357,7 +357,7 @@ The business model for this store would be a B2C (Business to Customer) model, a
 
 
 
-Atlassian project board [here](https://heredo.atlassian.net/jira/software/projects/HEREDO/boards/1/roadmap?shared=&atlOrigin=eyJpIjoiNDZlNjIwYTY5M2VhNGU0ZWIyYzQxMTRkOWQyODdkNjgiLCJwIjoiaiJ9)
+Find my Atlassian project board [here](https://heredo.atlassian.net/jira/software/projects/HEREDO/boards/1/roadmap?shared=&atlOrigin=eyJpIjoiNDZlNjIwYTY5M2VhNGU0ZWIyYzQxMTRkOWQyODdkNjgiLCJwIjoiaiJ9).
 
 
 <details>
@@ -771,6 +771,11 @@ Stripe is needed to handle the checkout process when a payment is made. You will
 + The jumotron background video is taken from Pexels.
 
 ### Work based on other code
+
++ I have used CodePen for inspiration for many of my features.
+
+The one below is for the text animation on the home page, in the shop section.
+https://codepen.io/sebastian-szyja/pen/QWwxZEq
 
 
 [Back to top ⇧](#)
