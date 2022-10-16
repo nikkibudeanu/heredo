@@ -313,7 +313,7 @@ footer a:hover {
 .card-content h3{
   top: 20px;
   text-transform: uppercase;
-  color: 15133C;
+  color: #15133C;
 }
 
 .card-content span{
@@ -772,11 +772,6 @@ color:#EFEFEF;
 
 .allauth-form-inner-content input::placeholder {
   color: #aab7c4;
-}
-
-.checkboxinput {
-  border: 2px solid #15133C;
-  outline: none;
 }
 
 

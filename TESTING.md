@@ -239,12 +239,12 @@ HTML Validation not perfomed as W3 is not configured for django HTML files and a
 ## CSS Code Validation
 
 <p float="left">
-        <img src="media/readme/validation/css-validation.png" width="40%" />
+        <img src="media/readme/css.png" width="40%" />
 </p>
 
 ## JavaScript Code Validation
 
-The only errors are linked to JQUERY $ sign. Please see below.
+The only errors are linked to JQuery $ sign. Please see below.
 
 ### **home** 
 
@@ -276,11 +276,27 @@ The only errors are linked to JQUERY $ sign. Please see below.
 The test user was my friend. I held a test session with herxs and here are the results! 
 
 1. **Home page**
+* The user suggested a different background as there was low contrast between the nav links on the jumbotron and the video behind. 
+
+2. **Allauth forms**
+* The user suggested to add more style to the form as they were blank and not user friendly. 
+
+3. **Wishlist**
+* The user suggested the wishlist app, that's why it was added at a later stage.
+
+3. **Footer**
+* The user suggested to add the newsletter in the footer to add extra content along the social links. 
+
+3. **Wishlist**
+* The user suggested the wishlist app, that's why it was added at a later stage.
+
+
+
 
 
 ### **Response to the user experience test:**
 
-+ All user feedback was taken into account and incorporated except 
++ All user feedback was taken into account and incorporated .
 
 
 ### Final User Testing 
@@ -289,7 +305,7 @@ For this test, I have created a checklist for the user which included tests for 
 
 
 <p float="left">
-        <img src="media/readme/unittests/user-test.png" width="40%" />
+        <img src="media/readme/final_test.png" width="40%" />
 </p>
 
 
@@ -311,7 +327,6 @@ For this test, I have created a checklist for the user which included tests for 
 
 * Tested with iPhone 11 PRO and Woofme works well without errors.
 
-
 ### WAVE Accesibility validation
 
 **Home page analysis**
@@ -321,25 +336,31 @@ For this test, I have created a checklist for the user which included tests for 
 </p>
 
 
-**Breed Reviews analysis**
+**FAQ**
 
 <p float="left">
         <img src="media/readme/validation/reviewlist-wave.png" width="40%" />
 </p>
 
-**Add review Page analysis**
+**Contact**
 
 <p float="left">
         <img src="media/readme/validation/addreview-wave.png" width="40%" />
 </p>
 
-**Login Page analysis**
+**Checkout**
 
 <p float="left">
         <img src="media/readme/validation/login-wave.png" width="40%" />
 </p>
 
-**Register Page  analysis**
+**Shop**
+
+<p float="left">
+        <img src="media/readme/validation/register-wave.png" width="40%" />
+</p>
+
+**Product detail**
 
 <p float="left">
         <img src="media/readme/validation/register-wave.png" width="40%" />
@@ -349,4 +370,4 @@ For this test, I have created a checklist for the user which included tests for 
 
 # Unfixed bugs
 
-* The
+* The wishlist app is fully working in the database, as per django admin pannel. However, the wishlist template is not populating whenever an user adds an item to the wishlist. The user only gets the alarm that an item was added. 
