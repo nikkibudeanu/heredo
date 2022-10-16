@@ -305,7 +305,7 @@ For this test, I have created a checklist for the user which included tests for 
 
 
 <p float="left">
-        <img src="media/readme/final_test.png" width="40%" />
+        <img src="media/readme/exploratory.png" width="40%" />
 </p>
 
 
