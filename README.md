@@ -334,9 +334,11 @@ For this project, I have used Oswald for the body and Noto Serif for the heading
 
 
 # Marketing 
+Heredo's marketing strategy is consistent content to gain presence on social media. Email marketing to drive conversions. The target audience for social media are 18 + adults in Moldova and abroad. The target audience for email marketing will be all subscribers to our newsletter. 
 - Links to all the social media sites can be found both inside the footer.
 - The newsletter sign up form can also be found in the footer
 - The Facebook link takes you to the Heredo business page which can be found [here](https://www.facebook.com/heredo.md).
+- SEO steps are implemented to make sure search engines are collecting the accurate data.
 
 
 # Search Engine Optimisation
