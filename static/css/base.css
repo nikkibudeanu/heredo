@@ -1,4 +1,4 @@
-/* Body, html, links and text */
+/* Body, html, links and text, icons */
 *{
   margin: 0;
   padding: 0;
@@ -46,6 +46,12 @@ html{
 
 }
 
+.icon{
+  font-size: 20px;
+  color: #15133C;
+  transition: .3s linear;
+}
+
 body{
   position: relative;
     height: calc(100vh - 164px);
@@ -65,6 +71,64 @@ body{
   height: auto;
 }
 
+
+/* Home page jumbotron */
+
+
+.jumbotron{
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  z-index: 0;
+
+}
+
+.jumbotron-image{
+  filter: invert(100%) sepia(8%) saturate(7467%) hue-rotate(164deg) brightness(119%) contrast(94%);
+
+}
+
+.jumbotron-hr{
+  width: 300px;
+  border: 0;
+  border-top: 3px double #fafafa;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  padding: 100px;
+
+}
+
+#background-video{
+  position: absolute;
+  width: auto;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+}
+
+
+
+/* Contact info section*/
+
+
+.contact-info{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-button{
+padding: 10px;
+}
 
 /* Footer */
 
@@ -153,7 +217,8 @@ footer a:hover {
 
 .content .image{
   position: relative;
-  width: 100%;
+  width: 600px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -216,63 +281,6 @@ footer a:hover {
   text-shadow: none;
 }
 
-/* Home page jumbotron */
-
-
-.jumbotron{
-  position: relative;
-  overflow: hidden;
-  height: 600px;
-  z-index: 0;
-
-}
-
-.jumbotron-image{
-  filter: invert(100%) sepia(8%) saturate(7467%) hue-rotate(164deg) brightness(119%) contrast(94%);
-
-}
-
-.jumbotron-hr{
-  width: 300px;
-  border: 0;
-  border-top: 3px double #fafafa;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-  padding: 100px;
-
-}
-
-#background-video{
-  position: absolute;
-  width: auto;
-  height: auto;
-  min-height: 100%;
-  min-width: 100%;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-  z-index: 1;
-}
-
-
-/* Contact info section*/
-
-
-.contact-info{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.contact-button{
-padding: 10px;
-}
-
 #card-home{
   position: relative;
   flex: 1;
@@ -286,11 +294,7 @@ padding: 10px;
   justify-content: center;
 }
 
-.icon{
-  font-size: 20px;
-  color: #15133C;
-  transition: .3s linear;
-}
+
 
 #card-home:hover .icon{
   transform: scale(4);
@@ -331,19 +335,18 @@ padding: 10px;
 }
 
 
+.delivery{
+  font-style: italic;
+  font-size: 20px;
+}
+
+
 @media screen and (max-width:900px){
   #card-home{
       flex: 100%;
       max-width: 500px;
   }
 }
-
-
-.delivery{
-  font-style: italic;
-  font-size: 20px;
-}
-
 
 
 
@@ -362,10 +365,6 @@ padding: 10px;
   cursor: pointer;
   height: 100%;
 
-}
-
-nav a{
-  color:#343a40;
 }
 
 
@@ -521,19 +520,6 @@ color:#EFEFEF;
   height: 5px;
 }
 
-
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
-.arrow-up {
-  width: 0; 
-  height: 0; 
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent; 
-  border-bottom: 10px solid black;
-  position: absolute;
-  top: -10px;
-  right: 36px;
-}
-
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
   border-bottom-color: #007bff !important;
@@ -585,56 +571,6 @@ color:#EFEFEF;
   background-color: #dc3545;
   border-color: #dc3545;
   border-radius: 0;
-}
-
-/* Shop button on home page */
-
-.button-shop {
-  border-radius: 4px;
-  background-color:#EC994B;
-  border: none;
-  padding: 10px;
-  width: 100px;
-  transition: all 0.5s;
-}
-
-
-.button-shop span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#shop a{
-  text-decoration:none;
-  color:#15133C;
-  font-family: 'Noto Serif', serif;
-  font-size: 2rem;
-}
-
-.button-shop span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button-shop span:after {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button-shop:hover span {
-  padding-right: 25px;
-}
-
-.button-shop:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 /* Gallery container*/
@@ -758,9 +694,58 @@ color:#EFEFEF;
   letter-spacing: 1px;
   color: #15133C;
 }
+/* Shop button  and login button on home page */
+
+.button-shop {
+  border-radius: 4px;
+  background-color:#EC994B;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+}
 
 
-/* Allauth form formatting */
+.button-shop span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#shop a{
+  text-decoration:none;
+  color:#15133C;
+  font-family: 'Noto Serif', serif;
+  font-size: 2rem;
+}
+
+.button-shop span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-shop span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-shop:hover span {
+  padding-right: 25px;
+}
+
+.button-shop:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Allauth form style */
 
 .allauth-form-inner-content p {
   color: #6c757d; /* text-secondary */
@@ -866,6 +851,7 @@ opacity: 0.7;
   }
 
 
+  /* Mobile screens*/
 @media (max-width: 991px) {
   .header-container {
     padding-top: 116px;
