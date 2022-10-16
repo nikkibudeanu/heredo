@@ -327,45 +327,6 @@ For this test, I have created a checklist for the user which included tests for 
 
 * Tested with iPhone 11 PRO and Woofme works well without errors.
 
-### WAVE Accesibility validation
-
-**Home page analysis**
-
-<p float="left">
-        <img src="media/readme/validation/home-wave.png" width="40%" />
-</p>
-
-
-**FAQ**
-
-<p float="left">
-        <img src="media/readme/validation/reviewlist-wave.png" width="40%" />
-</p>
-
-**Contact**
-
-<p float="left">
-        <img src="media/readme/validation/addreview-wave.png" width="40%" />
-</p>
-
-**Checkout**
-
-<p float="left">
-        <img src="media/readme/validation/login-wave.png" width="40%" />
-</p>
-
-**Shop**
-
-<p float="left">
-        <img src="media/readme/validation/register-wave.png" width="40%" />
-</p>
-
-**Product detail**
-
-<p float="left">
-        <img src="media/readme/validation/register-wave.png" width="40%" />
-</p>
-
 
 
 # Unfixed bugs
