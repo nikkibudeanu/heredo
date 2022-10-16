@@ -916,11 +916,6 @@ display:none;
 }
 
 
-.content{
-  justify-content: start;
-  flex-wrap: wrap;
-}
-
 .content .image{
 display: none;
 }
@@ -929,9 +924,7 @@ display: none;
 display: none;
 }
 
-.content .text-box{
-  transform: translate(-80px, 0px);
-}
+
 
 
 

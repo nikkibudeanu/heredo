@@ -192,7 +192,7 @@
               <span>heredo@gmail.com</span>
             </div>
           </div>
-  
+
           <div class="card " id="card-home">
             <i class="icon fas fa-phone"></i>
             <div class="card-content">
@@ -200,7 +200,7 @@
               <span>+373601198866</span>
             </div>
           </div>
-  
+
           <div class="card" id="card-home">
             <i class="icon fas fa-map-marker-alt"></i>
             <div class="card-content">
@@ -212,21 +212,21 @@
         <br>
       </div>
       <div class="container">
-      <div class="row">
-        <div class="col-lg-6 ">
+        <div class="row">
+          <div class="col-lg-6 ">
             <p>Got a question? We're here to answer!</p>
             <a class="contact-button" href="{% url 'faq_page' %}"><span></span>
               <div class="btn text-uppercase mt-5 border-secondary btn-style logo-font">FAQ</div>
             </a>
-            </div>
-            <div class="col-lg-6 ">
+          </div>
+          <div class="col-lg-6 ">
             <p>If you don't find an answer, drop us a message!</p>
             <a class="contact-button" href="{% url 'contact' %}"><span> </i></span>
               <div class="btn text-uppercase mt-5 border-secondary btn-style logo-font">Contact us</div>
             </a>
             </p>
           </div>
-      </div>
+        </div>
       </div>
     </div>
 
@@ -254,23 +254,28 @@
         });
       });
 
-      //scroll animation about page
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 568) {
+          //scroll animation about page
+          ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 2500,
+          });
 
-      ScrollReveal({
-        reset: true,
-        distance: '100px',
-        duration: 2500,
+          //target elements, and specify options to create reveal animations
+          ScrollReveal().reveal('.sec-about .image', {
+            delay: 300,
+            origin: 'left'
+          });
+          ScrollReveal().reveal('.text-box', {
+            delay: 300,
+            origin: 'right'
+          });
+        }
       });
 
-      //target elements, and specify options to create reveal animations
-      ScrollReveal().reveal('.sec-about .image', {
-        delay: 300,
-        origin: 'left'
-      });
-      ScrollReveal().reveal('.text-box', {
-        delay: 300,
-        origin: 'right'
-      });
+
 
       //code pen https://codepen.io/sebastian-szyja/pen/QWwxZEq
       var TxtRotate = function (el, toRotate, period) {
