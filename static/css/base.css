@@ -907,5 +907,10 @@ display:none;
   transform: translateX(-20%);
 }
 
+.content .image{
+display: none;
+}
+
+
 
 }
