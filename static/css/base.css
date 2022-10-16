@@ -293,7 +293,7 @@ footer a:hover {
   list-style: none;
 }
 
-/* Sections general */
+/* Sections about and vineyards */
 .main-title {
   font-size: 3em;
   margin-bottom: 20px;
@@ -864,7 +864,7 @@ footer a:hover {
       display: none;
   }
 
-  .content .text-box {
+.text-box {
       transform: none;
   }
 
