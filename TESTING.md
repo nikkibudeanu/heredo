@@ -252,6 +252,12 @@ The only errors are linked to JQuery $ sign. Please see below.
         <img src="media/readme/jshint/home.png" width="40%" />
 </p>
 
+### **quantity input script** 
+
+<p float="left">
+        <img src="media/readme/jshint/quantity.png" width="40%" />
+</p>
+
 ### **stripe** 
 
 

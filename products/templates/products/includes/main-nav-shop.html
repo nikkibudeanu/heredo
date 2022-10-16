@@ -1,9 +1,9 @@
-
 <div class="navbar" id="main-nav-shop">
     <ul class="navbar-nav navbar-expand-lg  mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link  mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products  <i class="fas fa-caret-down"></i>
+            <a class="logo-font font-weight-bold nav-link  mr-5" href="#" id="all-products-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                All Products <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -14,20 +14,24 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="wines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="wines-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Wines <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="wines-link">
                 <a href="{% url 'products' %}?category=red-wine" class="dropdown-item">Red wines</a>
-                <a href="{% url 'products' %}?category=white-and-rose-wine" class="dropdown-item">White and Rosé wines</a>
+                <a href="{% url 'products' %}?category=white-and-rose-wine" class="dropdown-item">White and Rosé
+                    wines</a>
                 <a href="{% url 'products' %}?category=sparkling" class="dropdown-item">Sparkling and Champagne</a>
-                <a href="{% url 'products' %}?category=red-wine,white-and-rose-wine,sparkling" class="dropdown-item">All Wine</a>
+                <a href="{% url 'products' %}?category=red-wine,white-and-rose-wine,sparkling" class="dropdown-item">All
+                    Wine</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link  mr-5" href="#" id="gifts-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Gifts <i class="fas fa-caret-down"></i>
+            <a class="logo-font font-weight-bold nav-link  mr-5" href="#" id="gifts-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Gifts <i class="fas fa-caret-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="gifts-link">
                 <a href="{% url 'products' %}?category=gift-cards" class="dropdown-item">Gift cards</a>
@@ -36,12 +40,11 @@
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link" href="{% url 'products' %}?category=mistery-box" >
+            <a class="logo-font font-weight-bold nav-link" href="{% url 'products' %}?category=mistery-box">
                 Mistery Boxes
             </a>
 
-            </div>
-        </li>
-    </ul>
-</div> 
-
+</div>
+</li>
+</ul>
+</div>

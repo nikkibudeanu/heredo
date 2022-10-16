@@ -10,7 +10,8 @@
 <body>
   <header>
     <div class="jumbotron  jumbotron-fluid ">
-      <video playsinline autoplay muted loop poster="" class="responsive p-3" id="background-video" style="z-index: -1;">
+      <video playsinline autoplay muted loop poster="" class="responsive p-3" id="background-video"
+        style="z-index: -1;">
         <source src="{{ MEDIA_URL }}background-video.mp4" type="video/mp4">
       </video>
       <div class="callout">
@@ -254,22 +255,22 @@
         });
       });
 
-          //scroll animation about page
-          ScrollReveal({
-            reset: true,
-            distance: '100px',
-            duration: 2500,
-          });
+      //scroll animation about page
+      ScrollReveal({
+        reset: true,
+        distance: '100px',
+        duration: 2500,
+      });
 
-          //target elements, and specify options to create reveal animations
-          ScrollReveal().reveal('.sec-about .image', {
-            delay: 300,
-            origin: 'left'
-          });
-          ScrollReveal().reveal('.text-box', {
-            delay: 300,
-            origin: 'right'
-          });
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.sec-about .image', {
+        delay: 300,
+        origin: 'left'
+      });
+      ScrollReveal().reveal('.text-box', {
+        delay: 300,
+        origin: 'right'
+      });
 
 
 
