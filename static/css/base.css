@@ -925,7 +925,13 @@ display: none;
 }
 
 
+.content .text-box{
+  transform: none;
+}
 
+#cards_landscape_wrap{
+  background: #fff ;
+}
 
 
 }
